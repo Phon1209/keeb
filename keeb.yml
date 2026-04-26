@@ -1,0 +1,326 @@
+meta:
+  engine: 4.1.0
+
+units:
+  cx: 18 # Choc column spacing
+  cy: 17 # Choc row spacing
+
+points:
+  key.tags:
+    - key
+  zones:
+    # ── Left hand main matrix: 4 rows × 6 columns ──────────────────────────
+    matrix:
+      anchor:
+        shift: [150, -150]
+      key:
+        width: cx
+        height: cy
+        spread: cx
+        padding: cy
+      columns:
+        # Column order: pinky → inner_index (left to right)
+        extra_pinky:
+        pinky:
+          key:
+            splay: -3
+            origin: [0, -20]
+        ring:
+          key:
+            stagger: 7
+            splay: -7
+            origin: [0, -20]
+        middle:
+          key:
+            stagger: 3
+        index:
+          key:
+            stagger: -8
+        inner:
+          key:
+            stagger: -2
+            col_net: P5
+      rows:
+        bottom:
+        home:
+        top:
+        upper:
+
+    # ── Left thumb cluster: 3 keys ─────────────────────────────────────────
+    thumbsfan:
+      anchor:
+        ref: matrix_index_bottom
+        shift: [3, -1.2*cy]
+      key:
+        width: cx
+        height: cy
+      columns:
+        near:
+          key:
+            rotate: -10
+        home:
+          key:
+            stagger: -4
+            origin: [-cx/2, -cy/2]
+            rotate: -15
+        far:
+          key:
+            stagger: -6
+            origin: [-cx/2, -cy/2]
+            rotate: -20
+
+    mcu:
+      key.tags:
+        - helper
+      anchor:
+        - ref: matrix_inner_top
+          shift: [cx+ 1.5, -3]
+          rotate: 0
+    battery:
+      key.tags:
+        - helper
+      anchor:
+        - ref: matrix_middle_top
+          shift: [0, 0]
+          rotate: 0
+    screw_1:
+      key.tags:
+        - helper
+        - screw
+      anchor:
+        aggregate.parts:
+          - ref: matrix_extra_pinky_top
+          - ref: matrix_extra_pinky_upper
+          - ref: matrix_pinky_top
+          - ref: matrix_pinky_upper
+    screw_2:
+      key.tags:
+        - helper
+        - screw
+      anchor:
+        aggregate.parts:
+          - ref: matrix_extra_pinky_home
+          - ref: matrix_extra_pinky_bottom
+          - ref: matrix_pinky_home
+          - ref: matrix_pinky_bottom
+    screw_3:
+      key.tags:
+        - helper
+        - screw
+      anchor:
+        aggregate.parts:
+          - ref: matrix_index_upper
+          - ref: matrix_index_top
+          - ref: matrix_inner_upper
+          - ref: matrix_inner_top
+        shift: [0, -1]
+
+    screw_4:
+      key.tags:
+        - helper
+        - screw
+      anchor:
+        aggregate.parts:
+          - ref: thumbsfan_near
+          - ref: matrix_ring_bottom
+        shift: [.4, -5]
+    screw_5:
+      key.tags:
+        - helper
+        - screw
+      anchor:
+        aggregate.parts:
+          - ref: matrix_inner_bottom
+          - ref: thumbsfan_far
+        shift: [5, 0]
+
+outlines:
+  _keys:
+    - what: rectangle
+      where: [key]
+      size: [cx - 0.5, cy - 0.5]
+
+  # Alpha block with padding
+  _alpha_block:
+    - what: rectangle
+      where: /matrix/
+      size: [cx + 3, cy + 3]
+      bound: true
+  # Thumb cluster with padding
+  _thumb_block:
+    - what: rectangle
+      where: /thumbsfan/
+      size: [cx + 3, cy + 3]
+      bound: true
+
+  _extra_board:
+    - what: polygon
+      points:
+        - aggregate:
+            parts:
+              - ref: matrix_pinky_bottom
+                shift: [cx/2 + 1, -cy/2 - 1.5]
+        - aggregate:
+            parts:
+              - ref: matrix_pinky_top
+                shift: [cx/2, 0]
+        - ref: matrix_ring_top
+          shift: [-0.5cx - 1.5, 0]
+        - ref: matrix_middle_upper
+          shift: [-1.5cx-1.5, cy/2 + 1.5]
+        - ref: matrix_middle_upper
+          shift: [2.5cx + 1.5, cy/2 + 1.5]
+        - ref: mcu
+          shift: [-17.5/2, 21/2]
+        - ref: mcu
+          shift: [17.5/2 + 1.5, 21/2]
+        - ref: thumbsfan_far
+          shift: [cx/2+1.5, cy/2+1.5]
+        - ref: thumbsfan_far
+          shift: [cx/2, 0]
+        - ref: thumbsfan_near # inside thumb block
+          shift: [-cx/2, -cy/2 - 1.5]
+
+  _screw_heads:
+    - what: circle
+      where: [screw]
+      radius: 4.3/2
+
+  _mcu:
+    - what: rectangle
+      where: [mcu]
+      size: [17.5, 21]
+      fillet: 1
+    - what: rectangle
+      where: [mcu]
+      size: [8.94, 7.35]
+      fillet: 0.1
+      operation: stack
+      adjust:
+        shift: [0, 21/2 - 7.35/2 + .7]
+
+  _battery:
+    - what: rectangle
+      where: [battery]
+      size: [34, 50]
+      adjust.shift: [0, 0]
+      # size: [12, 30]
+
+  # Final board: hull merges both blocks into one smooth convex outline
+  preview:
+    - what: outline
+      name: _alpha_block
+      fillet: 1 # rounds the alpha block corners
+    - what: outline
+      name: _thumb_block
+      operation: add
+    - what: outline
+      name: _extra_board
+      operation: stack
+    - what: outline
+      name: _screw_heads
+      operation: add
+    - what: outline
+      name: _keys
+      operation: stack
+    - what: outline
+      name: preview
+      fillet: 2
+
+  board_outline:
+    - what: outline
+      name: _alpha_block
+    - what: outline
+      name: _extra_board
+    - what: outline
+      name: _thumb_block
+    - what: outline
+      name: board_outline
+      fillet: 1
+
+  board:
+    - what: outline
+      name: board_outline
+    - what: outline
+      name: _screw_heads
+      operation: stack
+    - what: outline
+      name: _mcu
+      operation: stack
+    - what: outline
+      name: _keys
+      operation: stack
+
+  combo:
+    - what: outline
+      name: board_outline
+      fillet: 2
+    - operation: subtract
+      name: _keys
+
+pcbs:
+  board_pcb:
+    template: kicad8
+    outlines:
+      board:
+        outline: board
+    footprints:
+      m2_screws:
+        what: ceoloide/mounting_hole_npth
+        where: /screw/
+        params:
+          hole_size: 4.6
+          hole_drill: 2.2
+      choc_hotswap:
+        what: ceoloide/switch_choc_v1_v2
+        where:
+          - /key/
+        params: &switches
+          from: "{{colrow}}"
+          to: "{{col.name}}"
+          choc_v1_support: false
+          include_plated_holes: false
+          hotswap: true
+          reversible: true
+        adjust:
+          rotate: 180
+
+      diodes:
+        what: ceoloide/diode_tht_sod123
+        where: /key/
+        params:
+          from: "{{colrow}}"
+          to: "{{row}}"
+          reversible: true
+        adjust:
+          shift: [6, 0]
+          rotate: 180
+
+      battery_connector:
+        what: ceoloide/battery_connector_jst_ph_2
+        where: [mcu]
+        params:
+          reversible: true
+        adjust:
+          shift: [-5, -37]
+          rotate: 90
+
+      on_off_switch:
+        what: ceoloide/power_switch_smd_side
+        where: mcu
+        params:
+          from: BAT_P
+          to: RAW
+          reversible: true
+        adjust:
+          shift: [11.5, -20]
+          rotate: 6
+
+      reset_switch:
+        what: ceoloide/reset_switch_tht_top
+        where: mcu
+        params:
+          reversible: true
+        adjust:
+          shift: [11.5, -35]
+          rotate: 96
