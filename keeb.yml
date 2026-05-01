@@ -20,31 +20,40 @@ points:
         padding: cy
       columns:
         # Column order: pinky → inner_index (left to right)
-        extra_pinky:
+        extra_pinky.key:
+          col_net: col0
         pinky:
           key:
             splay: -3
             origin: [0, -20]
+            col_net: col1
         ring:
           key:
             stagger: 7
             splay: -7
             origin: [0, -20]
+            col_net: col2
         middle:
           key:
             stagger: 3
+            col_net: col3
         index:
           key:
             stagger: -8
+            col_net: col4
         inner:
           key:
             stagger: -2
-            col_net: P5
+            col_net: col5
       rows:
         bottom:
+          key.row_net: r0
         home:
+          key.row_net: r1
         top:
+          key.row_net: r2
         upper:
+          key.row_net: r3
 
     # ── Left thumb cluster: 3 keys ─────────────────────────────────────────
     thumbsfan:
@@ -58,16 +67,21 @@ points:
         near:
           key:
             rotate: -10
+            col_net: col3
         home:
           key:
             stagger: -4
             origin: [-cx/2, -cy/2]
             rotate: -15
+            col_net: col4
         far:
           key:
             stagger: -6
             origin: [-cx/2, -cy/2]
             rotate: -20
+            col_net: col5
+      rows:
+        thumb.key.row_net: r4
 
     mcu:
       key.tags:
@@ -121,7 +135,7 @@ points:
         - screw
       anchor:
         aggregate.parts:
-          - ref: thumbsfan_near
+          - ref: thumbsfan_near_thumb
           - ref: matrix_ring_bottom
         shift: [.4, -5]
     screw_5:
@@ -131,7 +145,7 @@ points:
       anchor:
         aggregate.parts:
           - ref: matrix_inner_bottom
-          - ref: thumbsfan_far
+          - ref: thumbsfan_far_thumb
         shift: [5, 0]
 
 outlines:
@@ -174,11 +188,11 @@ outlines:
           shift: [-17.5/2, 21/2]
         - ref: mcu
           shift: [17.5/2 + 1.5, 21/2]
-        - ref: thumbsfan_far
+        - ref: thumbsfan_far_thumb
           shift: [cx/2+1.5, cy/2+1.5]
-        - ref: thumbsfan_far
+        - ref: thumbsfan_far_thumb
           shift: [cx/2, 0]
-        - ref: thumbsfan_near # inside thumb block
+        - ref: thumbsfan_near_thumb # inside thumb block
           shift: [-cx/2, -cy/2 - 1.5]
 
   _screw_heads:
@@ -277,7 +291,7 @@ pcbs:
           - /key/
         params: &switches
           from: "{{colrow}}"
-          to: "{{col.name}}"
+          to: "{{col_net}}"
           choc_v1_support: false
           include_plated_holes: false
           hotswap: true
