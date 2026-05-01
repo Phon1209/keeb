@@ -221,33 +221,15 @@ outlines:
       # size: [12, 30]
 
   # Final board: hull merges both blocks into one smooth convex outline
-  preview:
-    - what: outline
-      name: _alpha_block
-      fillet: 1 # rounds the alpha block corners
-    - what: outline
-      name: _thumb_block
-      operation: add
-    - what: outline
-      name: _extra_board
-      operation: stack
-    - what: outline
-      name: _screw_heads
-      operation: add
-    - what: outline
-      name: _keys
-      operation: stack
-    - what: outline
-      name: preview
-      fillet: 2
-
   board_outline:
     - what: outline
       name: _alpha_block
     - what: outline
       name: _extra_board
+      operation: add
     - what: outline
       name: _thumb_block
+      operation: add
     - what: outline
       name: board_outline
       fillet: 1
@@ -257,13 +239,27 @@ outlines:
       name: board_outline
     - what: outline
       name: _screw_heads
+      operation: subtract
+
+  preview:
+    - what: outline
+      name: _alpha_block
+      fillet: 1 # rounds the alpha block corners
+    - what: outline
+      name: _thumb_block
+      operation: add
+    - what: outline
+      name: _extra_board
+      operation: add
+    - what: outline
+      name: _keys
       operation: stack
     - what: outline
       name: _mcu
       operation: stack
     - what: outline
-      name: _keys
-      operation: stack
+      name: preview
+      fillet: 2
 
   combo:
     - what: outline
@@ -279,12 +275,6 @@ pcbs:
       board:
         outline: board
     footprints:
-      m2_screws:
-        what: ceoloide/mounting_hole_npth
-        where: /screw/
-        params:
-          hole_size: 4.6
-          hole_drill: 2.2
       choc_hotswap:
         what: ceoloide/switch_choc_v1_v2
         where:
@@ -292,10 +282,10 @@ pcbs:
         params: &switches
           from: "{{colrow}}"
           to: "{{col_net}}"
-          choc_v1_support: false
+          choc_v1_support: true
           include_plated_holes: true
           hotswap: true
-          reversible: true
+          reversible: false
         adjust:
           rotate: 180
 
@@ -305,16 +295,16 @@ pcbs:
         params:
           from: "{{colrow}}"
           to: "{{row}}"
-          reversible: true
+          reversible: false
         adjust:
-          shift: [6, 0]
-          rotate: 180
+          shift: [3.2, 3]
+          rotate: 270
 
       battery_connector:
         what: ceoloide/battery_connector_jst_ph_2
         where: [mcu]
         params:
-          reversible: true
+          reversible: false
         adjust:
           shift: [-5, -37]
           rotate: 90
@@ -325,7 +315,7 @@ pcbs:
         params:
           from: BAT_P
           to: RAW
-          reversible: true
+          reversible: false
         adjust:
           shift: [11.5, -20]
           rotate: 6
@@ -334,7 +324,7 @@ pcbs:
         what: ceoloide/reset_switch_tht_top
         where: mcu
         params:
-          reversible: true
+          reversible: false
         adjust:
           shift: [11.5, -35]
           rotate: 96

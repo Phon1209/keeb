@@ -233,7 +233,7 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 180) (size 5 5) (drill 5) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 0 180) (size 5.3 5.3) (drill 5) (layers "*.Cu" "*.Mask") )
     
     
     (pad "" thru_hole circle (at 5.00 5.15 180) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
@@ -242,7 +242,7 @@
     
     
     
-    (pad "" np_thru_hole circle (at 0 -5.95 180) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 -5.95 180) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") )
     
     
     
@@ -265,23 +265,15 @@
     
     
     
-    (pad "" np_thru_hole circle (at -5 -3.75 375) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-
+    
+    (pad "1" thru_hole circle (at -5 -3.75 375) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 1 "extra_pinky_bottom"))
     
     
-    (pad "1" smd roundrect
-      (at 3.275 -5.95 180)
-      (size 2.6 2.6)
-      (layers "F.Cu" "F.Paste" "F.Mask")
-      (roundrect_rratio 0)
-			(chamfer_ratio 0.455)
-			(chamfer bottom_right)
-      (net 1 "extra_pinky_bottom")
-    )
+    (pad "2" smd roundrect (at 3.245 -5.95 180) (size 2.65 2.15) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1) (net 2 "col0"))
+    (pad "1" smd roundrect (at -7.6475 -3.75 180) (size 3.8 2.15) (layers "F.Cu") (roundrect_rratio 0.1) (net 1 "extra_pinky_bottom"))
+    (pad "" smd roundrect (at -8.2475 -3.75 180) (size 2.6 2.15) (layers "F.Paste" "F.Mask") (roundrect_rratio 0.1))
     
-
     
-    (pad "2" smd rect (at -8.275 -3.75 180) (size 2.6 2.6) (layers "F.Cu" "F.Paste" "F.Mask") (net 2 "col0"))
     
     
     
@@ -304,139 +296,18 @@
 
     
     
+      
+      (pad "2" thru_hole circle (at 5 -3.75 375) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 2 "col0"))
+      
+      
+    (pad "1" smd roundrect (at -3.245 -5.95 180) (size 2.65 2.15) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.1) (net 1 "extra_pinky_bottom"))
+    (pad "2" smd roundrect (at 7.6475 -3.75 180) (size 3.8 2.15) (layers "B.Cu") (roundrect_rratio 0.1) (net 2 "col0"))
+    (pad "" smd roundrect (at 8.2475 -3.75 180) (size 2.6 2.15) (layers "B.Paste" "B.Mask") (roundrect_rratio 0.1))
     
-    (pad "1" smd roundrect
-      (at -3.275 -5.95 180)
-      (size 2.6 2.6)
-      (layers "B.Cu" "B.Paste" "B.Mask")
-      (roundrect_rratio 0)
-			(chamfer_ratio 0.455)
-			(chamfer bottom_left)
-      (net 1 "extra_pinky_bottom")
-    )
-    
-
-    
-    (pad "2" smd rect (at 8.275 -3.75 180) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 2 "col0"))
-
-    
-    (pad "" np_thru_hole circle (at 5 -3.75 375) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+      
     
     
   )
-    
-	(segment
-		(start 146.725 155.95)
-		(end 148.8 153.875)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 1)
-	)
-	(segment
-		(start 148.8 153.875)
-		(end 150 153.875)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 1)
-	)
-	(via
-		(at 150 153.875)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 1)
-	)
-	(segment
-		(start 151.2 153.875)
-		(end 150 153.875)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 1)
-	)
-	(segment
-		(start 153.275 155.95)
-		(end 151.2 153.875)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 1)
-	)
-	(segment
-		(start 156.421 151.896)
-		(end 152.154 151.896)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(segment
-		(start 150.975 153.075)
-		(end 150 153.075)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(segment
-		(start 158.275 153.75)
-		(end 156.421 151.896)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(segment
-		(start 152.154 151.896)
-		(end 150.975 153.075)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(via
-		(at 150 153.075)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 2)
-	)
-	(segment
-		(start 147.859834 151.896)
-		(end 149.038834 153.075)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
-	(segment
-		(start 143.579 151.896)
-		(end 147.859834 151.896)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
-	(segment
-		(start 149.038834 153.075)
-		(end 150 153.075)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
-	(segment
-		(start 141.725 153.75)
-		(end 143.579 151.896)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
     
 
   (footprint "ceoloide:switch_choc_v1_v2"
@@ -452,7 +323,7 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 180) (size 5 5) (drill 5) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 0 180) (size 5.3 5.3) (drill 5) (layers "*.Cu" "*.Mask") )
     
     
     (pad "" thru_hole circle (at 5.00 5.15 180) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
@@ -461,7 +332,7 @@
     
     
     
-    (pad "" np_thru_hole circle (at 0 -5.95 180) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 -5.95 180) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") )
     
     
     
@@ -484,23 +355,15 @@
     
     
     
-    (pad "" np_thru_hole circle (at -5 -3.75 375) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-
+    
+    (pad "1" thru_hole circle (at -5 -3.75 375) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 6 "extra_pinky_home"))
     
     
-    (pad "1" smd roundrect
-      (at 3.275 -5.95 180)
-      (size 2.6 2.6)
-      (layers "F.Cu" "F.Paste" "F.Mask")
-      (roundrect_rratio 0)
-			(chamfer_ratio 0.455)
-			(chamfer bottom_right)
-      (net 6 "extra_pinky_home")
-    )
+    (pad "2" smd roundrect (at 3.245 -5.95 180) (size 2.65 2.15) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1) (net 2 "col0"))
+    (pad "1" smd roundrect (at -7.6475 -3.75 180) (size 3.8 2.15) (layers "F.Cu") (roundrect_rratio 0.1) (net 6 "extra_pinky_home"))
+    (pad "" smd roundrect (at -8.2475 -3.75 180) (size 2.6 2.15) (layers "F.Paste" "F.Mask") (roundrect_rratio 0.1))
     
-
     
-    (pad "2" smd rect (at -8.275 -3.75 180) (size 2.6 2.6) (layers "F.Cu" "F.Paste" "F.Mask") (net 2 "col0"))
     
     
     
@@ -523,139 +386,18 @@
 
     
     
+      
+      (pad "2" thru_hole circle (at 5 -3.75 375) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 2 "col0"))
+      
+      
+    (pad "1" smd roundrect (at -3.245 -5.95 180) (size 2.65 2.15) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.1) (net 6 "extra_pinky_home"))
+    (pad "2" smd roundrect (at 7.6475 -3.75 180) (size 3.8 2.15) (layers "B.Cu") (roundrect_rratio 0.1) (net 2 "col0"))
+    (pad "" smd roundrect (at 8.2475 -3.75 180) (size 2.6 2.15) (layers "B.Paste" "B.Mask") (roundrect_rratio 0.1))
     
-    (pad "1" smd roundrect
-      (at -3.275 -5.95 180)
-      (size 2.6 2.6)
-      (layers "B.Cu" "B.Paste" "B.Mask")
-      (roundrect_rratio 0)
-			(chamfer_ratio 0.455)
-			(chamfer bottom_left)
-      (net 6 "extra_pinky_home")
-    )
-    
-
-    
-    (pad "2" smd rect (at 8.275 -3.75 180) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 2 "col0"))
-
-    
-    (pad "" np_thru_hole circle (at 5 -3.75 375) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+      
     
     
   )
-    
-	(segment
-		(start 146.725 138.95)
-		(end 148.8 136.875)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 6)
-	)
-	(segment
-		(start 148.8 136.875)
-		(end 150 136.875)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 6)
-	)
-	(via
-		(at 150 136.875)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 6)
-	)
-	(segment
-		(start 151.2 136.875)
-		(end 150 136.875)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 6)
-	)
-	(segment
-		(start 153.275 138.95)
-		(end 151.2 136.875)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 6)
-	)
-	(segment
-		(start 156.421 134.896)
-		(end 152.154 134.896)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(segment
-		(start 150.975 136.075)
-		(end 150 136.075)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(segment
-		(start 158.275 136.75)
-		(end 156.421 134.896)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(segment
-		(start 152.154 134.896)
-		(end 150.975 136.075)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(via
-		(at 150 136.075)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 2)
-	)
-	(segment
-		(start 147.859834 134.896)
-		(end 149.038834 136.075)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
-	(segment
-		(start 143.579 134.896)
-		(end 147.859834 134.896)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
-	(segment
-		(start 149.038834 136.075)
-		(end 150 136.075)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
-	(segment
-		(start 141.725 136.75)
-		(end 143.579 134.896)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
     
 
   (footprint "ceoloide:switch_choc_v1_v2"
@@ -671,7 +413,7 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 180) (size 5 5) (drill 5) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 0 180) (size 5.3 5.3) (drill 5) (layers "*.Cu" "*.Mask") )
     
     
     (pad "" thru_hole circle (at 5.00 5.15 180) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
@@ -680,7 +422,7 @@
     
     
     
-    (pad "" np_thru_hole circle (at 0 -5.95 180) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 -5.95 180) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") )
     
     
     
@@ -703,23 +445,15 @@
     
     
     
-    (pad "" np_thru_hole circle (at -5 -3.75 375) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-
+    
+    (pad "1" thru_hole circle (at -5 -3.75 375) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 7 "extra_pinky_top"))
     
     
-    (pad "1" smd roundrect
-      (at 3.275 -5.95 180)
-      (size 2.6 2.6)
-      (layers "F.Cu" "F.Paste" "F.Mask")
-      (roundrect_rratio 0)
-			(chamfer_ratio 0.455)
-			(chamfer bottom_right)
-      (net 7 "extra_pinky_top")
-    )
+    (pad "2" smd roundrect (at 3.245 -5.95 180) (size 2.65 2.15) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1) (net 2 "col0"))
+    (pad "1" smd roundrect (at -7.6475 -3.75 180) (size 3.8 2.15) (layers "F.Cu") (roundrect_rratio 0.1) (net 7 "extra_pinky_top"))
+    (pad "" smd roundrect (at -8.2475 -3.75 180) (size 2.6 2.15) (layers "F.Paste" "F.Mask") (roundrect_rratio 0.1))
     
-
     
-    (pad "2" smd rect (at -8.275 -3.75 180) (size 2.6 2.6) (layers "F.Cu" "F.Paste" "F.Mask") (net 2 "col0"))
     
     
     
@@ -742,139 +476,18 @@
 
     
     
+      
+      (pad "2" thru_hole circle (at 5 -3.75 375) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 2 "col0"))
+      
+      
+    (pad "1" smd roundrect (at -3.245 -5.95 180) (size 2.65 2.15) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.1) (net 7 "extra_pinky_top"))
+    (pad "2" smd roundrect (at 7.6475 -3.75 180) (size 3.8 2.15) (layers "B.Cu") (roundrect_rratio 0.1) (net 2 "col0"))
+    (pad "" smd roundrect (at 8.2475 -3.75 180) (size 2.6 2.15) (layers "B.Paste" "B.Mask") (roundrect_rratio 0.1))
     
-    (pad "1" smd roundrect
-      (at -3.275 -5.95 180)
-      (size 2.6 2.6)
-      (layers "B.Cu" "B.Paste" "B.Mask")
-      (roundrect_rratio 0)
-			(chamfer_ratio 0.455)
-			(chamfer bottom_left)
-      (net 7 "extra_pinky_top")
-    )
-    
-
-    
-    (pad "2" smd rect (at 8.275 -3.75 180) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 2 "col0"))
-
-    
-    (pad "" np_thru_hole circle (at 5 -3.75 375) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+      
     
     
   )
-    
-	(segment
-		(start 146.725 121.95)
-		(end 148.8 119.875)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 7)
-	)
-	(segment
-		(start 148.8 119.875)
-		(end 150 119.875)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 7)
-	)
-	(via
-		(at 150 119.875)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 7)
-	)
-	(segment
-		(start 151.2 119.875)
-		(end 150 119.875)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 7)
-	)
-	(segment
-		(start 153.275 121.95)
-		(end 151.2 119.875)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 7)
-	)
-	(segment
-		(start 156.421 117.896)
-		(end 152.154 117.896)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(segment
-		(start 150.975 119.075)
-		(end 150 119.075)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(segment
-		(start 158.275 119.75)
-		(end 156.421 117.896)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(segment
-		(start 152.154 117.896)
-		(end 150.975 119.075)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(via
-		(at 150 119.075)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 2)
-	)
-	(segment
-		(start 147.859834 117.896)
-		(end 149.038834 119.075)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
-	(segment
-		(start 143.579 117.896)
-		(end 147.859834 117.896)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
-	(segment
-		(start 149.038834 119.075)
-		(end 150 119.075)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
-	(segment
-		(start 141.725 119.75)
-		(end 143.579 117.896)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
     
 
   (footprint "ceoloide:switch_choc_v1_v2"
@@ -890,7 +503,7 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 180) (size 5 5) (drill 5) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 0 180) (size 5.3 5.3) (drill 5) (layers "*.Cu" "*.Mask") )
     
     
     (pad "" thru_hole circle (at 5.00 5.15 180) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
@@ -899,7 +512,7 @@
     
     
     
-    (pad "" np_thru_hole circle (at 0 -5.95 180) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 -5.95 180) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") )
     
     
     
@@ -922,23 +535,15 @@
     
     
     
-    (pad "" np_thru_hole circle (at -5 -3.75 375) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-
+    
+    (pad "1" thru_hole circle (at -5 -3.75 375) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 8 "extra_pinky_upper"))
     
     
-    (pad "1" smd roundrect
-      (at 3.275 -5.95 180)
-      (size 2.6 2.6)
-      (layers "F.Cu" "F.Paste" "F.Mask")
-      (roundrect_rratio 0)
-			(chamfer_ratio 0.455)
-			(chamfer bottom_right)
-      (net 8 "extra_pinky_upper")
-    )
+    (pad "2" smd roundrect (at 3.245 -5.95 180) (size 2.65 2.15) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1) (net 2 "col0"))
+    (pad "1" smd roundrect (at -7.6475 -3.75 180) (size 3.8 2.15) (layers "F.Cu") (roundrect_rratio 0.1) (net 8 "extra_pinky_upper"))
+    (pad "" smd roundrect (at -8.2475 -3.75 180) (size 2.6 2.15) (layers "F.Paste" "F.Mask") (roundrect_rratio 0.1))
     
-
     
-    (pad "2" smd rect (at -8.275 -3.75 180) (size 2.6 2.6) (layers "F.Cu" "F.Paste" "F.Mask") (net 2 "col0"))
     
     
     
@@ -961,139 +566,18 @@
 
     
     
+      
+      (pad "2" thru_hole circle (at 5 -3.75 375) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 2 "col0"))
+      
+      
+    (pad "1" smd roundrect (at -3.245 -5.95 180) (size 2.65 2.15) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.1) (net 8 "extra_pinky_upper"))
+    (pad "2" smd roundrect (at 7.6475 -3.75 180) (size 3.8 2.15) (layers "B.Cu") (roundrect_rratio 0.1) (net 2 "col0"))
+    (pad "" smd roundrect (at 8.2475 -3.75 180) (size 2.6 2.15) (layers "B.Paste" "B.Mask") (roundrect_rratio 0.1))
     
-    (pad "1" smd roundrect
-      (at -3.275 -5.95 180)
-      (size 2.6 2.6)
-      (layers "B.Cu" "B.Paste" "B.Mask")
-      (roundrect_rratio 0)
-			(chamfer_ratio 0.455)
-			(chamfer bottom_left)
-      (net 8 "extra_pinky_upper")
-    )
-    
-
-    
-    (pad "2" smd rect (at 8.275 -3.75 180) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 2 "col0"))
-
-    
-    (pad "" np_thru_hole circle (at 5 -3.75 375) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+      
     
     
   )
-    
-	(segment
-		(start 146.725 104.95)
-		(end 148.8 102.875)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 8)
-	)
-	(segment
-		(start 148.8 102.875)
-		(end 150 102.875)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 8)
-	)
-	(via
-		(at 150 102.875)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 8)
-	)
-	(segment
-		(start 151.2 102.875)
-		(end 150 102.875)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 8)
-	)
-	(segment
-		(start 153.275 104.95)
-		(end 151.2 102.875)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 8)
-	)
-	(segment
-		(start 156.421 100.896)
-		(end 152.154 100.896)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(segment
-		(start 150.975 102.075)
-		(end 150 102.075)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(segment
-		(start 158.275 102.75)
-		(end 156.421 100.896)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(segment
-		(start 152.154 100.896)
-		(end 150.975 102.075)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 2)
-	)
-	(via
-		(at 150 102.075)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 2)
-	)
-	(segment
-		(start 147.859834 100.896)
-		(end 149.038834 102.075)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
-	(segment
-		(start 143.579 100.896)
-		(end 147.859834 100.896)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
-	(segment
-		(start 149.038834 102.075)
-		(end 150 102.075)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
-	(segment
-		(start 141.725 102.75)
-		(end 143.579 100.896)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 2)
-	)
     
 
   (footprint "ceoloide:switch_choc_v1_v2"
@@ -1109,7 +593,7 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 177) (size 5 5) (drill 5) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 0 177) (size 5.3 5.3) (drill 5) (layers "*.Cu" "*.Mask") )
     
     
     (pad "" thru_hole circle (at 5.00 5.15 177) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
@@ -1118,7 +602,7 @@
     
     
     
-    (pad "" np_thru_hole circle (at 0 -5.95 177) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 -5.95 177) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") )
     
     
     
@@ -1141,23 +625,15 @@
     
     
     
-    (pad "" np_thru_hole circle (at -5 -3.75 372) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-
+    
+    (pad "1" thru_hole circle (at -5 -3.75 372) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 9 "pinky_bottom"))
     
     
-    (pad "1" smd roundrect
-      (at 3.275 -5.95 177)
-      (size 2.6 2.6)
-      (layers "F.Cu" "F.Paste" "F.Mask")
-      (roundrect_rratio 0)
-			(chamfer_ratio 0.455)
-			(chamfer bottom_right)
-      (net 9 "pinky_bottom")
-    )
+    (pad "2" smd roundrect (at 3.245 -5.95 177) (size 2.65 2.15) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1) (net 10 "col1"))
+    (pad "1" smd roundrect (at -7.6475 -3.75 177) (size 3.8 2.15) (layers "F.Cu") (roundrect_rratio 0.1) (net 9 "pinky_bottom"))
+    (pad "" smd roundrect (at -8.2475 -3.75 177) (size 2.6 2.15) (layers "F.Paste" "F.Mask") (roundrect_rratio 0.1))
     
-
     
-    (pad "2" smd rect (at -8.275 -3.75 177) (size 2.6 2.6) (layers "F.Cu" "F.Paste" "F.Mask") (net 10 "col1"))
     
     
     
@@ -1180,139 +656,18 @@
 
     
     
+      
+      (pad "2" thru_hole circle (at 5 -3.75 372) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 10 "col1"))
+      
+      
+    (pad "1" smd roundrect (at -3.245 -5.95 177) (size 2.65 2.15) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.1) (net 9 "pinky_bottom"))
+    (pad "2" smd roundrect (at 7.6475 -3.75 177) (size 3.8 2.15) (layers "B.Cu") (roundrect_rratio 0.1) (net 10 "col1"))
+    (pad "" smd roundrect (at 8.2475 -3.75 177) (size 2.6 2.15) (layers "B.Paste" "B.Mask") (roundrect_rratio 0.1))
     
-    (pad "1" smd roundrect
-      (at -3.275 -5.95 177)
-      (size 2.6 2.6)
-      (layers "B.Cu" "B.Paste" "B.Mask")
-      (roundrect_rratio 0)
-			(chamfer_ratio 0.455)
-			(chamfer bottom_left)
-      (net 9 "pinky_bottom")
-    )
-    
-
-    
-    (pad "2" smd rect (at 8.275 -3.75 177) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 10 "col1"))
-
-    
-    (pad "" np_thru_hole circle (at 5 -3.75 372) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+      
     
     
   )
-    
-	(segment
-		(start 165.46480839999998 155.79785479999998)
-		(end 167.6455618 153.8342956)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 9)
-	)
-	(segment
-		(start 167.6455618 153.8342956)
-		(end 168.8439173 153.8970987)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 9)
-	)
-	(via
-		(at 168.8439173 153.8970987)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 9)
-	)
-	(segment
-		(start 170.04227269999998 153.95990189999998)
-		(end 168.8439173 153.8970987)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 9)
-	)
-	(segment
-		(start 172.0058319 156.1406553)
-		(end 170.04227269999998 153.95990189999998)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 9)
-	)
-	(segment
-		(start 175.35969039999998 152.25686009999998)
-		(end 171.09853809999998 152.03354249999998)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 10)
-	)
-	(segment
-		(start 169.8594498 153.1492227)
-		(end 168.885786 153.0981951)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 10)
-	)
-	(segment
-		(start 177.11411869999998 154.20535009999998)
-		(end 175.35969039999998 152.25686009999998)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 10)
-	)
-	(segment
-		(start 171.09853809999998 152.03354249999998)
-		(end 169.8594498 153.1492227)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 10)
-	)
-	(via
-		(at 168.885786 153.0981951)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 10)
-	)
-	(segment
-		(start 166.8102572 151.8088033)
-		(end 167.9259373 153.04789159999999)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 10)
-	)
-	(segment
-		(start 162.53528989999998 151.5847617)
-		(end 166.8102572 151.8088033)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 10)
-	)
-	(segment
-		(start 167.9259373 153.04789159999999)
-		(end 168.885786 153.0981951)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 10)
-	)
-	(segment
-		(start 160.5867999 153.33918999999997)
-		(end 162.53528989999998 151.5847617)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 10)
-	)
     
 
   (footprint "ceoloide:switch_choc_v1_v2"
@@ -1328,7 +683,7 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 177) (size 5 5) (drill 5) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 0 177) (size 5.3 5.3) (drill 5) (layers "*.Cu" "*.Mask") )
     
     
     (pad "" thru_hole circle (at 5.00 5.15 177) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
@@ -1337,7 +692,7 @@
     
     
     
-    (pad "" np_thru_hole circle (at 0 -5.95 177) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 -5.95 177) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") )
     
     
     
@@ -1360,23 +715,15 @@
     
     
     
-    (pad "" np_thru_hole circle (at -5 -3.75 372) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-
+    
+    (pad "1" thru_hole circle (at -5 -3.75 372) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 11 "pinky_home"))
     
     
-    (pad "1" smd roundrect
-      (at 3.275 -5.95 177)
-      (size 2.6 2.6)
-      (layers "F.Cu" "F.Paste" "F.Mask")
-      (roundrect_rratio 0)
-			(chamfer_ratio 0.455)
-			(chamfer bottom_right)
-      (net 11 "pinky_home")
-    )
+    (pad "2" smd roundrect (at 3.245 -5.95 177) (size 2.65 2.15) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1) (net 10 "col1"))
+    (pad "1" smd roundrect (at -7.6475 -3.75 177) (size 3.8 2.15) (layers "F.Cu") (roundrect_rratio 0.1) (net 11 "pinky_home"))
+    (pad "" smd roundrect (at -8.2475 -3.75 177) (size 2.6 2.15) (layers "F.Paste" "F.Mask") (roundrect_rratio 0.1))
     
-
     
-    (pad "2" smd rect (at -8.275 -3.75 177) (size 2.6 2.6) (layers "F.Cu" "F.Paste" "F.Mask") (net 10 "col1"))
     
     
     
@@ -1399,139 +746,18 @@
 
     
     
+      
+      (pad "2" thru_hole circle (at 5 -3.75 372) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 10 "col1"))
+      
+      
+    (pad "1" smd roundrect (at -3.245 -5.95 177) (size 2.65 2.15) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.1) (net 11 "pinky_home"))
+    (pad "2" smd roundrect (at 7.6475 -3.75 177) (size 3.8 2.15) (layers "B.Cu") (roundrect_rratio 0.1) (net 10 "col1"))
+    (pad "" smd roundrect (at 8.2475 -3.75 177) (size 2.6 2.15) (layers "B.Paste" "B.Mask") (roundrect_rratio 0.1))
     
-    (pad "1" smd roundrect
-      (at -3.275 -5.95 177)
-      (size 2.6 2.6)
-      (layers "B.Cu" "B.Paste" "B.Mask")
-      (roundrect_rratio 0)
-			(chamfer_ratio 0.455)
-			(chamfer bottom_left)
-      (net 11 "pinky_home")
-    )
-    
-
-    
-    (pad "2" smd rect (at 8.275 -3.75 177) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 10 "col1"))
-
-    
-    (pad "" np_thru_hole circle (at 5 -3.75 372) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+      
     
     
   )
-    
-	(segment
-		(start 166.35451969999997 138.82115269999997)
-		(end 168.53527309999998 136.85759349999998)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 11)
-	)
-	(segment
-		(start 168.53527309999998 136.85759349999998)
-		(end 169.73362859999997 136.92039659999998)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 11)
-	)
-	(via
-		(at 169.73362859999997 136.92039659999998)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 11)
-	)
-	(segment
-		(start 170.93198399999997 136.98319979999997)
-		(end 169.73362859999997 136.92039659999998)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 11)
-	)
-	(segment
-		(start 172.8955432 139.16395319999998)
-		(end 170.93198399999997 136.98319979999997)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 11)
-	)
-	(segment
-		(start 176.24940169999996 135.28015799999997)
-		(end 171.98824939999997 135.05684039999997)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 10)
-	)
-	(segment
-		(start 170.74916109999998 136.17252059999998)
-		(end 169.77549729999998 136.121493)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 10)
-	)
-	(segment
-		(start 178.00382999999997 137.22864799999996)
-		(end 176.24940169999996 135.28015799999997)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 10)
-	)
-	(segment
-		(start 171.98824939999997 135.05684039999997)
-		(end 170.74916109999998 136.17252059999998)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 10)
-	)
-	(via
-		(at 169.77549729999998 136.121493)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 10)
-	)
-	(segment
-		(start 167.69996849999998 134.83210119999998)
-		(end 168.81564859999997 136.07118949999997)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 10)
-	)
-	(segment
-		(start 163.42500119999997 134.6080596)
-		(end 167.69996849999998 134.83210119999998)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 10)
-	)
-	(segment
-		(start 168.81564859999997 136.07118949999997)
-		(end 169.77549729999998 136.121493)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 10)
-	)
-	(segment
-		(start 161.47651119999998 136.36248789999996)
-		(end 163.42500119999997 134.6080596)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 10)
-	)
     
 
   (footprint "ceoloide:switch_choc_v1_v2"
@@ -1547,7 +773,7 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 177) (size 5 5) (drill 5) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 0 177) (size 5.3 5.3) (drill 5) (layers "*.Cu" "*.Mask") )
     
     
     (pad "" thru_hole circle (at 5.00 5.15 177) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
@@ -1556,7 +782,7 @@
     
     
     
-    (pad "" np_thru_hole circle (at 0 -5.95 177) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 -5.95 177) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") )
     
     
     
@@ -1579,23 +805,15 @@
     
     
     
-    (pad "" np_thru_hole circle (at -5 -3.75 372) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-
+    
+    (pad "1" thru_hole circle (at -5 -3.75 372) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 12 "pinky_top"))
     
     
-    (pad "1" smd roundrect
-      (at 3.275 -5.95 177)
-      (size 2.6 2.6)
-      (layers "F.Cu" "F.Paste" "F.Mask")
-      (roundrect_rratio 0)
-			(chamfer_ratio 0.455)
-			(chamfer bottom_right)
-      (net 12 "pinky_top")
-    )
+    (pad "2" smd roundrect (at 3.245 -5.95 177) (size 2.65 2.15) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1) (net 10 "col1"))
+    (pad "1" smd roundrect (at -7.6475 -3.75 177) (size 3.8 2.15) (layers "F.Cu") (roundrect_rratio 0.1) (net 12 "pinky_top"))
+    (pad "" smd roundrect (at -8.2475 -3.75 177) (size 2.6 2.15) (layers "F.Paste" "F.Mask") (roundrect_rratio 0.1))
     
-
     
-    (pad "2" smd rect (at -8.275 -3.75 177) (size 2.6 2.6) (layers "F.Cu" "F.Paste" "F.Mask") (net 10 "col1"))
     
     
     
@@ -1618,139 +836,18 @@
 
     
     
+      
+      (pad "2" thru_hole circle (at 5 -3.75 372) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 10 "col1"))
+      
+      
+    (pad "1" smd roundrect (at -3.245 -5.95 177) (size 2.65 2.15) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.1) (net 12 "pinky_top"))
+    (pad "2" smd roundrect (at 7.6475 -3.75 177) (size 3.8 2.15) (layers "B.Cu") (roundrect_rratio 0.1) (net 10 "col1"))
+    (pad "" smd roundrect (at 8.2475 -3.75 177) (size 2.6 2.15) (layers "B.Paste" "B.Mask") (roundrect_rratio 0.1))
     
-    (pad "1" smd roundrect
-      (at -3.275 -5.95 177)
-      (size 2.6 2.6)
-      (layers "B.Cu" "B.Paste" "B.Mask")
-      (roundrect_rratio 0)
-			(chamfer_ratio 0.455)
-			(chamfer bottom_left)
-      (net 12 "pinky_top")
-    )
-    
-
-    
-    (pad "2" smd rect (at 8.275 -3.75 177) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 10 "col1"))
-
-    
-    (pad "" np_thru_hole circle (at 5 -3.75 372) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+      
     
     
   )
-    
-	(segment
-		(start 167.24423099999996 121.84445059999997)
-		(end 169.42498439999997 119.88089139999998)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 12)
-	)
-	(segment
-		(start 169.42498439999997 119.88089139999998)
-		(end 170.62333989999996 119.94369449999998)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 12)
-	)
-	(via
-		(at 170.62333989999996 119.94369449999998)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 12)
-	)
-	(segment
-		(start 171.82169529999996 120.00649769999998)
-		(end 170.62333989999996 119.94369449999998)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 12)
-	)
-	(segment
-		(start 173.78525449999998 122.18725109999998)
-		(end 171.82169529999996 120.00649769999998)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 12)
-	)
-	(segment
-		(start 177.13911299999995 118.30345589999997)
-		(end 172.87796069999996 118.08013829999997)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 10)
-	)
-	(segment
-		(start 171.63887239999997 119.19581849999997)
-		(end 170.66520859999997 119.14479089999998)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 10)
-	)
-	(segment
-		(start 178.89354129999995 120.25194589999998)
-		(end 177.13911299999995 118.30345589999997)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 10)
-	)
-	(segment
-		(start 172.87796069999996 118.08013829999997)
-		(end 171.63887239999997 119.19581849999997)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 10)
-	)
-	(via
-		(at 170.66520859999997 119.14479089999998)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 10)
-	)
-	(segment
-		(start 168.58967979999997 117.85539909999999)
-		(end 169.70535989999996 119.09448739999998)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 10)
-	)
-	(segment
-		(start 164.31471249999996 117.63135749999998)
-		(end 168.58967979999997 117.85539909999999)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 10)
-	)
-	(segment
-		(start 169.70535989999996 119.09448739999998)
-		(end 170.66520859999997 119.14479089999998)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 10)
-	)
-	(segment
-		(start 162.36622249999996 119.38578579999998)
-		(end 164.31471249999996 117.63135749999998)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 10)
-	)
     
 
   (footprint "ceoloide:switch_choc_v1_v2"
@@ -1766,7 +863,7 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 177) (size 5 5) (drill 5) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 0 177) (size 5.3 5.3) (drill 5) (layers "*.Cu" "*.Mask") )
     
     
     (pad "" thru_hole circle (at 5.00 5.15 177) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
@@ -1775,7 +872,7 @@
     
     
     
-    (pad "" np_thru_hole circle (at 0 -5.95 177) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 -5.95 177) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") )
     
     
     
@@ -1798,23 +895,15 @@
     
     
     
-    (pad "" np_thru_hole circle (at -5 -3.75 372) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-
+    
+    (pad "1" thru_hole circle (at -5 -3.75 372) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 13 "pinky_upper"))
     
     
-    (pad "1" smd roundrect
-      (at 3.275 -5.95 177)
-      (size 2.6 2.6)
-      (layers "F.Cu" "F.Paste" "F.Mask")
-      (roundrect_rratio 0)
-			(chamfer_ratio 0.455)
-			(chamfer bottom_right)
-      (net 13 "pinky_upper")
-    )
+    (pad "2" smd roundrect (at 3.245 -5.95 177) (size 2.65 2.15) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1) (net 10 "col1"))
+    (pad "1" smd roundrect (at -7.6475 -3.75 177) (size 3.8 2.15) (layers "F.Cu") (roundrect_rratio 0.1) (net 13 "pinky_upper"))
+    (pad "" smd roundrect (at -8.2475 -3.75 177) (size 2.6 2.15) (layers "F.Paste" "F.Mask") (roundrect_rratio 0.1))
     
-
     
-    (pad "2" smd rect (at -8.275 -3.75 177) (size 2.6 2.6) (layers "F.Cu" "F.Paste" "F.Mask") (net 10 "col1"))
     
     
     
@@ -1837,139 +926,18 @@
 
     
     
+      
+      (pad "2" thru_hole circle (at 5 -3.75 372) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 10 "col1"))
+      
+      
+    (pad "1" smd roundrect (at -3.245 -5.95 177) (size 2.65 2.15) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.1) (net 13 "pinky_upper"))
+    (pad "2" smd roundrect (at 7.6475 -3.75 177) (size 3.8 2.15) (layers "B.Cu") (roundrect_rratio 0.1) (net 10 "col1"))
+    (pad "" smd roundrect (at 8.2475 -3.75 177) (size 2.6 2.15) (layers "B.Paste" "B.Mask") (roundrect_rratio 0.1))
     
-    (pad "1" smd roundrect
-      (at -3.275 -5.95 177)
-      (size 2.6 2.6)
-      (layers "B.Cu" "B.Paste" "B.Mask")
-      (roundrect_rratio 0)
-			(chamfer_ratio 0.455)
-			(chamfer bottom_left)
-      (net 13 "pinky_upper")
-    )
-    
-
-    
-    (pad "2" smd rect (at 8.275 -3.75 177) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 10 "col1"))
-
-    
-    (pad "" np_thru_hole circle (at 5 -3.75 372) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+      
     
     
   )
-    
-	(segment
-		(start 168.13394229999994 104.86774849999998)
-		(end 170.31469569999996 102.90418929999998)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 13)
-	)
-	(segment
-		(start 170.31469569999996 102.90418929999998)
-		(end 171.51305119999995 102.96699239999998)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 13)
-	)
-	(via
-		(at 171.51305119999995 102.96699239999998)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 13)
-	)
-	(segment
-		(start 172.71140659999995 103.02979559999999)
-		(end 171.51305119999995 102.96699239999998)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 13)
-	)
-	(segment
-		(start 174.67496579999997 105.21054899999999)
-		(end 172.71140659999995 103.02979559999999)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 13)
-	)
-	(segment
-		(start 178.02882429999994 101.32675379999998)
-		(end 173.76767199999995 101.10343619999998)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 10)
-	)
-	(segment
-		(start 172.52858369999996 102.21911639999998)
-		(end 171.55491989999996 102.16808879999998)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 10)
-	)
-	(segment
-		(start 179.78325259999994 103.27524379999998)
-		(end 178.02882429999994 101.32675379999998)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 10)
-	)
-	(segment
-		(start 173.76767199999995 101.10343619999998)
-		(end 172.52858369999996 102.21911639999998)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 10)
-	)
-	(via
-		(at 171.55491989999996 102.16808879999998)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 10)
-	)
-	(segment
-		(start 169.47939109999996 100.87869699999999)
-		(end 170.59507119999995 102.11778529999998)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 10)
-	)
-	(segment
-		(start 165.20442379999994 100.65465539999998)
-		(end 169.47939109999996 100.87869699999999)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 10)
-	)
-	(segment
-		(start 170.59507119999995 102.11778529999998)
-		(end 171.55491989999996 102.16808879999998)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 10)
-	)
-	(segment
-		(start 163.25593379999995 102.40908369999998)
-		(end 165.20442379999994 100.65465539999998)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 10)
-	)
     
 
   (footprint "ceoloide:switch_choc_v1_v2"
@@ -1985,7 +953,7 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 170) (size 5 5) (drill 5) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 0 170) (size 5.3 5.3) (drill 5) (layers "*.Cu" "*.Mask") )
     
     
     (pad "" thru_hole circle (at 5.00 5.15 170) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
@@ -1994,7 +962,7 @@
     
     
     
-    (pad "" np_thru_hole circle (at 0 -5.95 170) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 -5.95 170) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") )
     
     
     
@@ -2017,23 +985,15 @@
     
     
     
-    (pad "" np_thru_hole circle (at -5 -3.75 365) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-
+    
+    (pad "1" thru_hole circle (at -5 -3.75 365) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 14 "ring_bottom"))
     
     
-    (pad "1" smd roundrect
-      (at 3.275 -5.95 170)
-      (size 2.6 2.6)
-      (layers "F.Cu" "F.Paste" "F.Mask")
-      (roundrect_rratio 0)
-			(chamfer_ratio 0.455)
-			(chamfer bottom_right)
-      (net 14 "ring_bottom")
-    )
+    (pad "2" smd roundrect (at 3.245 -5.95 170) (size 2.65 2.15) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1) (net 15 "col2"))
+    (pad "1" smd roundrect (at -7.6475 -3.75 170) (size 3.8 2.15) (layers "F.Cu") (roundrect_rratio 0.1) (net 14 "ring_bottom"))
+    (pad "" smd roundrect (at -8.2475 -3.75 170) (size 2.6 2.15) (layers "F.Paste" "F.Mask") (roundrect_rratio 0.1))
     
-
     
-    (pad "2" smd rect (at -8.275 -3.75 170) (size 2.6 2.6) (layers "F.Cu" "F.Paste" "F.Mask") (net 15 "col2"))
     
     
     
@@ -2056,139 +1016,18 @@
 
     
     
+      
+      (pad "2" thru_hole circle (at 5 -3.75 365) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 15 "col2"))
+      
+      
+    (pad "1" smd roundrect (at -3.245 -5.95 170) (size 2.65 2.15) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.1) (net 14 "ring_bottom"))
+    (pad "2" smd roundrect (at 7.6475 -3.75 170) (size 3.8 2.15) (layers "B.Cu") (roundrect_rratio 0.1) (net 15 "col2"))
+    (pad "" smd roundrect (at 8.2475 -3.75 170) (size 2.6 2.15) (layers "B.Paste" "B.Mask") (roundrect_rratio 0.1))
     
-    (pad "1" smd roundrect
-      (at -3.275 -5.95 170)
-      (size 2.6 2.6)
-      (layers "B.Cu" "B.Paste" "B.Mask")
-      (roundrect_rratio 0)
-			(chamfer_ratio 0.455)
-			(chamfer bottom_left)
-      (net 14 "ring_bottom")
-    )
-    
-
-    
-    (pad "2" smd rect (at 8.275 -3.75 170) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 15 "col2"))
-
-    
-    (pad "" np_thru_hole circle (at 5 -3.75 365) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+      
     
     
   )
-    
-	(segment
-		(start 185.5561948 149.5463937)
-		(end 187.95999079999999 147.8632376)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 14)
-	)
-	(segment
-		(start 187.95999079999999 147.8632376)
-		(end 189.1417601 148.07161539999998)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 14)
-	)
-	(via
-		(at 189.1417601 148.07161539999998)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 14)
-	)
-	(segment
-		(start 190.32352939999998 148.2799933)
-		(end 189.1417601 148.07161539999998)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 14)
-	)
-	(segment
-		(start 192.0066855 150.6837893)
-		(end 190.32352939999998 148.2799933)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 14)
-	)
-	(segment
-		(start 195.8088604 147.2376758)
-		(end 191.60668579999998 146.4967191)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 15)
-	)
-	(segment
-		(start 190.2408662 147.4530762)
-		(end 189.28067869999998 147.2837692)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 15)
-	)
-	(segment
-		(start 197.3127503 149.3854531)
-		(end 195.8088604 147.2376758)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 15)
-	)
-	(segment
-		(start 191.60668579999998 146.4967191)
-		(end 190.2408662 147.4530762)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 15)
-	)
-	(via
-		(at 189.28067869999998 147.2837692)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 15)
-	)
-	(segment
-		(start 187.37775779999998 145.751045)
-		(end 188.3341149 147.1168645)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 15)
-	)
-	(segment
-		(start 183.16195929999998 145.007686)
-		(end 187.37775779999998 145.751045)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 15)
-	)
-	(segment
-		(start 188.3341149 147.1168645)
-		(end 189.28067869999998 147.2837692)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 15)
-	)
-	(segment
-		(start 181.014182 146.5115758)
-		(end 183.16195929999998 145.007686)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 15)
-	)
     
 
   (footprint "ceoloide:switch_choc_v1_v2"
@@ -2204,7 +1043,7 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 170) (size 5 5) (drill 5) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 0 170) (size 5.3 5.3) (drill 5) (layers "*.Cu" "*.Mask") )
     
     
     (pad "" thru_hole circle (at 5.00 5.15 170) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
@@ -2213,7 +1052,7 @@
     
     
     
-    (pad "" np_thru_hole circle (at 0 -5.95 170) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 -5.95 170) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") )
     
     
     
@@ -2236,23 +1075,15 @@
     
     
     
-    (pad "" np_thru_hole circle (at -5 -3.75 365) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-
+    
+    (pad "1" thru_hole circle (at -5 -3.75 365) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 16 "ring_home"))
     
     
-    (pad "1" smd roundrect
-      (at 3.275 -5.95 170)
-      (size 2.6 2.6)
-      (layers "F.Cu" "F.Paste" "F.Mask")
-      (roundrect_rratio 0)
-			(chamfer_ratio 0.455)
-			(chamfer bottom_right)
-      (net 16 "ring_home")
-    )
+    (pad "2" smd roundrect (at 3.245 -5.95 170) (size 2.65 2.15) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1) (net 15 "col2"))
+    (pad "1" smd roundrect (at -7.6475 -3.75 170) (size 3.8 2.15) (layers "F.Cu") (roundrect_rratio 0.1) (net 16 "ring_home"))
+    (pad "" smd roundrect (at -8.2475 -3.75 170) (size 2.6 2.15) (layers "F.Paste" "F.Mask") (roundrect_rratio 0.1))
     
-
     
-    (pad "2" smd rect (at -8.275 -3.75 170) (size 2.6 2.6) (layers "F.Cu" "F.Paste" "F.Mask") (net 15 "col2"))
     
     
     
@@ -2275,139 +1106,18 @@
 
     
     
+      
+      (pad "2" thru_hole circle (at 5 -3.75 365) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 15 "col2"))
+      
+      
+    (pad "1" smd roundrect (at -3.245 -5.95 170) (size 2.65 2.15) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.1) (net 16 "ring_home"))
+    (pad "2" smd roundrect (at 7.6475 -3.75 170) (size 3.8 2.15) (layers "B.Cu") (roundrect_rratio 0.1) (net 15 "col2"))
+    (pad "" smd roundrect (at 8.2475 -3.75 170) (size 2.6 2.15) (layers "B.Paste" "B.Mask") (roundrect_rratio 0.1))
     
-    (pad "1" smd roundrect
-      (at -3.275 -5.95 170)
-      (size 2.6 2.6)
-      (layers "B.Cu" "B.Paste" "B.Mask")
-      (roundrect_rratio 0)
-			(chamfer_ratio 0.455)
-			(chamfer bottom_left)
-      (net 16 "ring_home")
-    )
-    
-
-    
-    (pad "2" smd rect (at 8.275 -3.75 170) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 15 "col2"))
-
-    
-    (pad "" np_thru_hole circle (at 5 -3.75 365) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+      
     
     
   )
-    
-	(segment
-		(start 188.5082138 132.8046619)
-		(end 190.9120098 131.1215058)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 16)
-	)
-	(segment
-		(start 190.9120098 131.1215058)
-		(end 192.0937791 131.3298836)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 16)
-	)
-	(via
-		(at 192.0937791 131.3298836)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 16)
-	)
-	(segment
-		(start 193.2755484 131.5382615)
-		(end 192.0937791 131.3298836)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 16)
-	)
-	(segment
-		(start 194.9587045 133.9420575)
-		(end 193.2755484 131.5382615)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 16)
-	)
-	(segment
-		(start 198.7608794 130.495944)
-		(end 194.5587048 129.7549873)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 15)
-	)
-	(segment
-		(start 193.1928852 130.7113444)
-		(end 192.2326977 130.5420374)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 15)
-	)
-	(segment
-		(start 200.2647693 132.6437213)
-		(end 198.7608794 130.495944)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 15)
-	)
-	(segment
-		(start 194.5587048 129.7549873)
-		(end 193.1928852 130.7113444)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 15)
-	)
-	(via
-		(at 192.2326977 130.5420374)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 15)
-	)
-	(segment
-		(start 190.3297768 129.0093132)
-		(end 191.2861339 130.3751327)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 15)
-	)
-	(segment
-		(start 186.11397829999999 128.2659542)
-		(end 190.3297768 129.0093132)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 15)
-	)
-	(segment
-		(start 191.2861339 130.3751327)
-		(end 192.2326977 130.5420374)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 15)
-	)
-	(segment
-		(start 183.966201 129.769844)
-		(end 186.11397829999999 128.2659542)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 15)
-	)
     
 
   (footprint "ceoloide:switch_choc_v1_v2"
@@ -2423,7 +1133,7 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 170) (size 5 5) (drill 5) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 0 170) (size 5.3 5.3) (drill 5) (layers "*.Cu" "*.Mask") )
     
     
     (pad "" thru_hole circle (at 5.00 5.15 170) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
@@ -2432,7 +1142,7 @@
     
     
     
-    (pad "" np_thru_hole circle (at 0 -5.95 170) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 -5.95 170) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") )
     
     
     
@@ -2455,23 +1165,15 @@
     
     
     
-    (pad "" np_thru_hole circle (at -5 -3.75 365) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-
+    
+    (pad "1" thru_hole circle (at -5 -3.75 365) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 17 "ring_top"))
     
     
-    (pad "1" smd roundrect
-      (at 3.275 -5.95 170)
-      (size 2.6 2.6)
-      (layers "F.Cu" "F.Paste" "F.Mask")
-      (roundrect_rratio 0)
-			(chamfer_ratio 0.455)
-			(chamfer bottom_right)
-      (net 17 "ring_top")
-    )
+    (pad "2" smd roundrect (at 3.245 -5.95 170) (size 2.65 2.15) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1) (net 15 "col2"))
+    (pad "1" smd roundrect (at -7.6475 -3.75 170) (size 3.8 2.15) (layers "F.Cu") (roundrect_rratio 0.1) (net 17 "ring_top"))
+    (pad "" smd roundrect (at -8.2475 -3.75 170) (size 2.6 2.15) (layers "F.Paste" "F.Mask") (roundrect_rratio 0.1))
     
-
     
-    (pad "2" smd rect (at -8.275 -3.75 170) (size 2.6 2.6) (layers "F.Cu" "F.Paste" "F.Mask") (net 15 "col2"))
     
     
     
@@ -2494,139 +1196,18 @@
 
     
     
+      
+      (pad "2" thru_hole circle (at 5 -3.75 365) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 15 "col2"))
+      
+      
+    (pad "1" smd roundrect (at -3.245 -5.95 170) (size 2.65 2.15) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.1) (net 17 "ring_top"))
+    (pad "2" smd roundrect (at 7.6475 -3.75 170) (size 3.8 2.15) (layers "B.Cu") (roundrect_rratio 0.1) (net 15 "col2"))
+    (pad "" smd roundrect (at 8.2475 -3.75 170) (size 2.6 2.15) (layers "B.Paste" "B.Mask") (roundrect_rratio 0.1))
     
-    (pad "1" smd roundrect
-      (at -3.275 -5.95 170)
-      (size 2.6 2.6)
-      (layers "B.Cu" "B.Paste" "B.Mask")
-      (roundrect_rratio 0)
-			(chamfer_ratio 0.455)
-			(chamfer bottom_left)
-      (net 17 "ring_top")
-    )
-    
-
-    
-    (pad "2" smd rect (at 8.275 -3.75 170) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 15 "col2"))
-
-    
-    (pad "" np_thru_hole circle (at 5 -3.75 365) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+      
     
     
   )
-    
-	(segment
-		(start 191.4602328 116.0629301)
-		(end 193.8640288 114.379774)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 17)
-	)
-	(segment
-		(start 193.8640288 114.379774)
-		(end 195.0457981 114.5881518)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 17)
-	)
-	(via
-		(at 195.0457981 114.5881518)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 17)
-	)
-	(segment
-		(start 196.2275674 114.79652970000001)
-		(end 195.0457981 114.5881518)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 17)
-	)
-	(segment
-		(start 197.91072350000002 117.20032570000001)
-		(end 196.2275674 114.79652970000001)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 17)
-	)
-	(segment
-		(start 201.7128984 113.7542122)
-		(end 197.5107238 113.0132555)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 15)
-	)
-	(segment
-		(start 196.1449042 113.9696126)
-		(end 195.1847167 113.8003056)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 15)
-	)
-	(segment
-		(start 203.21678830000002 115.9019895)
-		(end 201.7128984 113.7542122)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 15)
-	)
-	(segment
-		(start 197.5107238 113.0132555)
-		(end 196.1449042 113.9696126)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 15)
-	)
-	(via
-		(at 195.1847167 113.8003056)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 15)
-	)
-	(segment
-		(start 193.2817958 112.26758140000001)
-		(end 194.23815290000002 113.6334009)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 15)
-	)
-	(segment
-		(start 189.0659973 111.5242224)
-		(end 193.2817958 112.26758140000001)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 15)
-	)
-	(segment
-		(start 194.23815290000002 113.6334009)
-		(end 195.1847167 113.8003056)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 15)
-	)
-	(segment
-		(start 186.91822000000002 113.02811220000001)
-		(end 189.0659973 111.5242224)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 15)
-	)
     
 
   (footprint "ceoloide:switch_choc_v1_v2"
@@ -2642,7 +1223,7 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 170) (size 5 5) (drill 5) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 0 170) (size 5.3 5.3) (drill 5) (layers "*.Cu" "*.Mask") )
     
     
     (pad "" thru_hole circle (at 5.00 5.15 170) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
@@ -2651,7 +1232,7 @@
     
     
     
-    (pad "" np_thru_hole circle (at 0 -5.95 170) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 -5.95 170) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") )
     
     
     
@@ -2674,23 +1255,15 @@
     
     
     
-    (pad "" np_thru_hole circle (at -5 -3.75 365) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-
+    
+    (pad "1" thru_hole circle (at -5 -3.75 365) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 18 "ring_upper"))
     
     
-    (pad "1" smd roundrect
-      (at 3.275 -5.95 170)
-      (size 2.6 2.6)
-      (layers "F.Cu" "F.Paste" "F.Mask")
-      (roundrect_rratio 0)
-			(chamfer_ratio 0.455)
-			(chamfer bottom_right)
-      (net 18 "ring_upper")
-    )
+    (pad "2" smd roundrect (at 3.245 -5.95 170) (size 2.65 2.15) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1) (net 15 "col2"))
+    (pad "1" smd roundrect (at -7.6475 -3.75 170) (size 3.8 2.15) (layers "F.Cu") (roundrect_rratio 0.1) (net 18 "ring_upper"))
+    (pad "" smd roundrect (at -8.2475 -3.75 170) (size 2.6 2.15) (layers "F.Paste" "F.Mask") (roundrect_rratio 0.1))
     
-
     
-    (pad "2" smd rect (at -8.275 -3.75 170) (size 2.6 2.6) (layers "F.Cu" "F.Paste" "F.Mask") (net 15 "col2"))
     
     
     
@@ -2713,139 +1286,18 @@
 
     
     
+      
+      (pad "2" thru_hole circle (at 5 -3.75 365) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 15 "col2"))
+      
+      
+    (pad "1" smd roundrect (at -3.245 -5.95 170) (size 2.65 2.15) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.1) (net 18 "ring_upper"))
+    (pad "2" smd roundrect (at 7.6475 -3.75 170) (size 3.8 2.15) (layers "B.Cu") (roundrect_rratio 0.1) (net 15 "col2"))
+    (pad "" smd roundrect (at 8.2475 -3.75 170) (size 2.6 2.15) (layers "B.Paste" "B.Mask") (roundrect_rratio 0.1))
     
-    (pad "1" smd roundrect
-      (at -3.275 -5.95 170)
-      (size 2.6 2.6)
-      (layers "B.Cu" "B.Paste" "B.Mask")
-      (roundrect_rratio 0)
-			(chamfer_ratio 0.455)
-			(chamfer bottom_left)
-      (net 18 "ring_upper")
-    )
-    
-
-    
-    (pad "2" smd rect (at 8.275 -3.75 170) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 15 "col2"))
-
-    
-    (pad "" np_thru_hole circle (at 5 -3.75 365) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+      
     
     
   )
-    
-	(segment
-		(start 194.4122518 99.3211983)
-		(end 196.8160478 97.6380422)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 18)
-	)
-	(segment
-		(start 196.8160478 97.6380422)
-		(end 197.99781710000002 97.84642000000001)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 18)
-	)
-	(via
-		(at 197.99781710000002 97.84642000000001)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 18)
-	)
-	(segment
-		(start 199.1795864 98.05479790000001)
-		(end 197.99781710000002 97.84642000000001)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 18)
-	)
-	(segment
-		(start 200.86274250000002 100.45859390000001)
-		(end 199.1795864 98.05479790000001)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 18)
-	)
-	(segment
-		(start 204.6649174 97.0124804)
-		(end 200.4627428 96.2715237)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 15)
-	)
-	(segment
-		(start 199.09692320000002 97.22788080000001)
-		(end 198.1367357 97.0585738)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 15)
-	)
-	(segment
-		(start 206.16880730000003 99.1602577)
-		(end 204.6649174 97.0124804)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 15)
-	)
-	(segment
-		(start 200.4627428 96.2715237)
-		(end 199.09692320000002 97.22788080000001)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 15)
-	)
-	(via
-		(at 198.1367357 97.0585738)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 15)
-	)
-	(segment
-		(start 196.2338148 95.52584960000002)
-		(end 197.19017190000002 96.8916691)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 15)
-	)
-	(segment
-		(start 192.0180163 94.7824906)
-		(end 196.2338148 95.52584960000002)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 15)
-	)
-	(segment
-		(start 197.19017190000002 96.8916691)
-		(end 198.1367357 97.0585738)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 15)
-	)
-	(segment
-		(start 189.87023900000003 96.28638040000001)
-		(end 192.0180163 94.7824906)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 15)
-	)
     
 
   (footprint "ceoloide:switch_choc_v1_v2"
@@ -2861,7 +1313,7 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 170) (size 5 5) (drill 5) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 0 170) (size 5.3 5.3) (drill 5) (layers "*.Cu" "*.Mask") )
     
     
     (pad "" thru_hole circle (at 5.00 5.15 170) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
@@ -2870,7 +1322,7 @@
     
     
     
-    (pad "" np_thru_hole circle (at 0 -5.95 170) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 -5.95 170) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") )
     
     
     
@@ -2893,23 +1345,15 @@
     
     
     
-    (pad "" np_thru_hole circle (at -5 -3.75 365) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-
+    
+    (pad "1" thru_hole circle (at -5 -3.75 365) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 19 "middle_bottom"))
     
     
-    (pad "1" smd roundrect
-      (at 3.275 -5.95 170)
-      (size 2.6 2.6)
-      (layers "F.Cu" "F.Paste" "F.Mask")
-      (roundrect_rratio 0)
-			(chamfer_ratio 0.455)
-			(chamfer bottom_right)
-      (net 19 "middle_bottom")
-    )
+    (pad "2" smd roundrect (at 3.245 -5.95 170) (size 2.65 2.15) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1) (net 20 "col3"))
+    (pad "1" smd roundrect (at -7.6475 -3.75 170) (size 3.8 2.15) (layers "F.Cu") (roundrect_rratio 0.1) (net 19 "middle_bottom"))
+    (pad "" smd roundrect (at -8.2475 -3.75 170) (size 2.6 2.15) (layers "F.Paste" "F.Mask") (roundrect_rratio 0.1))
     
-
     
-    (pad "2" smd rect (at -8.275 -3.75 170) (size 2.6 2.6) (layers "F.Cu" "F.Paste" "F.Mask") (net 20 "col3"))
     
     
     
@@ -2932,139 +1376,18 @@
 
     
     
+      
+      (pad "2" thru_hole circle (at 5 -3.75 365) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 20 "col3"))
+      
+      
+    (pad "1" smd roundrect (at -3.245 -5.95 170) (size 2.65 2.15) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.1) (net 19 "middle_bottom"))
+    (pad "2" smd roundrect (at 7.6475 -3.75 170) (size 3.8 2.15) (layers "B.Cu") (roundrect_rratio 0.1) (net 20 "col3"))
+    (pad "" smd roundrect (at 8.2475 -3.75 170) (size 2.6 2.15) (layers "B.Paste" "B.Mask") (roundrect_rratio 0.1))
     
-    (pad "1" smd roundrect
-      (at -3.275 -5.95 170)
-      (size 2.6 2.6)
-      (layers "B.Cu" "B.Paste" "B.Mask")
-      (roundrect_rratio 0)
-			(chamfer_ratio 0.455)
-			(chamfer bottom_left)
-      (net 19 "middle_bottom")
-    )
-    
-
-    
-    (pad "2" smd rect (at 8.275 -3.75 170) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 20 "col3"))
-
-    
-    (pad "" np_thru_hole circle (at 5 -3.75 365) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+      
     
     
   )
-    
-	(segment
-		(start 203.8036789 149.7176377)
-		(end 206.2074749 148.0344816)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 19)
-	)
-	(segment
-		(start 206.2074749 148.0344816)
-		(end 207.3892442 148.2428594)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 19)
-	)
-	(via
-		(at 207.3892442 148.2428594)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 19)
-	)
-	(segment
-		(start 208.5710135 148.4512373)
-		(end 207.3892442 148.2428594)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 19)
-	)
-	(segment
-		(start 210.2541696 150.8550333)
-		(end 208.5710135 148.4512373)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 19)
-	)
-	(segment
-		(start 214.0563445 147.4089198)
-		(end 209.8541699 146.6679631)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 20)
-	)
-	(segment
-		(start 208.4883503 147.6243202)
-		(end 207.5281628 147.4550132)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 20)
-	)
-	(segment
-		(start 215.5602344 149.5566971)
-		(end 214.0563445 147.4089198)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 20)
-	)
-	(segment
-		(start 209.8541699 146.6679631)
-		(end 208.4883503 147.6243202)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 20)
-	)
-	(via
-		(at 207.5281628 147.4550132)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 20)
-	)
-	(segment
-		(start 205.6252419 145.922289)
-		(end 206.581599 147.2881085)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 20)
-	)
-	(segment
-		(start 201.4094434 145.17893)
-		(end 205.6252419 145.922289)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 20)
-	)
-	(segment
-		(start 206.581599 147.2881085)
-		(end 207.5281628 147.4550132)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 20)
-	)
-	(segment
-		(start 199.2616661 146.6828198)
-		(end 201.4094434 145.17893)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 20)
-	)
     
 
   (footprint "ceoloide:switch_choc_v1_v2"
@@ -3080,7 +1403,7 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 170) (size 5 5) (drill 5) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 0 170) (size 5.3 5.3) (drill 5) (layers "*.Cu" "*.Mask") )
     
     
     (pad "" thru_hole circle (at 5.00 5.15 170) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
@@ -3089,7 +1412,7 @@
     
     
     
-    (pad "" np_thru_hole circle (at 0 -5.95 170) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 -5.95 170) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") )
     
     
     
@@ -3112,23 +1435,15 @@
     
     
     
-    (pad "" np_thru_hole circle (at -5 -3.75 365) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-
+    
+    (pad "1" thru_hole circle (at -5 -3.75 365) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 21 "middle_home"))
     
     
-    (pad "1" smd roundrect
-      (at 3.275 -5.95 170)
-      (size 2.6 2.6)
-      (layers "F.Cu" "F.Paste" "F.Mask")
-      (roundrect_rratio 0)
-			(chamfer_ratio 0.455)
-			(chamfer bottom_right)
-      (net 21 "middle_home")
-    )
+    (pad "2" smd roundrect (at 3.245 -5.95 170) (size 2.65 2.15) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1) (net 20 "col3"))
+    (pad "1" smd roundrect (at -7.6475 -3.75 170) (size 3.8 2.15) (layers "F.Cu") (roundrect_rratio 0.1) (net 21 "middle_home"))
+    (pad "" smd roundrect (at -8.2475 -3.75 170) (size 2.6 2.15) (layers "F.Paste" "F.Mask") (roundrect_rratio 0.1))
     
-
     
-    (pad "2" smd rect (at -8.275 -3.75 170) (size 2.6 2.6) (layers "F.Cu" "F.Paste" "F.Mask") (net 20 "col3"))
     
     
     
@@ -3151,139 +1466,18 @@
 
     
     
+      
+      (pad "2" thru_hole circle (at 5 -3.75 365) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 20 "col3"))
+      
+      
+    (pad "1" smd roundrect (at -3.245 -5.95 170) (size 2.65 2.15) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.1) (net 21 "middle_home"))
+    (pad "2" smd roundrect (at 7.6475 -3.75 170) (size 3.8 2.15) (layers "B.Cu") (roundrect_rratio 0.1) (net 20 "col3"))
+    (pad "" smd roundrect (at 8.2475 -3.75 170) (size 2.6 2.15) (layers "B.Paste" "B.Mask") (roundrect_rratio 0.1))
     
-    (pad "1" smd roundrect
-      (at -3.275 -5.95 170)
-      (size 2.6 2.6)
-      (layers "B.Cu" "B.Paste" "B.Mask")
-      (roundrect_rratio 0)
-			(chamfer_ratio 0.455)
-			(chamfer bottom_left)
-      (net 21 "middle_home")
-    )
-    
-
-    
-    (pad "2" smd rect (at 8.275 -3.75 170) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 20 "col3"))
-
-    
-    (pad "" np_thru_hole circle (at 5 -3.75 365) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+      
     
     
   )
-    
-	(segment
-		(start 206.7556979 132.97590590000001)
-		(end 209.1594939 131.2927498)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 21)
-	)
-	(segment
-		(start 209.1594939 131.2927498)
-		(end 210.34126320000001 131.5011276)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 21)
-	)
-	(via
-		(at 210.34126320000001 131.5011276)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 21)
-	)
-	(segment
-		(start 211.5230325 131.7095055)
-		(end 210.34126320000001 131.5011276)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 21)
-	)
-	(segment
-		(start 213.20618860000002 134.1133015)
-		(end 211.5230325 131.7095055)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 21)
-	)
-	(segment
-		(start 217.0083635 130.667188)
-		(end 212.8061889 129.9262313)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 20)
-	)
-	(segment
-		(start 211.44036930000001 130.8825884)
-		(end 210.4801818 130.7132814)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 20)
-	)
-	(segment
-		(start 218.51225340000002 132.8149653)
-		(end 217.0083635 130.667188)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 20)
-	)
-	(segment
-		(start 212.8061889 129.9262313)
-		(end 211.44036930000001 130.8825884)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 20)
-	)
-	(via
-		(at 210.4801818 130.7132814)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 20)
-	)
-	(segment
-		(start 208.5772609 129.1805572)
-		(end 209.53361800000002 130.5463767)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 20)
-	)
-	(segment
-		(start 204.3614624 128.4371982)
-		(end 208.5772609 129.1805572)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 20)
-	)
-	(segment
-		(start 209.53361800000002 130.5463767)
-		(end 210.4801818 130.7132814)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 20)
-	)
-	(segment
-		(start 202.21368510000002 129.941088)
-		(end 204.3614624 128.4371982)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 20)
-	)
     
 
   (footprint "ceoloide:switch_choc_v1_v2"
@@ -3299,7 +1493,7 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 170) (size 5 5) (drill 5) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 0 170) (size 5.3 5.3) (drill 5) (layers "*.Cu" "*.Mask") )
     
     
     (pad "" thru_hole circle (at 5.00 5.15 170) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
@@ -3308,7 +1502,7 @@
     
     
     
-    (pad "" np_thru_hole circle (at 0 -5.95 170) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 -5.95 170) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") )
     
     
     
@@ -3331,23 +1525,15 @@
     
     
     
-    (pad "" np_thru_hole circle (at -5 -3.75 365) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-
+    
+    (pad "1" thru_hole circle (at -5 -3.75 365) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 22 "middle_top"))
     
     
-    (pad "1" smd roundrect
-      (at 3.275 -5.95 170)
-      (size 2.6 2.6)
-      (layers "F.Cu" "F.Paste" "F.Mask")
-      (roundrect_rratio 0)
-			(chamfer_ratio 0.455)
-			(chamfer bottom_right)
-      (net 22 "middle_top")
-    )
+    (pad "2" smd roundrect (at 3.245 -5.95 170) (size 2.65 2.15) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1) (net 20 "col3"))
+    (pad "1" smd roundrect (at -7.6475 -3.75 170) (size 3.8 2.15) (layers "F.Cu") (roundrect_rratio 0.1) (net 22 "middle_top"))
+    (pad "" smd roundrect (at -8.2475 -3.75 170) (size 2.6 2.15) (layers "F.Paste" "F.Mask") (roundrect_rratio 0.1))
     
-
     
-    (pad "2" smd rect (at -8.275 -3.75 170) (size 2.6 2.6) (layers "F.Cu" "F.Paste" "F.Mask") (net 20 "col3"))
     
     
     
@@ -3370,139 +1556,18 @@
 
     
     
+      
+      (pad "2" thru_hole circle (at 5 -3.75 365) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 20 "col3"))
+      
+      
+    (pad "1" smd roundrect (at -3.245 -5.95 170) (size 2.65 2.15) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.1) (net 22 "middle_top"))
+    (pad "2" smd roundrect (at 7.6475 -3.75 170) (size 3.8 2.15) (layers "B.Cu") (roundrect_rratio 0.1) (net 20 "col3"))
+    (pad "" smd roundrect (at 8.2475 -3.75 170) (size 2.6 2.15) (layers "B.Paste" "B.Mask") (roundrect_rratio 0.1))
     
-    (pad "1" smd roundrect
-      (at -3.275 -5.95 170)
-      (size 2.6 2.6)
-      (layers "B.Cu" "B.Paste" "B.Mask")
-      (roundrect_rratio 0)
-			(chamfer_ratio 0.455)
-			(chamfer bottom_left)
-      (net 22 "middle_top")
-    )
-    
-
-    
-    (pad "2" smd rect (at 8.275 -3.75 170) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 20 "col3"))
-
-    
-    (pad "" np_thru_hole circle (at 5 -3.75 365) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+      
     
     
   )
-    
-	(segment
-		(start 209.7077169 116.2341741)
-		(end 212.1115129 114.551018)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 22)
-	)
-	(segment
-		(start 212.1115129 114.551018)
-		(end 213.29328220000002 114.75939580000001)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 22)
-	)
-	(via
-		(at 213.29328220000002 114.75939580000001)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 22)
-	)
-	(segment
-		(start 214.4750515 114.96777370000001)
-		(end 213.29328220000002 114.75939580000001)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 22)
-	)
-	(segment
-		(start 216.15820760000003 117.37156970000001)
-		(end 214.4750515 114.96777370000001)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 22)
-	)
-	(segment
-		(start 219.9603825 113.9254562)
-		(end 215.7582079 113.1844995)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 20)
-	)
-	(segment
-		(start 214.39238830000002 114.1408566)
-		(end 213.4322008 113.9715496)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 20)
-	)
-	(segment
-		(start 221.46427240000003 116.0732335)
-		(end 219.9603825 113.9254562)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 20)
-	)
-	(segment
-		(start 215.7582079 113.1844995)
-		(end 214.39238830000002 114.1408566)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 20)
-	)
-	(via
-		(at 213.4322008 113.9715496)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 20)
-	)
-	(segment
-		(start 211.5292799 112.43882540000001)
-		(end 212.48563700000003 113.8046449)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 20)
-	)
-	(segment
-		(start 207.3134814 111.6954664)
-		(end 211.5292799 112.43882540000001)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 20)
-	)
-	(segment
-		(start 212.48563700000003 113.8046449)
-		(end 213.4322008 113.9715496)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 20)
-	)
-	(segment
-		(start 205.16570410000003 113.19935620000001)
-		(end 207.3134814 111.6954664)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 20)
-	)
     
 
   (footprint "ceoloide:switch_choc_v1_v2"
@@ -3518,7 +1583,7 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 170) (size 5 5) (drill 5) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 0 170) (size 5.3 5.3) (drill 5) (layers "*.Cu" "*.Mask") )
     
     
     (pad "" thru_hole circle (at 5.00 5.15 170) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
@@ -3527,7 +1592,7 @@
     
     
     
-    (pad "" np_thru_hole circle (at 0 -5.95 170) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 -5.95 170) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") )
     
     
     
@@ -3550,23 +1615,15 @@
     
     
     
-    (pad "" np_thru_hole circle (at -5 -3.75 365) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-
+    
+    (pad "1" thru_hole circle (at -5 -3.75 365) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 23 "middle_upper"))
     
     
-    (pad "1" smd roundrect
-      (at 3.275 -5.95 170)
-      (size 2.6 2.6)
-      (layers "F.Cu" "F.Paste" "F.Mask")
-      (roundrect_rratio 0)
-			(chamfer_ratio 0.455)
-			(chamfer bottom_right)
-      (net 23 "middle_upper")
-    )
+    (pad "2" smd roundrect (at 3.245 -5.95 170) (size 2.65 2.15) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1) (net 20 "col3"))
+    (pad "1" smd roundrect (at -7.6475 -3.75 170) (size 3.8 2.15) (layers "F.Cu") (roundrect_rratio 0.1) (net 23 "middle_upper"))
+    (pad "" smd roundrect (at -8.2475 -3.75 170) (size 2.6 2.15) (layers "F.Paste" "F.Mask") (roundrect_rratio 0.1))
     
-
     
-    (pad "2" smd rect (at -8.275 -3.75 170) (size 2.6 2.6) (layers "F.Cu" "F.Paste" "F.Mask") (net 20 "col3"))
     
     
     
@@ -3589,139 +1646,18 @@
 
     
     
+      
+      (pad "2" thru_hole circle (at 5 -3.75 365) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 20 "col3"))
+      
+      
+    (pad "1" smd roundrect (at -3.245 -5.95 170) (size 2.65 2.15) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.1) (net 23 "middle_upper"))
+    (pad "2" smd roundrect (at 7.6475 -3.75 170) (size 3.8 2.15) (layers "B.Cu") (roundrect_rratio 0.1) (net 20 "col3"))
+    (pad "" smd roundrect (at 8.2475 -3.75 170) (size 2.6 2.15) (layers "B.Paste" "B.Mask") (roundrect_rratio 0.1))
     
-    (pad "1" smd roundrect
-      (at -3.275 -5.95 170)
-      (size 2.6 2.6)
-      (layers "B.Cu" "B.Paste" "B.Mask")
-      (roundrect_rratio 0)
-			(chamfer_ratio 0.455)
-			(chamfer bottom_left)
-      (net 23 "middle_upper")
-    )
-    
-
-    
-    (pad "2" smd rect (at 8.275 -3.75 170) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 20 "col3"))
-
-    
-    (pad "" np_thru_hole circle (at 5 -3.75 365) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+      
     
     
   )
-    
-	(segment
-		(start 212.65973590000002 99.49244230000001)
-		(end 215.06353190000002 97.8092862)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 23)
-	)
-	(segment
-		(start 215.06353190000002 97.8092862)
-		(end 216.24530120000003 98.01766400000001)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 23)
-	)
-	(via
-		(at 216.24530120000003 98.01766400000001)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 23)
-	)
-	(segment
-		(start 217.4270705 98.22604190000001)
-		(end 216.24530120000003 98.01766400000001)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 23)
-	)
-	(segment
-		(start 219.11022660000003 100.62983790000001)
-		(end 217.4270705 98.22604190000001)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 23)
-	)
-	(segment
-		(start 222.91240150000002 97.1837244)
-		(end 218.7102269 96.4427677)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 20)
-	)
-	(segment
-		(start 217.34440730000003 97.39912480000001)
-		(end 216.3842198 97.2298178)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 20)
-	)
-	(segment
-		(start 224.41629140000003 99.3315017)
-		(end 222.91240150000002 97.1837244)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 20)
-	)
-	(segment
-		(start 218.7102269 96.4427677)
-		(end 217.34440730000003 97.39912480000001)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 20)
-	)
-	(via
-		(at 216.3842198 97.2298178)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 20)
-	)
-	(segment
-		(start 214.4812989 95.69709360000002)
-		(end 215.43765600000003 97.0629131)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 20)
-	)
-	(segment
-		(start 210.2655004 94.9537346)
-		(end 214.4812989 95.69709360000002)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 20)
-	)
-	(segment
-		(start 215.43765600000003 97.0629131)
-		(end 216.3842198 97.2298178)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 20)
-	)
-	(segment
-		(start 208.11772310000003 96.45762440000001)
-		(end 210.2655004 94.9537346)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 20)
-	)
     
 
   (footprint "ceoloide:switch_choc_v1_v2"
@@ -3737,7 +1673,7 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 170) (size 5 5) (drill 5) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 0 170) (size 5.3 5.3) (drill 5) (layers "*.Cu" "*.Mask") )
     
     
     (pad "" thru_hole circle (at 5.00 5.15 170) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
@@ -3746,7 +1682,7 @@
     
     
     
-    (pad "" np_thru_hole circle (at 0 -5.95 170) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 -5.95 170) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") )
     
     
     
@@ -3769,23 +1705,15 @@
     
     
     
-    (pad "" np_thru_hole circle (at -5 -3.75 365) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-
+    
+    (pad "1" thru_hole circle (at -5 -3.75 365) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 24 "index_bottom"))
     
     
-    (pad "1" smd roundrect
-      (at 3.275 -5.95 170)
-      (size 2.6 2.6)
-      (layers "F.Cu" "F.Paste" "F.Mask")
-      (roundrect_rratio 0)
-			(chamfer_ratio 0.455)
-			(chamfer bottom_right)
-      (net 24 "index_bottom")
-    )
+    (pad "2" smd roundrect (at 3.245 -5.95 170) (size 2.65 2.15) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1) (net 25 "col4"))
+    (pad "1" smd roundrect (at -7.6475 -3.75 170) (size 3.8 2.15) (layers "F.Cu") (roundrect_rratio 0.1) (net 24 "index_bottom"))
+    (pad "" smd roundrect (at -8.2475 -3.75 170) (size 2.6 2.15) (layers "F.Paste" "F.Mask") (roundrect_rratio 0.1))
     
-
     
-    (pad "2" smd rect (at -8.275 -3.75 170) (size 2.6 2.6) (layers "F.Cu" "F.Paste" "F.Mask") (net 25 "col4"))
     
     
     
@@ -3808,139 +1736,18 @@
 
     
     
+      
+      (pad "2" thru_hole circle (at 5 -3.75 365) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 25 "col4"))
+      
+      
+    (pad "1" smd roundrect (at -3.245 -5.95 170) (size 2.65 2.15) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.1) (net 24 "index_bottom"))
+    (pad "2" smd roundrect (at 7.6475 -3.75 170) (size 3.8 2.15) (layers "B.Cu") (roundrect_rratio 0.1) (net 25 "col4"))
+    (pad "" smd roundrect (at 8.2475 -3.75 170) (size 2.6 2.15) (layers "B.Paste" "B.Mask") (roundrect_rratio 0.1))
     
-    (pad "1" smd roundrect
-      (at -3.275 -5.95 170)
-      (size 2.6 2.6)
-      (layers "B.Cu" "B.Paste" "B.Mask")
-      (roundrect_rratio 0)
-			(chamfer_ratio 0.455)
-			(chamfer bottom_left)
-      (net 24 "index_bottom")
-    )
-    
-
-    
-    (pad "2" smd rect (at 8.275 -3.75 170) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 25 "col4"))
-
-    
-    (pad "" np_thru_hole circle (at 5 -3.75 365) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+      
     
     
   )
-    
-	(segment
-		(start 220.1410331 160.7217669)
-		(end 222.5448291 159.0386108)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 24)
-	)
-	(segment
-		(start 222.5448291 159.0386108)
-		(end 223.7265984 159.24698859999998)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 24)
-	)
-	(via
-		(at 223.7265984 159.24698859999998)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 24)
-	)
-	(segment
-		(start 224.90836769999999 159.4553665)
-		(end 223.7265984 159.24698859999998)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 24)
-	)
-	(segment
-		(start 226.5915238 161.8591625)
-		(end 224.90836769999999 159.4553665)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 24)
-	)
-	(segment
-		(start 230.3936987 158.413049)
-		(end 226.19152409999998 157.6720923)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 25)
-	)
-	(segment
-		(start 224.8257045 158.6284494)
-		(end 223.86551699999998 158.4591424)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 25)
-	)
-	(segment
-		(start 231.8975886 160.5608263)
-		(end 230.3936987 158.413049)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 25)
-	)
-	(segment
-		(start 226.19152409999998 157.6720923)
-		(end 224.8257045 158.6284494)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 25)
-	)
-	(via
-		(at 223.86551699999998 158.4591424)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 25)
-	)
-	(segment
-		(start 221.96259609999998 156.9264182)
-		(end 222.9189532 158.2922377)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 25)
-	)
-	(segment
-		(start 217.74679759999998 156.1830592)
-		(end 221.96259609999998 156.9264182)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 25)
-	)
-	(segment
-		(start 222.9189532 158.2922377)
-		(end 223.86551699999998 158.4591424)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 25)
-	)
-	(segment
-		(start 215.5990203 157.686949)
-		(end 217.74679759999998 156.1830592)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 25)
-	)
     
 
   (footprint "ceoloide:switch_choc_v1_v2"
@@ -3956,7 +1763,7 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 170) (size 5 5) (drill 5) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 0 170) (size 5.3 5.3) (drill 5) (layers "*.Cu" "*.Mask") )
     
     
     (pad "" thru_hole circle (at 5.00 5.15 170) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
@@ -3965,7 +1772,7 @@
     
     
     
-    (pad "" np_thru_hole circle (at 0 -5.95 170) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 -5.95 170) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") )
     
     
     
@@ -3988,23 +1795,15 @@
     
     
     
-    (pad "" np_thru_hole circle (at -5 -3.75 365) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-
+    
+    (pad "1" thru_hole circle (at -5 -3.75 365) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 26 "index_home"))
     
     
-    (pad "1" smd roundrect
-      (at 3.275 -5.95 170)
-      (size 2.6 2.6)
-      (layers "F.Cu" "F.Paste" "F.Mask")
-      (roundrect_rratio 0)
-			(chamfer_ratio 0.455)
-			(chamfer bottom_right)
-      (net 26 "index_home")
-    )
+    (pad "2" smd roundrect (at 3.245 -5.95 170) (size 2.65 2.15) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1) (net 25 "col4"))
+    (pad "1" smd roundrect (at -7.6475 -3.75 170) (size 3.8 2.15) (layers "F.Cu") (roundrect_rratio 0.1) (net 26 "index_home"))
+    (pad "" smd roundrect (at -8.2475 -3.75 170) (size 2.6 2.15) (layers "F.Paste" "F.Mask") (roundrect_rratio 0.1))
     
-
     
-    (pad "2" smd rect (at -8.275 -3.75 170) (size 2.6 2.6) (layers "F.Cu" "F.Paste" "F.Mask") (net 25 "col4"))
     
     
     
@@ -4027,139 +1826,18 @@
 
     
     
+      
+      (pad "2" thru_hole circle (at 5 -3.75 365) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 25 "col4"))
+      
+      
+    (pad "1" smd roundrect (at -3.245 -5.95 170) (size 2.65 2.15) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.1) (net 26 "index_home"))
+    (pad "2" smd roundrect (at 7.6475 -3.75 170) (size 3.8 2.15) (layers "B.Cu") (roundrect_rratio 0.1) (net 25 "col4"))
+    (pad "" smd roundrect (at 8.2475 -3.75 170) (size 2.6 2.15) (layers "B.Paste" "B.Mask") (roundrect_rratio 0.1))
     
-    (pad "1" smd roundrect
-      (at -3.275 -5.95 170)
-      (size 2.6 2.6)
-      (layers "B.Cu" "B.Paste" "B.Mask")
-      (roundrect_rratio 0)
-			(chamfer_ratio 0.455)
-			(chamfer bottom_left)
-      (net 26 "index_home")
-    )
-    
-
-    
-    (pad "2" smd rect (at 8.275 -3.75 170) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 25 "col4"))
-
-    
-    (pad "" np_thru_hole circle (at 5 -3.75 365) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+      
     
     
   )
-    
-	(segment
-		(start 223.0930521 143.9800351)
-		(end 225.4968481 142.296879)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 26)
-	)
-	(segment
-		(start 225.4968481 142.296879)
-		(end 226.6786174 142.50525679999998)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 26)
-	)
-	(via
-		(at 226.6786174 142.50525679999998)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 26)
-	)
-	(segment
-		(start 227.8603867 142.7136347)
-		(end 226.6786174 142.50525679999998)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 26)
-	)
-	(segment
-		(start 229.5435428 145.1174307)
-		(end 227.8603867 142.7136347)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 26)
-	)
-	(segment
-		(start 233.3457177 141.6713172)
-		(end 229.1435431 140.9303605)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 25)
-	)
-	(segment
-		(start 227.7777235 141.8867176)
-		(end 226.817536 141.7174106)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 25)
-	)
-	(segment
-		(start 234.8496076 143.8190945)
-		(end 233.3457177 141.6713172)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 25)
-	)
-	(segment
-		(start 229.1435431 140.9303605)
-		(end 227.7777235 141.8867176)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 25)
-	)
-	(via
-		(at 226.817536 141.7174106)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 25)
-	)
-	(segment
-		(start 224.9146151 140.1846864)
-		(end 225.8709722 141.5505059)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 25)
-	)
-	(segment
-		(start 220.6988166 139.4413274)
-		(end 224.9146151 140.1846864)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 25)
-	)
-	(segment
-		(start 225.8709722 141.5505059)
-		(end 226.817536 141.7174106)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 25)
-	)
-	(segment
-		(start 218.5510393 140.9452172)
-		(end 220.6988166 139.4413274)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 25)
-	)
     
 
   (footprint "ceoloide:switch_choc_v1_v2"
@@ -4175,7 +1853,7 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 170) (size 5 5) (drill 5) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 0 170) (size 5.3 5.3) (drill 5) (layers "*.Cu" "*.Mask") )
     
     
     (pad "" thru_hole circle (at 5.00 5.15 170) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
@@ -4184,7 +1862,7 @@
     
     
     
-    (pad "" np_thru_hole circle (at 0 -5.95 170) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 -5.95 170) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") )
     
     
     
@@ -4207,23 +1885,15 @@
     
     
     
-    (pad "" np_thru_hole circle (at -5 -3.75 365) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-
+    
+    (pad "1" thru_hole circle (at -5 -3.75 365) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 27 "index_top"))
     
     
-    (pad "1" smd roundrect
-      (at 3.275 -5.95 170)
-      (size 2.6 2.6)
-      (layers "F.Cu" "F.Paste" "F.Mask")
-      (roundrect_rratio 0)
-			(chamfer_ratio 0.455)
-			(chamfer bottom_right)
-      (net 27 "index_top")
-    )
+    (pad "2" smd roundrect (at 3.245 -5.95 170) (size 2.65 2.15) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1) (net 25 "col4"))
+    (pad "1" smd roundrect (at -7.6475 -3.75 170) (size 3.8 2.15) (layers "F.Cu") (roundrect_rratio 0.1) (net 27 "index_top"))
+    (pad "" smd roundrect (at -8.2475 -3.75 170) (size 2.6 2.15) (layers "F.Paste" "F.Mask") (roundrect_rratio 0.1))
     
-
     
-    (pad "2" smd rect (at -8.275 -3.75 170) (size 2.6 2.6) (layers "F.Cu" "F.Paste" "F.Mask") (net 25 "col4"))
     
     
     
@@ -4246,139 +1916,18 @@
 
     
     
+      
+      (pad "2" thru_hole circle (at 5 -3.75 365) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 25 "col4"))
+      
+      
+    (pad "1" smd roundrect (at -3.245 -5.95 170) (size 2.65 2.15) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.1) (net 27 "index_top"))
+    (pad "2" smd roundrect (at 7.6475 -3.75 170) (size 3.8 2.15) (layers "B.Cu") (roundrect_rratio 0.1) (net 25 "col4"))
+    (pad "" smd roundrect (at 8.2475 -3.75 170) (size 2.6 2.15) (layers "B.Paste" "B.Mask") (roundrect_rratio 0.1))
     
-    (pad "1" smd roundrect
-      (at -3.275 -5.95 170)
-      (size 2.6 2.6)
-      (layers "B.Cu" "B.Paste" "B.Mask")
-      (roundrect_rratio 0)
-			(chamfer_ratio 0.455)
-			(chamfer bottom_left)
-      (net 27 "index_top")
-    )
-    
-
-    
-    (pad "2" smd rect (at 8.275 -3.75 170) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 25 "col4"))
-
-    
-    (pad "" np_thru_hole circle (at 5 -3.75 365) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+      
     
     
   )
-    
-	(segment
-		(start 226.0450711 127.2383033)
-		(end 228.4488671 125.5551472)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 27)
-	)
-	(segment
-		(start 228.4488671 125.5551472)
-		(end 229.63063640000001 125.763525)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 27)
-	)
-	(via
-		(at 229.63063640000001 125.763525)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 27)
-	)
-	(segment
-		(start 230.8124057 125.9719029)
-		(end 229.63063640000001 125.763525)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 27)
-	)
-	(segment
-		(start 232.49556180000002 128.3756989)
-		(end 230.8124057 125.9719029)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 27)
-	)
-	(segment
-		(start 236.2977367 124.9295854)
-		(end 232.0955621 124.1886287)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 25)
-	)
-	(segment
-		(start 230.72974250000001 125.1449858)
-		(end 229.769555 124.9756788)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 25)
-	)
-	(segment
-		(start 237.80162660000002 127.0773627)
-		(end 236.2977367 124.9295854)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 25)
-	)
-	(segment
-		(start 232.0955621 124.1886287)
-		(end 230.72974250000001 125.1449858)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 25)
-	)
-	(via
-		(at 229.769555 124.9756788)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 25)
-	)
-	(segment
-		(start 227.8666341 123.44295460000001)
-		(end 228.82299120000002 124.8087741)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 25)
-	)
-	(segment
-		(start 223.6508356 122.6995956)
-		(end 227.8666341 123.44295460000001)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 25)
-	)
-	(segment
-		(start 228.82299120000002 124.8087741)
-		(end 229.769555 124.9756788)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 25)
-	)
-	(segment
-		(start 221.50305830000002 124.2034854)
-		(end 223.6508356 122.6995956)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 25)
-	)
     
 
   (footprint "ceoloide:switch_choc_v1_v2"
@@ -4394,7 +1943,7 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 170) (size 5 5) (drill 5) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 0 170) (size 5.3 5.3) (drill 5) (layers "*.Cu" "*.Mask") )
     
     
     (pad "" thru_hole circle (at 5.00 5.15 170) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
@@ -4403,7 +1952,7 @@
     
     
     
-    (pad "" np_thru_hole circle (at 0 -5.95 170) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 -5.95 170) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") )
     
     
     
@@ -4426,23 +1975,15 @@
     
     
     
-    (pad "" np_thru_hole circle (at -5 -3.75 365) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-
+    
+    (pad "1" thru_hole circle (at -5 -3.75 365) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 28 "index_upper"))
     
     
-    (pad "1" smd roundrect
-      (at 3.275 -5.95 170)
-      (size 2.6 2.6)
-      (layers "F.Cu" "F.Paste" "F.Mask")
-      (roundrect_rratio 0)
-			(chamfer_ratio 0.455)
-			(chamfer bottom_right)
-      (net 28 "index_upper")
-    )
+    (pad "2" smd roundrect (at 3.245 -5.95 170) (size 2.65 2.15) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1) (net 25 "col4"))
+    (pad "1" smd roundrect (at -7.6475 -3.75 170) (size 3.8 2.15) (layers "F.Cu") (roundrect_rratio 0.1) (net 28 "index_upper"))
+    (pad "" smd roundrect (at -8.2475 -3.75 170) (size 2.6 2.15) (layers "F.Paste" "F.Mask") (roundrect_rratio 0.1))
     
-
     
-    (pad "2" smd rect (at -8.275 -3.75 170) (size 2.6 2.6) (layers "F.Cu" "F.Paste" "F.Mask") (net 25 "col4"))
     
     
     
@@ -4465,139 +2006,18 @@
 
     
     
+      
+      (pad "2" thru_hole circle (at 5 -3.75 365) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 25 "col4"))
+      
+      
+    (pad "1" smd roundrect (at -3.245 -5.95 170) (size 2.65 2.15) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.1) (net 28 "index_upper"))
+    (pad "2" smd roundrect (at 7.6475 -3.75 170) (size 3.8 2.15) (layers "B.Cu") (roundrect_rratio 0.1) (net 25 "col4"))
+    (pad "" smd roundrect (at 8.2475 -3.75 170) (size 2.6 2.15) (layers "B.Paste" "B.Mask") (roundrect_rratio 0.1))
     
-    (pad "1" smd roundrect
-      (at -3.275 -5.95 170)
-      (size 2.6 2.6)
-      (layers "B.Cu" "B.Paste" "B.Mask")
-      (roundrect_rratio 0)
-			(chamfer_ratio 0.455)
-			(chamfer bottom_left)
-      (net 28 "index_upper")
-    )
-    
-
-    
-    (pad "2" smd rect (at 8.275 -3.75 170) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 25 "col4"))
-
-    
-    (pad "" np_thru_hole circle (at 5 -3.75 365) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+      
     
     
   )
-    
-	(segment
-		(start 228.9970901 110.4965715)
-		(end 231.4008861 108.8134154)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 28)
-	)
-	(segment
-		(start 231.4008861 108.8134154)
-		(end 232.58265540000002 109.0217932)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 28)
-	)
-	(via
-		(at 232.58265540000002 109.0217932)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 28)
-	)
-	(segment
-		(start 233.7644247 109.2301711)
-		(end 232.58265540000002 109.0217932)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 28)
-	)
-	(segment
-		(start 235.44758080000003 111.6339671)
-		(end 233.7644247 109.2301711)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 28)
-	)
-	(segment
-		(start 239.2497557 108.1878536)
-		(end 235.0475811 107.4468969)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 25)
-	)
-	(segment
-		(start 233.68176150000002 108.403254)
-		(end 232.721574 108.233947)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 25)
-	)
-	(segment
-		(start 240.75364560000003 110.3356309)
-		(end 239.2497557 108.1878536)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 25)
-	)
-	(segment
-		(start 235.0475811 107.4468969)
-		(end 233.68176150000002 108.403254)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 25)
-	)
-	(via
-		(at 232.721574 108.233947)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 25)
-	)
-	(segment
-		(start 230.8186531 106.70122280000001)
-		(end 231.77501020000003 108.0670423)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 25)
-	)
-	(segment
-		(start 226.6028546 105.9578638)
-		(end 230.8186531 106.70122280000001)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 25)
-	)
-	(segment
-		(start 231.77501020000003 108.0670423)
-		(end 232.721574 108.233947)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 25)
-	)
-	(segment
-		(start 224.45507730000003 107.46175360000001)
-		(end 226.6028546 105.9578638)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 25)
-	)
     
 
   (footprint "ceoloide:switch_choc_v1_v2"
@@ -4613,7 +2033,7 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 170) (size 5 5) (drill 5) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 0 170) (size 5.3 5.3) (drill 5) (layers "*.Cu" "*.Mask") )
     
     
     (pad "" thru_hole circle (at 5.00 5.15 170) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
@@ -4622,7 +2042,7 @@
     
     
     
-    (pad "" np_thru_hole circle (at 0 -5.95 170) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 -5.95 170) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") )
     
     
     
@@ -4645,23 +2065,15 @@
     
     
     
-    (pad "" np_thru_hole circle (at -5 -3.75 365) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-
+    
+    (pad "1" thru_hole circle (at -5 -3.75 365) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 29 "inner_bottom"))
     
     
-    (pad "1" smd roundrect
-      (at 3.275 -5.95 170)
-      (size 2.6 2.6)
-      (layers "F.Cu" "F.Paste" "F.Mask")
-      (roundrect_rratio 0)
-			(chamfer_ratio 0.455)
-			(chamfer bottom_right)
-      (net 29 "inner_bottom")
-    )
+    (pad "2" smd roundrect (at 3.245 -5.95 170) (size 2.65 2.15) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1) (net 30 "col5"))
+    (pad "1" smd roundrect (at -7.6475 -3.75 170) (size 3.8 2.15) (layers "F.Cu") (roundrect_rratio 0.1) (net 29 "inner_bottom"))
+    (pad "" smd roundrect (at -8.2475 -3.75 170) (size 2.6 2.15) (layers "F.Paste" "F.Mask") (roundrect_rratio 0.1))
     
-
     
-    (pad "2" smd rect (at -8.275 -3.75 170) (size 2.6 2.6) (layers "F.Cu" "F.Paste" "F.Mask") (net 30 "col5"))
     
     
     
@@ -4684,139 +2096,18 @@
 
     
     
+      
+      (pad "2" thru_hole circle (at 5 -3.75 365) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 30 "col5"))
+      
+      
+    (pad "1" smd roundrect (at -3.245 -5.95 170) (size 2.65 2.15) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.1) (net 29 "inner_bottom"))
+    (pad "2" smd roundrect (at 7.6475 -3.75 170) (size 3.8 2.15) (layers "B.Cu") (roundrect_rratio 0.1) (net 30 "col5"))
+    (pad "" smd roundrect (at 8.2475 -3.75 170) (size 2.6 2.15) (layers "B.Paste" "B.Mask") (roundrect_rratio 0.1))
     
-    (pad "1" smd roundrect
-      (at -3.275 -5.95 170)
-      (size 2.6 2.6)
-      (layers "B.Cu" "B.Paste" "B.Mask")
-      (roundrect_rratio 0)
-			(chamfer_ratio 0.455)
-			(chamfer bottom_left)
-      (net 29 "inner_bottom")
-    )
-    
-
-    
-    (pad "2" smd rect (at 8.275 -3.75 170) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 30 "col5"))
-
-    
-    (pad "" np_thru_hole circle (at 5 -3.75 365) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+      
     
     
   )
-    
-	(segment
-		(start 237.5202763 165.81704960000002)
-		(end 239.9240723 164.1338935)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 29)
-	)
-	(segment
-		(start 239.9240723 164.1338935)
-		(end 241.10584160000002 164.3422713)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 29)
-	)
-	(via
-		(at 241.10584160000002 164.3422713)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 29)
-	)
-	(segment
-		(start 242.2876109 164.5506492)
-		(end 241.10584160000002 164.3422713)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 29)
-	)
-	(segment
-		(start 243.97076700000002 166.9544452)
-		(end 242.2876109 164.5506492)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 29)
-	)
-	(segment
-		(start 247.7729419 163.5083317)
-		(end 243.5707673 162.76737500000002)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 30)
-	)
-	(segment
-		(start 242.20494770000002 163.7237321)
-		(end 241.2447602 163.5544251)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 30)
-	)
-	(segment
-		(start 249.27683180000002 165.65610900000001)
-		(end 247.7729419 163.5083317)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 30)
-	)
-	(segment
-		(start 243.5707673 162.76737500000002)
-		(end 242.20494770000002 163.7237321)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 30)
-	)
-	(via
-		(at 241.2447602 163.5544251)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 30)
-	)
-	(segment
-		(start 239.3418393 162.0217009)
-		(end 240.29819640000002 163.3875204)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 30)
-	)
-	(segment
-		(start 235.1260408 161.27834190000002)
-		(end 239.3418393 162.0217009)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 30)
-	)
-	(segment
-		(start 240.29819640000002 163.3875204)
-		(end 241.2447602 163.5544251)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 30)
-	)
-	(segment
-		(start 232.97826350000003 162.7822317)
-		(end 235.1260408 161.27834190000002)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 30)
-	)
     
 
   (footprint "ceoloide:switch_choc_v1_v2"
@@ -4832,7 +2123,7 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 170) (size 5 5) (drill 5) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 0 170) (size 5.3 5.3) (drill 5) (layers "*.Cu" "*.Mask") )
     
     
     (pad "" thru_hole circle (at 5.00 5.15 170) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
@@ -4841,7 +2132,7 @@
     
     
     
-    (pad "" np_thru_hole circle (at 0 -5.95 170) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 -5.95 170) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") )
     
     
     
@@ -4864,23 +2155,15 @@
     
     
     
-    (pad "" np_thru_hole circle (at -5 -3.75 365) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-
+    
+    (pad "1" thru_hole circle (at -5 -3.75 365) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 31 "inner_home"))
     
     
-    (pad "1" smd roundrect
-      (at 3.275 -5.95 170)
-      (size 2.6 2.6)
-      (layers "F.Cu" "F.Paste" "F.Mask")
-      (roundrect_rratio 0)
-			(chamfer_ratio 0.455)
-			(chamfer bottom_right)
-      (net 31 "inner_home")
-    )
+    (pad "2" smd roundrect (at 3.245 -5.95 170) (size 2.65 2.15) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1) (net 30 "col5"))
+    (pad "1" smd roundrect (at -7.6475 -3.75 170) (size 3.8 2.15) (layers "F.Cu") (roundrect_rratio 0.1) (net 31 "inner_home"))
+    (pad "" smd roundrect (at -8.2475 -3.75 170) (size 2.6 2.15) (layers "F.Paste" "F.Mask") (roundrect_rratio 0.1))
     
-
     
-    (pad "2" smd rect (at -8.275 -3.75 170) (size 2.6 2.6) (layers "F.Cu" "F.Paste" "F.Mask") (net 30 "col5"))
     
     
     
@@ -4903,139 +2186,18 @@
 
     
     
+      
+      (pad "2" thru_hole circle (at 5 -3.75 365) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 30 "col5"))
+      
+      
+    (pad "1" smd roundrect (at -3.245 -5.95 170) (size 2.65 2.15) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.1) (net 31 "inner_home"))
+    (pad "2" smd roundrect (at 7.6475 -3.75 170) (size 3.8 2.15) (layers "B.Cu") (roundrect_rratio 0.1) (net 30 "col5"))
+    (pad "" smd roundrect (at 8.2475 -3.75 170) (size 2.6 2.15) (layers "B.Paste" "B.Mask") (roundrect_rratio 0.1))
     
-    (pad "1" smd roundrect
-      (at -3.275 -5.95 170)
-      (size 2.6 2.6)
-      (layers "B.Cu" "B.Paste" "B.Mask")
-      (roundrect_rratio 0)
-			(chamfer_ratio 0.455)
-			(chamfer bottom_left)
-      (net 31 "inner_home")
-    )
-    
-
-    
-    (pad "2" smd rect (at 8.275 -3.75 170) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 30 "col5"))
-
-    
-    (pad "" np_thru_hole circle (at 5 -3.75 365) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+      
     
     
   )
-    
-	(segment
-		(start 240.4722953 149.07531780000002)
-		(end 242.8760913 147.3921617)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 31)
-	)
-	(segment
-		(start 242.8760913 147.3921617)
-		(end 244.05786060000003 147.6005395)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 31)
-	)
-	(via
-		(at 244.05786060000003 147.6005395)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 31)
-	)
-	(segment
-		(start 245.2396299 147.8089174)
-		(end 244.05786060000003 147.6005395)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 31)
-	)
-	(segment
-		(start 246.92278600000003 150.2127134)
-		(end 245.2396299 147.8089174)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 31)
-	)
-	(segment
-		(start 250.7249609 146.76659990000002)
-		(end 246.5227863 146.02564320000002)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 30)
-	)
-	(segment
-		(start 245.15696670000003 146.9820003)
-		(end 244.1967792 146.8126933)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 30)
-	)
-	(segment
-		(start 252.22885080000003 148.91437720000002)
-		(end 250.7249609 146.76659990000002)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 30)
-	)
-	(segment
-		(start 246.5227863 146.02564320000002)
-		(end 245.15696670000003 146.9820003)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 30)
-	)
-	(via
-		(at 244.1967792 146.8126933)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 30)
-	)
-	(segment
-		(start 242.2938583 145.27996910000002)
-		(end 243.25021540000003 146.6457886)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 30)
-	)
-	(segment
-		(start 238.0780598 144.53661010000002)
-		(end 242.2938583 145.27996910000002)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 30)
-	)
-	(segment
-		(start 243.25021540000003 146.6457886)
-		(end 244.1967792 146.8126933)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 30)
-	)
-	(segment
-		(start 235.93028250000003 146.04049990000001)
-		(end 238.0780598 144.53661010000002)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 30)
-	)
     
 
   (footprint "ceoloide:switch_choc_v1_v2"
@@ -5051,7 +2213,7 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 170) (size 5 5) (drill 5) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 0 170) (size 5.3 5.3) (drill 5) (layers "*.Cu" "*.Mask") )
     
     
     (pad "" thru_hole circle (at 5.00 5.15 170) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
@@ -5060,7 +2222,7 @@
     
     
     
-    (pad "" np_thru_hole circle (at 0 -5.95 170) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 -5.95 170) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") )
     
     
     
@@ -5083,23 +2245,15 @@
     
     
     
-    (pad "" np_thru_hole circle (at -5 -3.75 365) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-
+    
+    (pad "1" thru_hole circle (at -5 -3.75 365) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 32 "inner_top"))
     
     
-    (pad "1" smd roundrect
-      (at 3.275 -5.95 170)
-      (size 2.6 2.6)
-      (layers "F.Cu" "F.Paste" "F.Mask")
-      (roundrect_rratio 0)
-			(chamfer_ratio 0.455)
-			(chamfer bottom_right)
-      (net 32 "inner_top")
-    )
+    (pad "2" smd roundrect (at 3.245 -5.95 170) (size 2.65 2.15) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1) (net 30 "col5"))
+    (pad "1" smd roundrect (at -7.6475 -3.75 170) (size 3.8 2.15) (layers "F.Cu") (roundrect_rratio 0.1) (net 32 "inner_top"))
+    (pad "" smd roundrect (at -8.2475 -3.75 170) (size 2.6 2.15) (layers "F.Paste" "F.Mask") (roundrect_rratio 0.1))
     
-
     
-    (pad "2" smd rect (at -8.275 -3.75 170) (size 2.6 2.6) (layers "F.Cu" "F.Paste" "F.Mask") (net 30 "col5"))
     
     
     
@@ -5122,139 +2276,18 @@
 
     
     
+      
+      (pad "2" thru_hole circle (at 5 -3.75 365) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 30 "col5"))
+      
+      
+    (pad "1" smd roundrect (at -3.245 -5.95 170) (size 2.65 2.15) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.1) (net 32 "inner_top"))
+    (pad "2" smd roundrect (at 7.6475 -3.75 170) (size 3.8 2.15) (layers "B.Cu") (roundrect_rratio 0.1) (net 30 "col5"))
+    (pad "" smd roundrect (at 8.2475 -3.75 170) (size 2.6 2.15) (layers "B.Paste" "B.Mask") (roundrect_rratio 0.1))
     
-    (pad "1" smd roundrect
-      (at -3.275 -5.95 170)
-      (size 2.6 2.6)
-      (layers "B.Cu" "B.Paste" "B.Mask")
-      (roundrect_rratio 0)
-			(chamfer_ratio 0.455)
-			(chamfer bottom_left)
-      (net 32 "inner_top")
-    )
-    
-
-    
-    (pad "2" smd rect (at 8.275 -3.75 170) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 30 "col5"))
-
-    
-    (pad "" np_thru_hole circle (at 5 -3.75 365) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+      
     
     
   )
-    
-	(segment
-		(start 243.42431430000002 132.33358600000003)
-		(end 245.82811030000002 130.6504299)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 32)
-	)
-	(segment
-		(start 245.82811030000002 130.6504299)
-		(end 247.00987960000003 130.8588077)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 32)
-	)
-	(via
-		(at 247.00987960000003 130.8588077)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 32)
-	)
-	(segment
-		(start 248.19164890000002 131.06718560000002)
-		(end 247.00987960000003 130.8588077)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 32)
-	)
-	(segment
-		(start 249.87480500000004 133.47098160000002)
-		(end 248.19164890000002 131.06718560000002)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 32)
-	)
-	(segment
-		(start 253.67697990000002 130.02486810000002)
-		(end 249.4748053 129.28391140000002)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 30)
-	)
-	(segment
-		(start 248.10898570000003 130.2402685)
-		(end 247.14879820000002 130.0709615)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 30)
-	)
-	(segment
-		(start 255.18086980000004 132.17264540000002)
-		(end 253.67697990000002 130.02486810000002)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 30)
-	)
-	(segment
-		(start 249.4748053 129.28391140000002)
-		(end 248.10898570000003 130.2402685)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 30)
-	)
-	(via
-		(at 247.14879820000002 130.0709615)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 30)
-	)
-	(segment
-		(start 245.24587730000002 128.53823730000002)
-		(end 246.20223440000004 129.9040568)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 30)
-	)
-	(segment
-		(start 241.0300788 127.79487830000001)
-		(end 245.24587730000002 128.53823730000002)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 30)
-	)
-	(segment
-		(start 246.20223440000004 129.9040568)
-		(end 247.14879820000002 130.0709615)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 30)
-	)
-	(segment
-		(start 238.88230150000004 129.29876810000002)
-		(end 241.0300788 127.79487830000001)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 30)
-	)
     
 
   (footprint "ceoloide:switch_choc_v1_v2"
@@ -5270,7 +2303,7 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 170) (size 5 5) (drill 5) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 0 170) (size 5.3 5.3) (drill 5) (layers "*.Cu" "*.Mask") )
     
     
     (pad "" thru_hole circle (at 5.00 5.15 170) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
@@ -5279,7 +2312,7 @@
     
     
     
-    (pad "" np_thru_hole circle (at 0 -5.95 170) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 -5.95 170) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") )
     
     
     
@@ -5302,23 +2335,15 @@
     
     
     
-    (pad "" np_thru_hole circle (at -5 -3.75 365) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-
+    
+    (pad "1" thru_hole circle (at -5 -3.75 365) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 33 "inner_upper"))
     
     
-    (pad "1" smd roundrect
-      (at 3.275 -5.95 170)
-      (size 2.6 2.6)
-      (layers "F.Cu" "F.Paste" "F.Mask")
-      (roundrect_rratio 0)
-			(chamfer_ratio 0.455)
-			(chamfer bottom_right)
-      (net 33 "inner_upper")
-    )
+    (pad "2" smd roundrect (at 3.245 -5.95 170) (size 2.65 2.15) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1) (net 30 "col5"))
+    (pad "1" smd roundrect (at -7.6475 -3.75 170) (size 3.8 2.15) (layers "F.Cu") (roundrect_rratio 0.1) (net 33 "inner_upper"))
+    (pad "" smd roundrect (at -8.2475 -3.75 170) (size 2.6 2.15) (layers "F.Paste" "F.Mask") (roundrect_rratio 0.1))
     
-
     
-    (pad "2" smd rect (at -8.275 -3.75 170) (size 2.6 2.6) (layers "F.Cu" "F.Paste" "F.Mask") (net 30 "col5"))
     
     
     
@@ -5341,139 +2366,18 @@
 
     
     
+      
+      (pad "2" thru_hole circle (at 5 -3.75 365) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 30 "col5"))
+      
+      
+    (pad "1" smd roundrect (at -3.245 -5.95 170) (size 2.65 2.15) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.1) (net 33 "inner_upper"))
+    (pad "2" smd roundrect (at 7.6475 -3.75 170) (size 3.8 2.15) (layers "B.Cu") (roundrect_rratio 0.1) (net 30 "col5"))
+    (pad "" smd roundrect (at 8.2475 -3.75 170) (size 2.6 2.15) (layers "B.Paste" "B.Mask") (roundrect_rratio 0.1))
     
-    (pad "1" smd roundrect
-      (at -3.275 -5.95 170)
-      (size 2.6 2.6)
-      (layers "B.Cu" "B.Paste" "B.Mask")
-      (roundrect_rratio 0)
-			(chamfer_ratio 0.455)
-			(chamfer bottom_left)
-      (net 33 "inner_upper")
-    )
-    
-
-    
-    (pad "2" smd rect (at 8.275 -3.75 170) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 30 "col5"))
-
-    
-    (pad "" np_thru_hole circle (at 5 -3.75 365) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+      
     
     
   )
-    
-	(segment
-		(start 246.37633330000003 115.59185420000001)
-		(end 248.78012930000003 113.90869810000001)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 33)
-	)
-	(segment
-		(start 248.78012930000003 113.90869810000001)
-		(end 249.96189860000004 114.11707590000002)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 33)
-	)
-	(via
-		(at 249.96189860000004 114.11707590000002)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 33)
-	)
-	(segment
-		(start 251.14366790000003 114.32545380000002)
-		(end 249.96189860000004 114.11707590000002)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 33)
-	)
-	(segment
-		(start 252.82682400000004 116.72924980000002)
-		(end 251.14366790000003 114.32545380000002)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 33)
-	)
-	(segment
-		(start 256.62899890000006 113.28313630000001)
-		(end 252.42682430000002 112.54217960000001)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 30)
-	)
-	(segment
-		(start 251.06100470000004 113.49853670000002)
-		(end 250.10081720000002 113.32922970000001)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 30)
-	)
-	(segment
-		(start 258.13288880000005 115.43091360000001)
-		(end 256.62899890000006 113.28313630000001)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 30)
-	)
-	(segment
-		(start 252.42682430000002 112.54217960000001)
-		(end 251.06100470000004 113.49853670000002)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 30)
-	)
-	(via
-		(at 250.10081720000002 113.32922970000001)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 30)
-	)
-	(segment
-		(start 248.19789630000002 111.79650550000002)
-		(end 249.15425340000004 113.16232500000001)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 30)
-	)
-	(segment
-		(start 243.98209780000002 111.05314650000001)
-		(end 248.19789630000002 111.79650550000002)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 30)
-	)
-	(segment
-		(start 249.15425340000004 113.16232500000001)
-		(end 250.10081720000002 113.32922970000001)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 30)
-	)
-	(segment
-		(start 241.83432050000005 112.55703630000002)
-		(end 243.98209780000002 111.05314650000001)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 30)
-	)
     
 
   (footprint "ceoloide:switch_choc_v1_v2"
@@ -5489,7 +2393,7 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 160) (size 5 5) (drill 5) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 0 160) (size 5.3 5.3) (drill 5) (layers "*.Cu" "*.Mask") )
     
     
     (pad "" thru_hole circle (at 5.00 5.15 160) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
@@ -5498,7 +2402,7 @@
     
     
     
-    (pad "" np_thru_hole circle (at 0 -5.95 160) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 -5.95 160) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") )
     
     
     
@@ -5521,23 +2425,15 @@
     
     
     
-    (pad "" np_thru_hole circle (at -5 -3.75 355) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-
+    
+    (pad "1" thru_hole circle (at -5 -3.75 355) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 34 "near_thumb"))
     
     
-    (pad "1" smd roundrect
-      (at 3.275 -5.95 160)
-      (size 2.6 2.6)
-      (layers "F.Cu" "F.Paste" "F.Mask")
-      (roundrect_rratio 0)
-			(chamfer_ratio 0.455)
-			(chamfer bottom_right)
-      (net 34 "near_thumb")
-    )
+    (pad "2" smd roundrect (at 3.245 -5.95 160) (size 2.65 2.15) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1) (net 20 "col3"))
+    (pad "1" smd roundrect (at -7.6475 -3.75 160) (size 3.8 2.15) (layers "F.Cu") (roundrect_rratio 0.1) (net 34 "near_thumb"))
+    (pad "" smd roundrect (at -8.2475 -3.75 160) (size 2.6 2.15) (layers "F.Paste" "F.Mask") (roundrect_rratio 0.1))
     
-
     
-    (pad "2" smd rect (at -8.275 -3.75 160) (size 2.6 2.6) (layers "F.Cu" "F.Paste" "F.Mask") (net 20 "col3"))
     
     
     
@@ -5560,139 +2456,18 @@
 
     
     
+      
+      (pad "2" thru_hole circle (at 5 -3.75 355) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 20 "col3"))
+      
+      
+    (pad "1" smd roundrect (at -3.245 -5.95 160) (size 2.65 2.15) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.1) (net 34 "near_thumb"))
+    (pad "2" smd roundrect (at 7.6475 -3.75 160) (size 3.8 2.15) (layers "B.Cu") (roundrect_rratio 0.1) (net 20 "col3"))
+    (pad "" smd roundrect (at 8.2475 -3.75 160) (size 2.6 2.15) (layers "B.Paste" "B.Mask") (roundrect_rratio 0.1))
     
-    (pad "1" smd roundrect
-      (at -3.275 -5.95 160)
-      (size 2.6 2.6)
-      (layers "B.Cu" "B.Paste" "B.Mask")
-      (roundrect_rratio 0)
-			(chamfer_ratio 0.455)
-			(chamfer bottom_left)
-      (net 34 "near_thumb")
-    )
-    
-
-    
-    (pad "2" smd rect (at 8.275 -3.75 160) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 20 "col3"))
-
-    
-    (pad "" np_thru_hole circle (at 5 -3.75 355) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+      
     
     
   )
-    
-	(segment
-		(start 218.6989723 180.5129364)
-		(end 221.3585263 179.272766)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 34)
-	)
-	(segment
-		(start 221.3585263 179.272766)
-		(end 222.4861574 179.6831902)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 34)
-	)
-	(via
-		(at 222.4861574 179.6831902)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 34)
-	)
-	(segment
-		(start 223.6137886 180.0936144)
-		(end 222.4861574 179.6831902)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 34)
-	)
-	(segment
-		(start 224.853959 182.7531684)
-		(end 223.6137886 180.0936144)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 34)
-	)
-	(segment
-		(start 229.1967816 180.0196498)
-		(end 225.1871132 178.5602499)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 20)
-	)
-	(segment
-		(start 223.6759739 179.26490569999999)
-		(end 222.75977360000002 178.9314361)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 20)
-	)
-	(segment
-		(start 230.3048664 182.3959453)
-		(end 229.1967816 180.0196498)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 20)
-	)
-	(segment
-		(start 225.1871132 178.5602499)
-		(end 223.6759739 179.26490569999999)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 20)
-	)
-	(via
-		(at 222.75977360000002 178.9314361)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 20)
-	)
-	(segment
-		(start 221.1519171 177.0915586)
-		(end 221.856573 178.602698)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 20)
-	)
-	(segment
-		(start 217.12924900000002 175.6274272)
-		(end 221.1519171 177.0915586)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 20)
-	)
-	(segment
-		(start 221.856573 178.602698)
-		(end 222.75977360000002 178.9314361)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 20)
-	)
-	(segment
-		(start 214.7529535 176.7355119)
-		(end 217.12924900000002 175.6274272)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 20)
-	)
     
 
   (footprint "ceoloide:switch_choc_v1_v2"
@@ -5708,7 +2483,7 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 155) (size 5 5) (drill 5) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 0 155) (size 5.3 5.3) (drill 5) (layers "*.Cu" "*.Mask") )
     
     
     (pad "" thru_hole circle (at 5.00 5.15 155) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
@@ -5717,7 +2492,7 @@
     
     
     
-    (pad "" np_thru_hole circle (at 0 -5.95 155) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 -5.95 155) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") )
     
     
     
@@ -5740,23 +2515,15 @@
     
     
     
-    (pad "" np_thru_hole circle (at -5 -3.75 350) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-
+    
+    (pad "1" thru_hole circle (at -5 -3.75 350) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 35 "home_thumb"))
     
     
-    (pad "1" smd roundrect
-      (at 3.275 -5.95 155)
-      (size 2.6 2.6)
-      (layers "F.Cu" "F.Paste" "F.Mask")
-      (roundrect_rratio 0)
-			(chamfer_ratio 0.455)
-			(chamfer bottom_right)
-      (net 35 "home_thumb")
-    )
+    (pad "2" smd roundrect (at 3.245 -5.95 155) (size 2.65 2.15) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1) (net 25 "col4"))
+    (pad "1" smd roundrect (at -7.6475 -3.75 155) (size 3.8 2.15) (layers "F.Cu") (roundrect_rratio 0.1) (net 35 "home_thumb"))
+    (pad "" smd roundrect (at -8.2475 -3.75 155) (size 2.6 2.15) (layers "F.Paste" "F.Mask") (roundrect_rratio 0.1))
     
-
     
-    (pad "2" smd rect (at -8.275 -3.75 155) (size 2.6 2.6) (layers "F.Cu" "F.Paste" "F.Mask") (net 25 "col4"))
     
     
     
@@ -5779,139 +2546,18 @@
 
     
     
+      
+      (pad "2" thru_hole circle (at 5 -3.75 350) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 25 "col4"))
+      
+      
+    (pad "1" smd roundrect (at -3.245 -5.95 155) (size 2.65 2.15) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.1) (net 35 "home_thumb"))
+    (pad "2" smd roundrect (at 7.6475 -3.75 155) (size 3.8 2.15) (layers "B.Cu") (roundrect_rratio 0.1) (net 25 "col4"))
+    (pad "" smd roundrect (at 8.2475 -3.75 155) (size 2.6 2.15) (layers "B.Paste" "B.Mask") (roundrect_rratio 0.1))
     
-    (pad "1" smd roundrect
-      (at -3.275 -5.95 155)
-      (size 2.6 2.6)
-      (layers "B.Cu" "B.Paste" "B.Mask")
-      (roundrect_rratio 0)
-			(chamfer_ratio 0.455)
-			(chamfer bottom_left)
-      (net 35 "home_thumb")
-    )
-    
-
-    
-    (pad "2" smd rect (at 8.275 -3.75 155) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 25 "col4"))
-
-    
-    (pad "" np_thru_hole circle (at 5 -3.75 350) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+      
     
     
   )
-    
-	(segment
-		(start 236.3455034 187.28888419999998)
-		(end 239.103025 186.2852285)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 35)
-	)
-	(segment
-		(start 239.103025 186.2852285)
-		(end 240.19059430000001 186.79237039999998)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 35)
-	)
-	(via
-		(at 240.19059430000001 186.79237039999998)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 35)
-	)
-	(segment
-		(start 241.27816370000002 187.2995123)
-		(end 240.19059430000001 186.79237039999998)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 35)
-	)
-	(segment
-		(start 242.28181940000002 190.0570338)
-		(end 241.27816370000002 187.2995123)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 35)
-	)
-	(segment
-		(start 246.84635820000003 187.71241909999998)
-		(end 242.9791428 185.90910699999998)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 25)
-	)
-	(segment
-		(start 241.412339 186.479377)
-		(end 240.52868890000002 186.06732409999998)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 25)
-	)
-	(segment
-		(start 247.7431186 190.176248)
-		(end 246.84635820000003 187.71241909999998)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 25)
-	)
-	(segment
-		(start 242.9791428 185.90910699999998)
-		(end 241.412339 186.479377)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 25)
-	)
-	(via
-		(at 240.52868890000002 186.06732409999998)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 25)
-	)
-	(segment
-		(start 239.08730680000002 184.094314)
-		(end 239.65757670000002 185.6611178)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 25)
-	)
-	(segment
-		(start 235.2075536 182.28515539999998)
-		(end 239.08730680000002 184.094314)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 25)
-	)
-	(segment
-		(start 239.65757670000002 185.6611178)
-		(end 240.52868890000002 186.06732409999998)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 25)
-	)
-	(segment
-		(start 232.74372470000003 183.18191579999998)
-		(end 235.2075536 182.28515539999998)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 25)
-	)
     
 
   (footprint "ceoloide:switch_choc_v1_v2"
@@ -5927,7 +2573,7 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 150) (size 5 5) (drill 5) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 0 150) (size 5.3 5.3) (drill 5) (layers "*.Cu" "*.Mask") )
     
     
     (pad "" thru_hole circle (at 5.00 5.15 150) (size 1.9 1.9) (drill 1.6) (layers "*.Cu" "*.Mask") )
@@ -5936,7 +2582,7 @@
     
     
     
-    (pad "" np_thru_hole circle (at 0 -5.95 150) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" thru_hole circle (at 0 -5.95 150) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") )
     
     
     
@@ -5959,23 +2605,15 @@
     
     
     
-    (pad "" np_thru_hole circle (at -5 -3.75 345) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-
+    
+    (pad "1" thru_hole circle (at -5 -3.75 345) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 36 "far_thumb"))
     
     
-    (pad "1" smd roundrect
-      (at 3.275 -5.95 150)
-      (size 2.6 2.6)
-      (layers "F.Cu" "F.Paste" "F.Mask")
-      (roundrect_rratio 0)
-			(chamfer_ratio 0.455)
-			(chamfer bottom_right)
-      (net 36 "far_thumb")
-    )
+    (pad "2" smd roundrect (at 3.245 -5.95 150) (size 2.65 2.15) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1) (net 30 "col5"))
+    (pad "1" smd roundrect (at -7.6475 -3.75 150) (size 3.8 2.15) (layers "F.Cu") (roundrect_rratio 0.1) (net 36 "far_thumb"))
+    (pad "" smd roundrect (at -8.2475 -3.75 150) (size 2.6 2.15) (layers "F.Paste" "F.Mask") (roundrect_rratio 0.1))
     
-
     
-    (pad "2" smd rect (at -8.275 -3.75 150) (size 2.6 2.6) (layers "F.Cu" "F.Paste" "F.Mask") (net 30 "col5"))
     
     
     
@@ -5998,139 +2636,18 @@
 
     
     
+      
+      (pad "2" thru_hole circle (at 5 -3.75 345) (size 3.3 3.3) (drill 3) (layers "*.Cu" "*.Mask") (net 30 "col5"))
+      
+      
+    (pad "1" smd roundrect (at -3.245 -5.95 150) (size 2.65 2.15) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.1) (net 36 "far_thumb"))
+    (pad "2" smd roundrect (at 7.6475 -3.75 150) (size 3.8 2.15) (layers "B.Cu") (roundrect_rratio 0.1) (net 30 "col5"))
+    (pad "" smd roundrect (at 8.2475 -3.75 150) (size 2.6 2.15) (layers "B.Paste" "B.Mask") (roundrect_rratio 0.1))
     
-    (pad "1" smd roundrect
-      (at -3.275 -5.95 150)
-      (size 2.6 2.6)
-      (layers "B.Cu" "B.Paste" "B.Mask")
-      (roundrect_rratio 0)
-			(chamfer_ratio 0.455)
-			(chamfer bottom_left)
-      (net 36 "far_thumb")
-    )
-    
-
-    
-    (pad "2" smd rect (at 8.275 -3.75 150) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 30 "col5"))
-
-    
-    (pad "" np_thru_hole circle (at 5 -3.75 345) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+      
     
     
   )
-    
-	(segment
-		(start 253.68646510000002 196.0039408)
-		(end 256.52096780000005 195.244438)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 36)
-	)
-	(segment
-		(start 256.52096780000005 195.244438)
-		(end 257.5601983 195.84443800000003)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 36)
-	)
-	(via
-		(at 257.5601983 195.84443800000003)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 36)
-	)
-	(segment
-		(start 258.5994288 196.44443800000002)
-		(end 257.5601983 195.84443800000003)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 36)
-	)
-	(segment
-		(start 259.35893150000004 199.27894080000002)
-		(end 258.5994288 196.44443800000002)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 36)
-	)
-	(segment
-		(start 264.1104474 197.3410738)
-		(end 260.415117 195.2075738)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 30)
-	)
-	(segment
-		(start 258.8045731 195.6391177)
-		(end 257.9601983 195.1516177)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 30)
-	)
-	(segment
-		(start 264.7890585 199.8736849)
-		(end 264.1104474 197.3410738)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 30)
-	)
-	(segment
-		(start 260.415117 195.2075738)
-		(end 258.8045731 195.6391177)
-		(width 0.2)
-    (locked no)
-		(layer "F.Cu")
-		(net 30)
-	)
-	(via
-		(at 257.9601983 195.1516177)
-		(size 0.6)
-    (drill 0.3)
-		(layers "F.Cu" "B.Cu")
-    (locked no)
-		(net 30)
-	)
-	(segment
-		(start 256.69626020000004 193.06049080000003)
-		(end 257.12780410000005 194.6710347)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 30)
-	)
-	(segment
-		(start 252.98894920000004 190.9200738)
-		(end 256.69626020000004 193.06049080000003)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 30)
-	)
-	(segment
-		(start 257.12780410000005 194.6710347)
-		(end 257.9601983 195.1516177)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 30)
-	)
-	(segment
-		(start 250.45633810000004 191.59868490000002)
-		(end 252.98894920000004 190.9200738)
-		(width 0.2)
-    (locked no)
-		(layer "B.Cu")
-		(net 30)
-	)
     
 
     (footprint "ceoloide:diode_tht_sod123"

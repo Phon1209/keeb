@@ -1,3 +1,5 @@
 fp-info-cache
 *-backups
 ~*.lck
+.history/
+.history/*
