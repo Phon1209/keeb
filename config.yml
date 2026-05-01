@@ -293,7 +293,7 @@ pcbs:
           from: "{{colrow}}"
           to: "{{col_net}}"
           choc_v1_support: false
-          include_plated_holes: false
+          include_plated_holes: true
           hotswap: true
           reversible: true
         adjust:
