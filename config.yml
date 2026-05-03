@@ -13,6 +13,7 @@ points:
     matrix:
       anchor:
         shift: [150, -150]
+        rotate: 10
       key:
         width: cx
         height: cy
@@ -21,39 +22,39 @@ points:
       columns:
         # Column order: pinky → inner_index (left to right)
         extra_pinky.key:
-          col_net: col0
+          col_net: P0
         pinky:
           key:
             splay: -3
             origin: [0, -20]
-            col_net: col1
+            col_net: P1
         ring:
           key:
             stagger: 7
             splay: -7
             origin: [0, -20]
-            col_net: col2
+            col_net: P2
         middle:
           key:
             stagger: 3
-            col_net: col3
+            col_net: P3
         index:
           key:
             stagger: -8
-            col_net: col4
+            col_net: P4
         inner:
           key:
             stagger: -2
-            col_net: col5
+            col_net: P5
       rows:
         bottom:
-          key.row_net: r0
+          row_net: P6
         home:
-          key.row_net: r1
+          row_net: P7
         top:
-          key.row_net: r2
+          row_net: P8
         upper:
-          key.row_net: r3
+          row_net: P9
 
     # ── Left thumb cluster: 3 keys ─────────────────────────────────────────
     thumbsfan:
@@ -67,21 +68,22 @@ points:
         near:
           key:
             rotate: -10
-            col_net: col3
+            col_net: P3
         home:
           key:
             stagger: -4
             origin: [-cx/2, -cy/2]
             rotate: -15
-            col_net: col4
+            col_net: P4
         far:
           key:
             stagger: -6
             origin: [-cx/2, -cy/2]
             rotate: -20
-            col_net: col5
+            col_net: P5
       rows:
-        thumb.key.row_net: r4
+        thumb:
+          row_net: P10
 
     mcu:
       key.tags:
@@ -283,9 +285,10 @@ pcbs:
           from: "{{colrow}}"
           to: "{{col_net}}"
           choc_v1_support: true
+          choc_v2_support: false
           include_plated_holes: true
           hotswap: true
-          reversible: false
+          reversible: true
         adjust:
           rotate: 180
 
@@ -294,17 +297,50 @@ pcbs:
         where: /key/
         params:
           from: "{{colrow}}"
-          to: "{{row}}"
-          reversible: false
+          to: "{{row_net}}"
+          reversible: true
         adjust:
           shift: [3.2, 3]
           rotate: 270
+
+      diode_via_1:
+        what: via
+        where: /key/
+        params:
+          net: "{{colrow}}"
+        adjust:
+          shift: [3.2, 0]
+      diode_via_2:
+        what: via
+        where: /key/
+        params:
+          net: "{{row_net}}"
+        adjust:
+          shift: [3.2, 6]
+
+      key_via_column:
+        what: via
+        where: /key/
+        params:
+          net: "{{col_net}}"
+        adjust:
+          shift: [-3.67, 0]
+
+      raw_pad:
+        what: pad
+        where:
+          ref: mcu
+          shift: [0, -.8cy]
+        params:
+          net: RAW
+          width: 1.5
+          height: 1.5
 
       battery_connector:
         what: ceoloide/battery_connector_jst_ph_2
         where: [mcu]
         params:
-          reversible: false
+          reversible: true
         adjust:
           shift: [-5, -37]
           rotate: 90
@@ -315,7 +351,7 @@ pcbs:
         params:
           from: BAT_P
           to: RAW
-          reversible: false
+          reversible: true
         adjust:
           shift: [11.5, -20]
           rotate: 6
@@ -324,7 +360,14 @@ pcbs:
         what: ceoloide/reset_switch_tht_top
         where: mcu
         params:
-          reversible: false
+          reversible: true
         adjust:
           shift: [11.5, -35]
           rotate: 96
+
+      xiao_flippable:
+        what: xiao_flippable
+        where:
+          ref: mcu
+          shift: [-17.5/2, -21/2]
+          rotate: -90
