@@ -13,6 +13,7 @@ points:
     matrix:
       anchor:
         shift: [150, -150]
+        rotate: 10
       key:
         width: cx
         height: cy
@@ -20,31 +21,40 @@ points:
         padding: cy
       columns:
         # Column order: pinky → inner_index (left to right)
-        extra_pinky:
+        extra_pinky.key:
+          col_net: P0
         pinky:
           key:
             splay: -3
             origin: [0, -20]
+            col_net: P1
         ring:
           key:
             stagger: 7
             splay: -7
             origin: [0, -20]
+            col_net: P2
         middle:
           key:
             stagger: 3
+            col_net: P3
         index:
           key:
             stagger: -8
+            col_net: P4
         inner:
           key:
             stagger: -2
             col_net: P5
       rows:
         bottom:
+          row_net: P6
         home:
+          row_net: P7
         top:
+          row_net: P8
         upper:
+          row_net: P9
 
     # ── Left thumb cluster: 3 keys ─────────────────────────────────────────
     thumbsfan:
@@ -58,16 +68,22 @@ points:
         near:
           key:
             rotate: -10
+            col_net: P3
         home:
           key:
             stagger: -4
             origin: [-cx/2, -cy/2]
             rotate: -15
+            col_net: P4
         far:
           key:
             stagger: -6
             origin: [-cx/2, -cy/2]
             rotate: -20
+            col_net: P5
+      rows:
+        thumb:
+          row_net: P10
 
     mcu:
       key.tags:
@@ -121,7 +137,7 @@ points:
         - screw
       anchor:
         aggregate.parts:
-          - ref: thumbsfan_near
+          - ref: thumbsfan_near_thumb
           - ref: matrix_ring_bottom
         shift: [.4, -5]
     screw_5:
@@ -131,7 +147,7 @@ points:
       anchor:
         aggregate.parts:
           - ref: matrix_inner_bottom
-          - ref: thumbsfan_far
+          - ref: thumbsfan_far_thumb
         shift: [5, 0]
 
 outlines:
@@ -174,11 +190,11 @@ outlines:
           shift: [-17.5/2, 21/2]
         - ref: mcu
           shift: [17.5/2 + 1.5, 21/2]
-        - ref: thumbsfan_far
+        - ref: thumbsfan_far_thumb
           shift: [cx/2+1.5, cy/2+1.5]
-        - ref: thumbsfan_far
+        - ref: thumbsfan_far_thumb
           shift: [cx/2, 0]
-        - ref: thumbsfan_near # inside thumb block
+        - ref: thumbsfan_near_thumb # inside thumb block
           shift: [-cx/2, -cy/2 - 1.5]
 
   _screw_heads:
@@ -207,33 +223,15 @@ outlines:
       # size: [12, 30]
 
   # Final board: hull merges both blocks into one smooth convex outline
-  preview:
-    - what: outline
-      name: _alpha_block
-      fillet: 1 # rounds the alpha block corners
-    - what: outline
-      name: _thumb_block
-      operation: add
-    - what: outline
-      name: _extra_board
-      operation: stack
-    - what: outline
-      name: _screw_heads
-      operation: add
-    - what: outline
-      name: _keys
-      operation: stack
-    - what: outline
-      name: preview
-      fillet: 2
-
   board_outline:
     - what: outline
       name: _alpha_block
     - what: outline
       name: _extra_board
+      operation: add
     - what: outline
       name: _thumb_block
+      operation: add
     - what: outline
       name: board_outline
       fillet: 1
@@ -243,13 +241,27 @@ outlines:
       name: board_outline
     - what: outline
       name: _screw_heads
+      operation: subtract
+
+  preview:
+    - what: outline
+      name: _alpha_block
+      fillet: 1 # rounds the alpha block corners
+    - what: outline
+      name: _thumb_block
+      operation: add
+    - what: outline
+      name: _extra_board
+      operation: add
+    - what: outline
+      name: _keys
       operation: stack
     - what: outline
       name: _mcu
       operation: stack
     - what: outline
-      name: _keys
-      operation: stack
+      name: preview
+      fillet: 2
 
   combo:
     - what: outline
@@ -265,21 +277,16 @@ pcbs:
       board:
         outline: board
     footprints:
-      m2_screws:
-        what: ceoloide/mounting_hole_npth
-        where: /screw/
-        params:
-          hole_size: 4.6
-          hole_drill: 2.2
       choc_hotswap:
         what: ceoloide/switch_choc_v1_v2
         where:
           - /key/
         params: &switches
           from: "{{colrow}}"
-          to: "{{col.name}}"
-          choc_v1_support: false
-          include_plated_holes: false
+          to: "{{col_net}}"
+          choc_v1_support: true
+          choc_v2_support: false
+          include_plated_holes: true
           hotswap: true
           reversible: true
         adjust:
@@ -290,11 +297,44 @@ pcbs:
         where: /key/
         params:
           from: "{{colrow}}"
-          to: "{{row}}"
+          to: "{{row_net}}"
           reversible: true
         adjust:
-          shift: [6, 0]
-          rotate: 180
+          shift: [3.2, 3]
+          rotate: 270
+
+      diode_via_1:
+        what: via
+        where: /key/
+        params:
+          net: "{{colrow}}"
+        adjust:
+          shift: [3.2, 0]
+      diode_via_2:
+        what: via
+        where: /key/
+        params:
+          net: "{{row_net}}"
+        adjust:
+          shift: [3.2, 6]
+
+      key_via_column:
+        what: via
+        where: /key/
+        params:
+          net: "{{col_net}}"
+        adjust:
+          shift: [-3.67, 0]
+
+      raw_pad:
+        what: pad
+        where:
+          ref: mcu
+          shift: [0, -.8cy]
+        params:
+          net: RAW
+          width: 1.5
+          height: 1.5
 
       battery_connector:
         what: ceoloide/battery_connector_jst_ph_2
@@ -324,3 +364,10 @@ pcbs:
         adjust:
           shift: [11.5, -35]
           rotate: 96
+
+      xiao_flippable:
+        what: xiao_flippable
+        where:
+          ref: mcu
+          shift: [-17.5/2, -21/2]
+          rotate: -90

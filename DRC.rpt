@@ -1,0 +1,1688 @@
+** Drc report for board_pcb.kicad_pcb **
+** Created on 2026-04-30T22:43:55 **
+** Report includes: Errors, Warnings **
+
+** Found 303 DRC violations **
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(179.9959 mm, 108.2933 mm): Segment on Edge.Cuts
+    @(160.6355 mm, 107.5428 mm): NPTH pad of MH1
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(158.7500 mm, 141.7500 mm): Segment on Edge.Cuts
+    @(159.7458 mm, 141.5195 mm): NPTH pad of MH2
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(240.4983 mm, 117.3986 mm): Segment on Edge.Cuts
+    @(240.2955 mm, 117.1090 mm): NPTH pad of MH3
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.1500 mm)
+    Rule: board setup constraints edge; error
+    @(205.9053 mm, 165.0818 mm): Circle on Edge.Cuts
+    @(205.9053 mm, 165.0818 mm): NPTH pad of MH4
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.1500 mm)
+    Rule: board setup constraints edge; error
+    @(255.3367 mm, 178.2175 mm): Circle on Edge.Cuts
+    @(255.3367 mm, 178.2175 mm): NPTH pad of MH5
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(158.7500 mm, 158.2500 mm): Segment on Edge.Cuts
+    @(157.6475 mm, 153.7500 mm): Pad 1 [extra_pinky_bottom] of S1 on F.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(141.2500 mm, 141.7500 mm): Segment on Edge.Cuts
+    @(142.3525 mm, 153.7500 mm): Pad 2 [col0] of S1 on B.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(158.7500 mm, 141.2500 mm): Segment on Edge.Cuts
+    @(157.6475 mm, 136.7500 mm): Pad 1 [extra_pinky_home] of S2 on F.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(141.2500 mm, 124.7500 mm): Segment on Edge.Cuts
+    @(142.3525 mm, 136.7500 mm): Pad 2 [col0] of S2 on B.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(158.7500 mm, 124.2500 mm): Segment on Edge.Cuts
+    @(157.6475 mm, 119.7500 mm): Pad 1 [extra_pinky_top] of S3 on F.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(141.2500 mm, 107.7500 mm): Segment on Edge.Cuts
+    @(142.3525 mm, 119.7500 mm): Pad 2 [col0] of S3 on B.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(158.7500 mm, 107.2500 mm): Segment on Edge.Cuts
+    @(157.6475 mm, 102.7500 mm): Pad 1 [extra_pinky_upper] of S4 on F.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(141.2500 mm, 90.7500 mm): Segment on Edge.Cuts
+    @(142.3525 mm, 102.7500 mm): Pad 2 [col0] of S4 on B.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(177.3530 mm, 158.7240 mm): Segment on Edge.Cuts
+    @(176.4875 mm, 154.1725 mm): Pad 1 [pinky_bottom] of S5 on F.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(160.7405 mm, 141.3308 mm): Segment on Edge.Cuts
+    @(161.2134 mm, 153.3720 mm): Pad 2 [col1] of S5 on B.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(178.2427 mm, 141.7473 mm): Segment on Edge.Cuts
+    @(177.3772 mm, 137.1958 mm): Pad 1 [pinky_home] of S6 on F.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(161.6302 mm, 124.3541 mm): Segment on Edge.Cuts
+    @(162.1032 mm, 136.3953 mm): Pad 2 [col1] of S6 on B.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(179.1324 mm, 124.7706 mm): Segment on Edge.Cuts
+    @(178.2669 mm, 120.2191 mm): Pad 1 [pinky_top] of S7 on F.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(162.5199 mm, 107.3774 mm): Segment on Edge.Cuts
+    @(162.9929 mm, 119.4186 mm): Pad 2 [col1] of S7 on B.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(180.0221 mm, 107.7939 mm): Segment on Edge.Cuts
+    @(179.1566 mm, 103.2424 mm): Pad 1 [pinky_upper] of S8 on F.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(163.4096 mm, 90.4007 mm): Segment on Edge.Cuts
+    @(163.8826 mm, 102.4419 mm): Pad 2 [col1] of S8 on B.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(196.9991 mm, 153.8996 mm): Segment on Edge.Cuts
+    @(196.6948 mm, 149.2765 mm): Pad 1 [ring_bottom] of S9 on F.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(182.6302 mm, 134.6114 mm): Segment on Edge.Cuts
+    @(181.6321 mm, 146.6205 mm): Pad 2 [col2] of S9 on B.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(199.9511 mm, 137.1578 mm): Segment on Edge.Cuts
+    @(199.6468 mm, 132.5348 mm): Pad 1 [ring_home] of S10 on F.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(185.5822 mm, 117.8697 mm): Segment on Edge.Cuts
+    @(184.5842 mm, 129.8788 mm): Pad 2 [col2] of S10 on B.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(206.7817 mm, 101.2992 mm): Segment on Edge.Cuts
+    @(202.5988 mm, 115.7930 mm): Pad 1 [ring_top] of S11 on F.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(188.5342 mm, 101.1279 mm): Segment on Edge.Cuts
+    @(187.5362 mm, 113.1371 mm): Pad 2 [col2] of S11 on B.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(205.8552 mm, 103.6744 mm): Segment on Edge.Cuts
+    @(205.5508 mm, 99.0513 mm): Pad 1 [ring_upper] of S12 on F.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(191.4862 mm, 84.3862 mm): Segment on Edge.Cuts
+    @(190.4882 mm, 96.3953 mm): Pad 2 [col2] of S12 on B.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(215.2466 mm, 154.0708 mm): Segment on Edge.Cuts
+    @(214.9423 mm, 149.4477 mm): Pad 1 [middle_bottom] of S13 on F.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(196.9991 mm, 153.8996 mm): Segment on Edge.Cuts
+    @(199.8796 mm, 146.7918 mm): Pad 2 [col3] of S13 on B.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(218.1986 mm, 137.3291 mm): Segment on Edge.Cuts
+    @(217.8943 mm, 132.7060 mm): Pad 1 [middle_home] of S14 on F.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(199.9511 mm, 137.1578 mm): Segment on Edge.Cuts
+    @(202.8317 mm, 130.0501 mm): Pad 2 [col3] of S14 on B.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(221.1506 mm, 120.5874 mm): Segment on Edge.Cuts
+    @(220.8463 mm, 115.9643 mm): Pad 1 [middle_top] of S15 on F.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(206.7817 mm, 101.2992 mm): Segment on Edge.Cuts
+    @(205.7837 mm, 113.3083 mm): Pad 2 [col3] of S15 on B.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(224.1027 mm, 103.8456 mm): Segment on Edge.Cuts
+    @(223.7983 mm, 99.2225 mm): Pad 1 [middle_upper] of S16 on F.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(205.8552 mm, 103.6744 mm): Segment on Edge.Cuts
+    @(208.7357 mm, 96.5666 mm): Pad 2 [col3] of S16 on B.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(231.5840 mm, 165.0749 mm): Segment on Edge.Cuts
+    @(231.2796 mm, 160.4519 mm): Pad 1 [index_bottom] of S17 on F.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(217.2150 mm, 145.7868 mm): Segment on Edge.Cuts
+    @(216.2170 mm, 157.7959 mm): Pad 2 [col4] of S17 on B.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(237.5463 mm, 134.1403 mm): Segment on Edge.Cuts
+    @(234.2316 mm, 143.7101 mm): Pad 1 [index_home] of S18 on F.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(215.2466 mm, 154.0708 mm): Segment on Edge.Cuts
+    @(219.1690 mm, 141.0542 mm): Pad 2 [col4] of S18 on B.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(240.4983 mm, 117.3986 mm): Segment on Edge.Cuts
+    @(237.1837 mm, 126.9684 mm): Pad 1 [index_top] of S19 on F.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(218.1986 mm, 137.3291 mm): Segment on Edge.Cuts
+    @(222.1210 mm, 124.3124 mm): Pad 2 [col4] of S19 on B.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(240.4400 mm, 114.8497 mm): Segment on Edge.Cuts
+    @(240.1357 mm, 110.2267 mm): Pad 1 [index_upper] of S20 on F.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(221.1506 mm, 120.5874 mm): Segment on Edge.Cuts
+    @(225.0730 mm, 107.5707 mm): Pad 2 [col4] of S20 on B.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(248.9632 mm, 170.1702 mm): Segment on Edge.Cuts
+    @(248.6589 mm, 165.5471 mm): Pad 1 [inner_bottom] of S21 on F.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(231.5840 mm, 165.0749 mm): Segment on Edge.Cuts
+    @(233.5962 mm, 162.8912 mm): Pad 2 [col5] of S21 on B.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(251.9152 mm, 153.4285 mm): Segment on Edge.Cuts
+    @(251.6109 mm, 148.8054 mm): Pad 1 [inner_home] of S22 on F.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(237.5463 mm, 134.1403 mm): Segment on Edge.Cuts
+    @(236.5482 mm, 146.1495 mm): Pad 2 [col5] of S22 on B.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(254.8672 mm, 136.6868 mm): Segment on Edge.Cuts
+    @(254.5629 mm, 132.0637 mm): Pad 1 [inner_top] of S23 on F.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(240.4983 mm, 117.3986 mm): Segment on Edge.Cuts
+    @(239.5003 mm, 129.4077 mm): Pad 2 [col5] of S23 on B.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(257.8193 mm, 119.9450 mm): Segment on Edge.Cuts
+    @(257.5149 mm, 115.3220 mm): Pad 1 [inner_upper] of S24 on F.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(240.4400 mm, 114.8497 mm): Segment on Edge.Cuts
+    @(242.4523 mm, 112.6660 mm): Pad 2 [col5] of S24 on B.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(229.2121 mm, 186.7870 mm): Segment on Edge.Cuts
+    @(229.7152 mm, 182.1813 mm): Pad 1 [near_thumb] of S25 on F.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(218.4108 mm, 165.2967 mm): Segment on Edge.Cuts
+    @(215.3426 mm, 176.9501 mm): Pad 2 [col3] of S25 on B.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(246.2718 mm, 194.4554 mm): Segment on Edge.Cuts
+    @(247.1744 mm, 189.9111 mm): Pad 1 [home_thumb] of S26 on F.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(237.3846 mm, 172.1055 mm): Segment on Edge.Cuts
+    @(233.3124 mm, 183.4471 mm): Pad 2 [col4] of S26 on B.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(262.9504 mm, 204.0083 mm): Segment on Edge.Cuts
+    @(264.2456 mm, 199.5599 mm): Pad 1 [far_thumb] of S27 on F.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.0000 mm)
+    Rule: board setup constraints edge; error
+    @(256.0450 mm, 180.9689 mm): Segment on Edge.Cuts
+    @(250.9998 mm, 191.9124 mm): Pad 2 [col5] of S27 on B.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.3358 mm)
+    Rule: board setup constraints edge; error
+    @(278.2174 mm, 125.7235 mm): Segment on Edge.Cuts
+    @(275.5948 mm, 151.5137 mm): Pad [<no net>] of PWR1 on F.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.3133 mm)
+    Rule: board setup constraints edge; error
+    @(278.2174 mm, 125.7235 mm): Segment on Edge.Cuts
+    @(275.0855 mm, 158.7959 mm): Pad [<no net>] of PWR1 on F.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.3358 mm)
+    Rule: board setup constraints edge; error
+    @(278.2174 mm, 125.7235 mm): Segment on Edge.Cuts
+    @(275.5948 mm, 151.5137 mm): Pad [<no net>] of PWR1 on B.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.3133 mm)
+    Rule: board setup constraints edge; error
+    @(278.2174 mm, 125.7235 mm): Segment on Edge.Cuts
+    @(275.0855 mm, 158.7959 mm): Pad [<no net>] of PWR1 on B.Cu
+[invalid_outline]: Board has malformed outline (arc has null or very small size: 0 nm)
+    Local override; error
+    @(140.5000 mm, 160.0000 mm): Segment on Edge.Cuts
+    @(168.2357 mm, 161.0002 mm): Arc on Edge.Cuts
+[invalid_outline]: Board has malformed outline (arc has null or very small size: 0 nm)
+    Local override; error
+    @(140.5000 mm, 160.0000 mm): Segment on Edge.Cuts
+    @(168.2357 mm, 161.0002 mm): Arc on Edge.Cuts
+[invalid_outline]: Board has malformed outline (arc has null or very small size: 0 nm)
+    Local override; error
+    @(140.5000 mm, 160.0000 mm): Segment on Edge.Cuts
+    @(168.2357 mm, 161.0002 mm): Arc on Edge.Cuts
+[invalid_outline]: Board has malformed outline (arc has null or very small size: 0 nm)
+    Local override; error
+    @(140.5000 mm, 160.0000 mm): Segment on Edge.Cuts
+    @(168.2357 mm, 161.0002 mm): Arc on Edge.Cuts
+[invalid_outline]: Board has malformed outline (not a closed shape)
+    Local override; error
+    @(276.6323 mm, 125.5470 mm): Arc on Edge.Cuts
+    @(276.6323 mm, 125.5470 mm): Arc on Edge.Cuts
+[invalid_outline]: Board has malformed outline (not a closed shape)
+    Local override; error
+    @(272.1745 mm, 145.0695 mm): Arc on Edge.Cuts
+    @(272.1745 mm, 145.0695 mm): Arc on Edge.Cuts
+[invalid_outline]: Board has malformed outline (self-intersecting)
+    Local override; error
+    @(260.5566 mm, 121.6970 mm): Arc on Edge.Cuts
+    @(260.3830 mm, 122.6818 mm): Arc on Edge.Cuts
+[invalid_outline]: Board has malformed outline (self-intersecting)
+    Local override; error
+    @(256.0988 mm, 141.2195 mm): Arc on Edge.Cuts
+    @(259.3982 mm, 122.5081 mm): Segment on Edge.Cuts
+[invalid_outline]: Board has malformed outline (not a closed shape)
+    Local override; error
+    @(259.3982 mm, 122.5081 mm): Segment on Edge.Cuts
+    @(256.0988 mm, 141.2195 mm): Arc on Edge.Cuts
+[invalid_outline]: Board has malformed outline (not a closed shape)
+    Local override; error
+    @(260.5566 mm, 121.6970 mm): Arc on Edge.Cuts
+    @(260.3830 mm, 122.6818 mm): Arc on Edge.Cuts
+[invalid_outline]: Board has malformed outline (self-intersecting)
+    Local override; error
+    @(256.9100 mm, 142.3779 mm): Segment on Edge.Cuts
+    @(272.1745 mm, 145.0695 mm): Arc on Edge.Cuts
+[invalid_outline]: Board has malformed outline (self-intersecting)
+    Local override; error
+    @(257.0837 mm, 141.3931 mm): Arc on Edge.Cuts
+    @(259.3982 mm, 122.5081 mm): Segment on Edge.Cuts
+[invalid_outline]: Board has malformed outline (not a closed shape)
+    Local override; error
+    @(257.0837 mm, 141.3931 mm): Arc on Edge.Cuts
+    @(259.3982 mm, 122.5081 mm): Segment on Edge.Cuts
+[invalid_outline]: Board has malformed outline (self-intersecting)
+    Local override; error
+    @(275.6475 mm, 125.3733 mm): Arc on Edge.Cuts
+    @(276.6323 mm, 125.5470 mm): Arc on Edge.Cuts
+[invalid_outline]: Board has malformed outline (not a closed shape)
+    Local override; error
+    @(275.6475 mm, 125.3733 mm): Arc on Edge.Cuts
+    @(275.6475 mm, 125.3733 mm): Arc on Edge.Cuts
+[invalid_outline]: Board has malformed outline (not a closed shape)
+    Local override; error
+    @(275.6475 mm, 125.3733 mm): Arc on Edge.Cuts
+    @(276.6323 mm, 125.5470 mm): Arc on Edge.Cuts
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(141.2500 mm, 158.2500 mm): Segment on Edge.Cuts
+    @(151.5000 mm, 158.2000 mm): Segment of S1 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(141.2500 mm, 158.2500 mm): Segment on Edge.Cuts
+    @(148.5000 mm, 158.2000 mm): Segment of S1 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(141.2500 mm, 158.2500 mm): Segment on Edge.Cuts
+    @(148.0000 mm, 157.7000 mm): Segment of S1 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(141.2500 mm, 158.2500 mm): Segment on Edge.Cuts
+    @(151.5000 mm, 158.2000 mm): Segment of S1 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(141.2500 mm, 158.2500 mm): Segment on Edge.Cuts
+    @(148.5000 mm, 158.2000 mm): Segment of S1 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(141.2500 mm, 158.2500 mm): Segment on Edge.Cuts
+    @(148.0000 mm, 157.7000 mm): Segment of S1 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(141.2500 mm, 141.2500 mm): Segment on Edge.Cuts
+    @(151.5000 mm, 141.2000 mm): Segment of S2 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(141.2500 mm, 141.2500 mm): Segment on Edge.Cuts
+    @(148.5000 mm, 141.2000 mm): Segment of S2 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(141.2500 mm, 141.2500 mm): Segment on Edge.Cuts
+    @(148.0000 mm, 140.7000 mm): Segment of S2 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(141.2500 mm, 141.2500 mm): Segment on Edge.Cuts
+    @(151.5000 mm, 141.2000 mm): Segment of S2 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(141.2500 mm, 141.2500 mm): Segment on Edge.Cuts
+    @(148.5000 mm, 141.2000 mm): Segment of S2 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(141.2500 mm, 141.2500 mm): Segment on Edge.Cuts
+    @(148.0000 mm, 140.7000 mm): Segment of S2 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(141.2500 mm, 124.2500 mm): Segment on Edge.Cuts
+    @(151.5000 mm, 124.2000 mm): Segment of S3 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(141.2500 mm, 124.2500 mm): Segment on Edge.Cuts
+    @(148.5000 mm, 124.2000 mm): Segment of S3 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(141.2500 mm, 124.2500 mm): Segment on Edge.Cuts
+    @(148.0000 mm, 123.7000 mm): Segment of S3 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(141.2500 mm, 124.2500 mm): Segment on Edge.Cuts
+    @(151.5000 mm, 124.2000 mm): Segment of S3 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(141.2500 mm, 124.2500 mm): Segment on Edge.Cuts
+    @(148.5000 mm, 124.2000 mm): Segment of S3 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(141.2500 mm, 124.2500 mm): Segment on Edge.Cuts
+    @(148.0000 mm, 123.7000 mm): Segment of S3 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(141.2500 mm, 107.2500 mm): Segment on Edge.Cuts
+    @(151.5000 mm, 107.2000 mm): Segment of S4 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(141.2500 mm, 107.2500 mm): Segment on Edge.Cuts
+    @(148.5000 mm, 107.2000 mm): Segment of S4 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(141.2500 mm, 107.2500 mm): Segment on Edge.Cuts
+    @(148.0000 mm, 106.7000 mm): Segment of S4 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(141.2500 mm, 107.2500 mm): Segment on Edge.Cuts
+    @(151.5000 mm, 107.2000 mm): Segment of S4 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(141.2500 mm, 107.2500 mm): Segment on Edge.Cuts
+    @(148.5000 mm, 107.2000 mm): Segment of S4 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(141.2500 mm, 107.2500 mm): Segment on Edge.Cuts
+    @(148.0000 mm, 106.7000 mm): Segment of S4 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(159.8769 mm, 157.8082 mm): Segment on Edge.Cuts
+    @(170.1155 mm, 158.2947 mm): Segment of S5 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(159.8769 mm, 157.8082 mm): Segment on Edge.Cuts
+    @(167.1196 mm, 158.1377 mm): Segment of S5 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(159.8769 mm, 157.8082 mm): Segment on Edge.Cuts
+    @(166.6465 mm, 157.6122 mm): Segment of S5 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(159.8769 mm, 157.8082 mm): Segment on Edge.Cuts
+    @(170.1155 mm, 158.2947 mm): Segment of S5 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(159.8769 mm, 157.8082 mm): Segment on Edge.Cuts
+    @(167.1196 mm, 158.1377 mm): Segment of S5 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(159.8769 mm, 157.8082 mm): Segment on Edge.Cuts
+    @(166.6465 mm, 157.6122 mm): Segment of S5 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(160.7666 mm, 140.8315 mm): Segment on Edge.Cuts
+    @(171.0052 mm, 141.3180 mm): Segment of S6 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(160.7666 mm, 140.8315 mm): Segment on Edge.Cuts
+    @(168.0093 mm, 141.1610 mm): Segment of S6 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(160.7666 mm, 140.8315 mm): Segment on Edge.Cuts
+    @(167.5362 mm, 140.6355 mm): Segment of S6 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(160.7666 mm, 140.8315 mm): Segment on Edge.Cuts
+    @(171.0052 mm, 141.3180 mm): Segment of S6 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(160.7666 mm, 140.8315 mm): Segment on Edge.Cuts
+    @(168.0093 mm, 141.1610 mm): Segment of S6 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(160.7666 mm, 140.8315 mm): Segment on Edge.Cuts
+    @(167.5362 mm, 140.6355 mm): Segment of S6 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(161.6564 mm, 123.8548 mm): Segment on Edge.Cuts
+    @(171.8949 mm, 124.3413 mm): Segment of S7 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(161.6564 mm, 123.8548 mm): Segment on Edge.Cuts
+    @(168.8990 mm, 124.1843 mm): Segment of S7 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(161.6564 mm, 123.8548 mm): Segment on Edge.Cuts
+    @(168.4259 mm, 123.6588 mm): Segment of S7 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(161.6564 mm, 123.8548 mm): Segment on Edge.Cuts
+    @(171.8949 mm, 124.3413 mm): Segment of S7 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(161.6564 mm, 123.8548 mm): Segment on Edge.Cuts
+    @(168.8990 mm, 124.1843 mm): Segment of S7 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(161.6564 mm, 123.8548 mm): Segment on Edge.Cuts
+    @(168.4259 mm, 123.6588 mm): Segment of S7 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(162.5461 mm, 106.8781 mm): Segment on Edge.Cuts
+    @(172.7846 mm, 107.3646 mm): Segment of S8 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(162.5461 mm, 106.8781 mm): Segment on Edge.Cuts
+    @(169.7888 mm, 107.2076 mm): Segment of S8 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(162.5461 mm, 106.8781 mm): Segment on Edge.Cuts
+    @(169.3156 mm, 106.6821 mm): Segment of S8 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(162.5461 mm, 106.8781 mm): Segment on Edge.Cuts
+    @(172.7846 mm, 107.3646 mm): Segment of S8 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(162.5461 mm, 106.8781 mm): Segment on Edge.Cuts
+    @(169.7888 mm, 107.2076 mm): Segment of S8 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(162.5461 mm, 106.8781 mm): Segment on Edge.Cuts
+    @(169.3156 mm, 106.6821 mm): Segment of S8 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(179.7650 mm, 150.8607 mm): Segment on Edge.Cuts
+    @(189.8679 mm, 152.5914 mm): Segment of S9 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(179.7650 mm, 150.8607 mm): Segment on Edge.Cuts
+    @(186.9135 mm, 152.0704 mm): Segment of S9 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(179.7650 mm, 150.8607 mm): Segment on Edge.Cuts
+    @(186.5079 mm, 151.4912 mm): Segment of S9 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(179.7650 mm, 150.8607 mm): Segment on Edge.Cuts
+    @(189.8679 mm, 152.5914 mm): Segment of S9 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(179.7650 mm, 150.8607 mm): Segment on Edge.Cuts
+    @(186.9135 mm, 152.0704 mm): Segment of S9 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(179.7650 mm, 150.8607 mm): Segment on Edge.Cuts
+    @(186.5079 mm, 151.4912 mm): Segment of S9 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(182.7170 mm, 134.1190 mm): Segment on Edge.Cuts
+    @(192.8200 mm, 135.8496 mm): Segment of S10 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(182.7170 mm, 134.1190 mm): Segment on Edge.Cuts
+    @(189.8655 mm, 135.3287 mm): Segment of S10 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(182.7170 mm, 134.1190 mm): Segment on Edge.Cuts
+    @(189.4600 mm, 134.7495 mm): Segment of S10 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(182.7170 mm, 134.1190 mm): Segment on Edge.Cuts
+    @(192.8200 mm, 135.8496 mm): Segment of S10 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(182.7170 mm, 134.1190 mm): Segment on Edge.Cuts
+    @(189.8655 mm, 135.3287 mm): Segment of S10 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(182.7170 mm, 134.1190 mm): Segment on Edge.Cuts
+    @(189.4600 mm, 134.7495 mm): Segment of S10 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(185.6690 mm, 117.3773 mm): Segment on Edge.Cuts
+    @(195.7720 mm, 119.1079 mm): Segment of S11 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(185.6690 mm, 117.3773 mm): Segment on Edge.Cuts
+    @(192.8176 mm, 118.5870 mm): Segment of S11 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(185.6690 mm, 117.3773 mm): Segment on Edge.Cuts
+    @(192.4120 mm, 118.0077 mm): Segment of S11 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(185.6690 mm, 117.3773 mm): Segment on Edge.Cuts
+    @(195.7720 mm, 119.1079 mm): Segment of S11 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(185.6690 mm, 117.3773 mm): Segment on Edge.Cuts
+    @(192.8176 mm, 118.5870 mm): Segment of S11 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(185.6690 mm, 117.3773 mm): Segment on Edge.Cuts
+    @(192.4120 mm, 118.0077 mm): Segment of S11 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(188.6210 mm, 100.6355 mm): Segment on Edge.Cuts
+    @(198.7240 mm, 102.3662 mm): Segment of S12 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(188.6210 mm, 100.6355 mm): Segment on Edge.Cuts
+    @(195.7696 mm, 101.8452 mm): Segment of S12 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(188.6210 mm, 100.6355 mm): Segment on Edge.Cuts
+    @(195.3640 mm, 101.2660 mm): Segment of S12 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(188.6210 mm, 100.6355 mm): Segment on Edge.Cuts
+    @(198.7240 mm, 102.3662 mm): Segment of S12 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(188.6210 mm, 100.6355 mm): Segment on Edge.Cuts
+    @(195.7696 mm, 101.8452 mm): Segment of S12 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(188.6210 mm, 100.6355 mm): Segment on Edge.Cuts
+    @(195.3640 mm, 101.2660 mm): Segment of S12 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(198.0125 mm, 151.0320 mm): Segment on Edge.Cuts
+    @(208.1154 mm, 152.7626 mm): Segment of S13 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(198.0125 mm, 151.0320 mm): Segment on Edge.Cuts
+    @(205.1610 mm, 152.2417 mm): Segment of S13 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(198.0125 mm, 151.0320 mm): Segment on Edge.Cuts
+    @(204.7554 mm, 151.6625 mm): Segment of S13 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(198.0125 mm, 151.0320 mm): Segment on Edge.Cuts
+    @(208.1154 mm, 152.7626 mm): Segment of S13 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(198.0125 mm, 151.0320 mm): Segment on Edge.Cuts
+    @(205.1610 mm, 152.2417 mm): Segment of S13 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(198.0125 mm, 151.0320 mm): Segment on Edge.Cuts
+    @(204.7554 mm, 151.6625 mm): Segment of S13 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(200.9645 mm, 134.2902 mm): Segment on Edge.Cuts
+    @(211.0674 mm, 136.0209 mm): Segment of S14 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(200.9645 mm, 134.2902 mm): Segment on Edge.Cuts
+    @(208.1130 mm, 135.4999 mm): Segment of S14 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(200.9645 mm, 134.2902 mm): Segment on Edge.Cuts
+    @(207.7074 mm, 134.9207 mm): Segment of S14 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(200.9645 mm, 134.2902 mm): Segment on Edge.Cuts
+    @(211.0674 mm, 136.0209 mm): Segment of S14 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(200.9645 mm, 134.2902 mm): Segment on Edge.Cuts
+    @(208.1130 mm, 135.4999 mm): Segment of S14 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(200.9645 mm, 134.2902 mm): Segment on Edge.Cuts
+    @(207.7074 mm, 134.9207 mm): Segment of S14 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(203.9165 mm, 117.5485 mm): Segment on Edge.Cuts
+    @(214.0195 mm, 119.2792 mm): Segment of S15 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(203.9165 mm, 117.5485 mm): Segment on Edge.Cuts
+    @(211.0650 mm, 118.7582 mm): Segment of S15 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(203.9165 mm, 117.5485 mm): Segment on Edge.Cuts
+    @(210.6595 mm, 118.1790 mm): Segment of S15 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(203.9165 mm, 117.5485 mm): Segment on Edge.Cuts
+    @(214.0195 mm, 119.2792 mm): Segment of S15 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(203.9165 mm, 117.5485 mm): Segment on Edge.Cuts
+    @(211.0650 mm, 118.7582 mm): Segment of S15 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(203.9165 mm, 117.5485 mm): Segment on Edge.Cuts
+    @(210.6595 mm, 118.1790 mm): Segment of S15 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(206.8685 mm, 100.8068 mm): Segment on Edge.Cuts
+    @(216.9715 mm, 102.5374 mm): Segment of S16 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(206.8685 mm, 100.8068 mm): Segment on Edge.Cuts
+    @(214.0171 mm, 102.0165 mm): Segment of S16 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(206.8685 mm, 100.8068 mm): Segment on Edge.Cuts
+    @(213.6115 mm, 101.4373 mm): Segment of S16 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(206.8685 mm, 100.8068 mm): Segment on Edge.Cuts
+    @(216.9715 mm, 102.5374 mm): Segment of S16 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(206.8685 mm, 100.8068 mm): Segment on Edge.Cuts
+    @(214.0171 mm, 102.0165 mm): Segment of S16 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(206.8685 mm, 100.8068 mm): Segment on Edge.Cuts
+    @(213.6115 mm, 101.4373 mm): Segment of S16 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(214.3498 mm, 162.0361 mm): Segment on Edge.Cuts
+    @(224.4528 mm, 163.7668 mm): Segment of S17 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(214.3498 mm, 162.0361 mm): Segment on Edge.Cuts
+    @(221.4984 mm, 163.2458 mm): Segment of S17 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(214.3498 mm, 162.0361 mm): Segment on Edge.Cuts
+    @(221.0928 mm, 162.6666 mm): Segment of S17 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(214.3498 mm, 162.0361 mm): Segment on Edge.Cuts
+    @(224.4528 mm, 163.7668 mm): Segment of S17 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(214.3498 mm, 162.0361 mm): Segment on Edge.Cuts
+    @(221.4984 mm, 163.2458 mm): Segment of S17 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(214.3498 mm, 162.0361 mm): Segment on Edge.Cuts
+    @(221.0928 mm, 162.6666 mm): Segment of S17 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(217.3018 mm, 145.2944 mm): Segment on Edge.Cuts
+    @(227.4048 mm, 147.0250 mm): Segment of S18 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(217.3018 mm, 145.2944 mm): Segment on Edge.Cuts
+    @(224.4504 mm, 146.5041 mm): Segment of S18 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(217.3018 mm, 145.2944 mm): Segment on Edge.Cuts
+    @(224.0448 mm, 145.9248 mm): Segment of S18 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(217.3018 mm, 145.2944 mm): Segment on Edge.Cuts
+    @(227.4048 mm, 147.0250 mm): Segment of S18 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(217.3018 mm, 145.2944 mm): Segment on Edge.Cuts
+    @(224.4504 mm, 146.5041 mm): Segment of S18 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(217.3018 mm, 145.2944 mm): Segment on Edge.Cuts
+    @(224.0448 mm, 145.9248 mm): Segment of S18 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(220.2539 mm, 128.5526 mm): Segment on Edge.Cuts
+    @(230.3568 mm, 130.2833 mm): Segment of S19 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(220.2539 mm, 128.5526 mm): Segment on Edge.Cuts
+    @(227.4024 mm, 129.7623 mm): Segment of S19 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(220.2539 mm, 128.5526 mm): Segment on Edge.Cuts
+    @(226.9968 mm, 129.1831 mm): Segment of S19 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(220.2539 mm, 128.5526 mm): Segment on Edge.Cuts
+    @(230.3568 mm, 130.2833 mm): Segment of S19 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(220.2539 mm, 128.5526 mm): Segment on Edge.Cuts
+    @(227.4024 mm, 129.7623 mm): Segment of S19 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(220.2539 mm, 128.5526 mm): Segment on Edge.Cuts
+    @(226.9968 mm, 129.1831 mm): Segment of S19 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(223.2059 mm, 111.8109 mm): Segment on Edge.Cuts
+    @(233.3088 mm, 113.5416 mm): Segment of S20 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(223.2059 mm, 111.8109 mm): Segment on Edge.Cuts
+    @(230.3544 mm, 113.0206 mm): Segment of S20 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(223.2059 mm, 111.8109 mm): Segment on Edge.Cuts
+    @(229.9488 mm, 112.4414 mm): Segment of S20 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(223.2059 mm, 111.8109 mm): Segment on Edge.Cuts
+    @(233.3088 mm, 113.5416 mm): Segment of S20 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(223.2059 mm, 111.8109 mm): Segment on Edge.Cuts
+    @(230.3544 mm, 113.0206 mm): Segment of S20 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(223.2059 mm, 111.8109 mm): Segment on Edge.Cuts
+    @(229.9488 mm, 112.4414 mm): Segment of S20 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(231.7291 mm, 167.1314 mm): Segment on Edge.Cuts
+    @(241.8320 mm, 168.8620 mm): Segment of S21 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(231.7291 mm, 167.1314 mm): Segment on Edge.Cuts
+    @(238.8776 mm, 168.3411 mm): Segment of S21 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(231.7291 mm, 167.1314 mm): Segment on Edge.Cuts
+    @(238.4720 mm, 167.7619 mm): Segment of S21 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(231.7291 mm, 167.1314 mm): Segment on Edge.Cuts
+    @(241.8320 mm, 168.8620 mm): Segment of S21 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(231.7291 mm, 167.1314 mm): Segment on Edge.Cuts
+    @(238.8776 mm, 168.3411 mm): Segment of S21 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(231.7291 mm, 167.1314 mm): Segment on Edge.Cuts
+    @(238.4720 mm, 167.7619 mm): Segment of S21 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(234.6811 mm, 150.3897 mm): Segment on Edge.Cuts
+    @(244.7840 mm, 152.1203 mm): Segment of S22 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(234.6811 mm, 150.3897 mm): Segment on Edge.Cuts
+    @(241.8296 mm, 151.5994 mm): Segment of S22 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(234.6811 mm, 150.3897 mm): Segment on Edge.Cuts
+    @(241.4240 mm, 151.0201 mm): Segment of S22 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(234.6811 mm, 150.3897 mm): Segment on Edge.Cuts
+    @(244.7840 mm, 152.1203 mm): Segment of S22 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(234.6811 mm, 150.3897 mm): Segment on Edge.Cuts
+    @(241.8296 mm, 151.5994 mm): Segment of S22 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(234.6811 mm, 150.3897 mm): Segment on Edge.Cuts
+    @(241.4240 mm, 151.0201 mm): Segment of S22 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(237.6331 mm, 133.6479 mm): Segment on Edge.Cuts
+    @(247.7361 mm, 135.3786 mm): Segment of S23 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(237.6331 mm, 133.6479 mm): Segment on Edge.Cuts
+    @(244.7816 mm, 134.8576 mm): Segment of S23 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(237.6331 mm, 133.6479 mm): Segment on Edge.Cuts
+    @(244.3761 mm, 134.2784 mm): Segment of S23 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(237.6331 mm, 133.6479 mm): Segment on Edge.Cuts
+    @(247.7361 mm, 135.3786 mm): Segment of S23 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(237.6331 mm, 133.6479 mm): Segment on Edge.Cuts
+    @(244.7816 mm, 134.8576 mm): Segment of S23 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(237.6331 mm, 133.6479 mm): Segment on Edge.Cuts
+    @(244.3761 mm, 134.2784 mm): Segment of S23 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(240.5851 mm, 116.9062 mm): Segment on Edge.Cuts
+    @(250.6881 mm, 118.6368 mm): Segment of S24 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(240.5851 mm, 116.9062 mm): Segment on Edge.Cuts
+    @(247.7337 mm, 118.1159 mm): Segment of S24 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(240.5851 mm, 116.9062 mm): Segment on Edge.Cuts
+    @(247.3281 mm, 117.5367 mm): Segment of S24 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(240.5851 mm, 116.9062 mm): Segment on Edge.Cuts
+    @(250.6881 mm, 118.6368 mm): Segment of S24 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(240.5851 mm, 116.9062 mm): Segment on Edge.Cuts
+    @(247.7337 mm, 118.1159 mm): Segment of S24 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(240.5851 mm, 116.9062 mm): Segment on Edge.Cuts
+    @(247.3281 mm, 117.5367 mm): Segment of S24 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(212.7675 mm, 180.8017 mm): Segment on Edge.Cuts
+    @(222.4165 mm, 184.2604 mm): Segment of S25 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(212.7675 mm, 180.8017 mm): Segment on Edge.Cuts
+    @(219.5974 mm, 183.2343 mm): Segment of S25 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(212.7675 mm, 180.8017 mm): Segment on Edge.Cuts
+    @(219.2985 mm, 182.5935 mm): Segment of S25 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(212.7675 mm, 180.8017 mm): Segment on Edge.Cuts
+    @(222.4165 mm, 184.2604 mm): Segment of S25 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(212.7675 mm, 180.8017 mm): Segment on Edge.Cuts
+    @(219.5974 mm, 183.2343 mm): Segment of S25 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(212.7675 mm, 180.8017 mm): Segment on Edge.Cuts
+    @(219.2985 mm, 182.5935 mm): Segment of S25 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(230.4114 mm, 187.0596 mm): Segment on Edge.Cuts
+    @(239.7222 mm, 191.3461 mm): Segment of S26 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(230.4114 mm, 187.0596 mm): Segment on Edge.Cuts
+    @(237.0033 mm, 190.0782 mm): Segment of S26 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(230.4114 mm, 187.0596 mm): Segment on Edge.Cuts
+    @(236.7615 mm, 189.4138 mm): Segment of S26 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(230.4114 mm, 187.0596 mm): Segment on Edge.Cuts
+    @(239.7222 mm, 191.3461 mm): Segment of S26 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(230.4114 mm, 187.0596 mm): Segment on Edge.Cuts
+    @(237.0033 mm, 190.0782 mm): Segment of S26 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(230.4114 mm, 187.0596 mm): Segment on Edge.Cuts
+    @(236.7615 mm, 189.4138 mm): Segment of S26 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(247.7950 mm, 195.2583 mm): Segment on Edge.Cuts
+    @(256.6967 mm, 200.3400 mm): Segment of S27 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(247.7950 mm, 195.2583 mm): Segment on Edge.Cuts
+    @(254.0987 mm, 198.8400 mm): Segment of S27 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(247.7950 mm, 195.2583 mm): Segment on Edge.Cuts
+    @(253.9156 mm, 198.1570 mm): Segment of S27 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(247.7950 mm, 195.2583 mm): Segment on Edge.Cuts
+    @(256.6967 mm, 200.3400 mm): Segment of S27 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(247.7950 mm, 195.2583 mm): Segment on Edge.Cuts
+    @(254.0987 mm, 198.8400 mm): Segment of S27 on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(247.7950 mm, 195.2583 mm): Segment on Edge.Cuts
+    @(253.9156 mm, 198.1570 mm): Segment of S27 on B.Silkscreen
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'
+    Local override; warning
+    @(160.6355 mm, 107.5428 mm): Footprint MH1
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'
+    Local override; warning
+    @(159.7458 mm, 141.5195 mm): Footprint MH2
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'
+    Local override; warning
+    @(240.2955 mm, 117.1090 mm): Footprint MH3
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'
+    Local override; warning
+    @(205.9053 mm, 165.0818 mm): Footprint MH4
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'
+    Local override; warning
+    @(255.3367 mm, 178.2175 mm): Footprint MH5
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'
+    Local override; warning
+    @(150.0000 mm, 150.0000 mm): Footprint S1
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'
+    Local override; warning
+    @(150.0000 mm, 133.0000 mm): Footprint S2
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'
+    Local override; warning
+    @(150.0000 mm, 116.0000 mm): Footprint S3
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'
+    Local override; warning
+    @(150.0000 mm, 99.0000 mm): Footprint S4
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'
+    Local override; warning
+    @(169.0467 mm, 150.0274 mm): Footprint S5
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'
+    Local override; warning
+    @(169.9364 mm, 133.0507 mm): Footprint S6
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'
+    Local override; warning
+    @(170.8261 mm, 116.0740 mm): Footprint S7
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'
+    Local override; warning
+    @(171.7159 mm, 99.0973 mm): Footprint S8
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'
+    Local override; warning
+    @(189.8146 mm, 144.2555 mm): Footprint S9
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'
+    Local override; warning
+    @(192.7667 mm, 127.5138 mm): Footprint S10
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'
+    Local override; warning
+    @(195.7187 mm, 110.7720 mm): Footprint S11
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'
+    Local override; warning
+    @(198.6707 mm, 94.0303 mm): Footprint S12
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'
+    Local override; warning
+    @(208.0621 mm, 144.4267 mm): Footprint S13
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'
+    Local override; warning
+    @(211.0142 mm, 127.6850 mm): Footprint S14
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'
+    Local override; warning
+    @(213.9662 mm, 110.9433 mm): Footprint S15
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'
+    Local override; warning
+    @(216.9182 mm, 94.2015 mm): Footprint S16
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'
+    Local override; warning
+    @(224.3995 mm, 155.4309 mm): Footprint S17
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'
+    Local override; warning
+    @(227.3515 mm, 138.6891 mm): Footprint S18
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'
+    Local override; warning
+    @(230.3035 mm, 121.9474 mm): Footprint S19
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'
+    Local override; warning
+    @(233.2555 mm, 105.2057 mm): Footprint S20
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'
+    Local override; warning
+    @(241.7787 mm, 160.5261 mm): Footprint S21
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'
+    Local override; warning
+    @(244.7307 mm, 143.7844 mm): Footprint S22
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'
+    Local override; warning
+    @(247.6828 mm, 127.0427 mm): Footprint S23
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'
+    Local override; warning
+    @(250.6348 mm, 110.3009 mm): Footprint S24
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'
+    Local override; warning
+    @(223.8115 mm, 176.0419 mm): Footprint S25
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'
+    Local override; warning
+    @(241.8282 mm, 183.2804 mm): Footprint S26
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'
+    Local override; warning
+    @(259.4977 mm, 192.4886 mm): Footprint S27
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'
+    Local override; warning
+    @(156.0000 mm, 150.0000 mm): Footprint D1
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'
+    Local override; warning
+    @(156.0000 mm, 133.0000 mm): Footprint D2
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'
+    Local override; warning
+    @(156.0000 mm, 116.0000 mm): Footprint D3
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'
+    Local override; warning
+    @(156.0000 mm, 99.0000 mm): Footprint D4
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'
+    Local override; warning
+    @(175.0385 mm, 150.3414 mm): Footprint D5
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'
+    Local override; warning
+    @(175.9282 mm, 133.3647 mm): Footprint D6
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'
+    Local override; warning
+    @(176.8179 mm, 116.3880 mm): Footprint D7
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'
+    Local override; warning
+    @(177.7076 mm, 99.4113 mm): Footprint D8
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'
+    Local override; warning
+    @(195.7235 mm, 145.2974 mm): Footprint D9
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'
+    Local override; warning
+    @(198.6755 mm, 128.5556 mm): Footprint D10
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'
+    Local override; warning
+    @(201.6275 mm, 111.8139 mm): Footprint D11
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'
+    Local override; warning
+    @(204.5796 mm, 95.0722 mm): Footprint D12
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'
+    Local override; warning
+    @(213.9710 mm, 145.4686 mm): Footprint D13
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'
+    Local override; warning
+    @(216.9230 mm, 128.7269 mm): Footprint D14
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'
+    Local override; warning
+    @(219.8750 mm, 111.9852 mm): Footprint D15
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'
+    Local override; warning
+    @(222.8270 mm, 95.2434 mm): Footprint D16
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'
+    Local override; warning
+    @(230.3083 mm, 156.4727 mm): Footprint D17
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'
+    Local override; warning
+    @(233.2604 mm, 139.7310 mm): Footprint D18
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'
+    Local override; warning
+    @(236.2124 mm, 122.9893 mm): Footprint D19
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'
+    Local override; warning
+    @(239.1644 mm, 106.2476 mm): Footprint D20
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'
+    Local override; warning
+    @(247.6876 mm, 161.5680 mm): Footprint D21
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'
+    Local override; warning
+    @(250.6396 mm, 144.8263 mm): Footprint D22
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'
+    Local override; warning
+    @(253.5916 mm, 128.0846 mm): Footprint D23
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'
+    Local override; warning
+    @(256.5436 mm, 111.3428 mm): Footprint D24
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'
+    Local override; warning
+    @(229.4496 mm, 178.0940 mm): Footprint D25
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'
+    Local override; warning
+    @(247.2661 mm, 185.8161 mm): Footprint D26
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'
+    Local override; warning
+    @(264.6939 mm, 195.4886 mm): Footprint D27
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'
+    Local override; warning
+    @(255.0166 mm, 168.9529 mm): Footprint JST1
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'
+    Local override; warning
+    @(274.2179 mm, 155.0763 mm): Footprint PWR1
+[lib_footprint_issues]: The current configuration does not include the footprint library 'ceoloide'
+    Local override; warning
+    @(271.6132 mm, 169.8485 mm): Footprint RST1
+
+** Found 130 unconnected pads **
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(154.3500 mm, 150.0000 mm): Pad 2 [extra_pinky_bottom] of D1 on F.Cu
+    @(154.3500 mm, 150.0000 mm): Pad 2 [extra_pinky_bottom] of D1 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(154.3500 mm, 150.0000 mm): Pad 2 [extra_pinky_bottom] of D1 on B.Cu
+    @(155.0000 mm, 153.7500 mm): PTH pad 1 [extra_pinky_bottom] of S1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(145.0000 mm, 153.7500 mm): PTH pad 2 [col0] of S1
+    @(146.7550 mm, 138.9500 mm): Pad 2 [col0] of S2 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(146.7550 mm, 104.9500 mm): Pad 2 [col0] of S4 on F.Cu
+    @(145.0000 mm, 119.7500 mm): PTH pad 2 [col0] of S3
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(146.7550 mm, 121.9500 mm): Pad 2 [col0] of S3 on F.Cu
+    @(145.0000 mm, 136.7500 mm): PTH pad 2 [col0] of S2
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(257.6161 mm, 170.4267 mm): Pad 2 [GND] of JST1 on B.Cu
+    @(271.3865 mm, 173.0905 mm): PTH pad 2 [GND] of RST1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(257.9634 mm, 168.4571 mm): Pad 2 [GND] of JST1 on F.Cu
+    @(257.6161 mm, 170.4267 mm): Pad 2 [GND] of JST1 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(154.3500 mm, 133.0000 mm): Pad 2 [extra_pinky_home] of D2 on B.Cu
+    @(154.3500 mm, 133.0000 mm): Pad 2 [extra_pinky_home] of D2 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(154.3500 mm, 133.0000 mm): Pad 2 [extra_pinky_home] of D2 on B.Cu
+    @(155.0000 mm, 136.7500 mm): PTH pad 1 [extra_pinky_home] of S2
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(154.3500 mm, 116.0000 mm): Pad 2 [extra_pinky_top] of D3 on F.Cu
+    @(154.3500 mm, 116.0000 mm): Pad 2 [extra_pinky_top] of D3 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(154.3500 mm, 116.0000 mm): Pad 2 [extra_pinky_top] of D3 on F.Cu
+    @(155.0000 mm, 119.7500 mm): PTH pad 1 [extra_pinky_top] of S3
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(154.3500 mm, 99.0000 mm): Pad 2 [extra_pinky_upper] of D4 on F.Cu
+    @(154.3500 mm, 99.0000 mm): Pad 2 [extra_pinky_upper] of D4 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(154.3500 mm, 99.0000 mm): Pad 2 [extra_pinky_upper] of D4 on F.Cu
+    @(155.0000 mm, 102.7500 mm): PTH pad 1 [extra_pinky_upper] of S4
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(173.3908 mm, 150.2551 mm): Pad 2 [pinky_bottom] of D5 on F.Cu
+    @(173.3908 mm, 150.2551 mm): Pad 2 [pinky_bottom] of D5 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(173.3908 mm, 150.2551 mm): Pad 2 [pinky_bottom] of D5 on F.Cu
+    @(173.8436 mm, 154.0340 mm): PTH pad 1 [pinky_bottom] of S5
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(163.8573 mm, 153.5106 mm): PTH pad 2 [col1] of S5
+    @(166.3845 mm, 138.8227 mm): Pad 2 [col1] of S6 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(164.7470 mm, 136.5339 mm): PTH pad 2 [col1] of S6
+    @(167.2742 mm, 121.8460 mm): Pad 2 [col1] of S7 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(168.1639 mm, 104.8693 mm): Pad 2 [col1] of S8 on F.Cu
+    @(165.6367 mm, 119.5572 mm): PTH pad 2 [col1] of S7
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(174.2805 mm, 133.2784 mm): Pad 2 [pinky_home] of D6 on F.Cu
+    @(174.2805 mm, 133.2784 mm): Pad 2 [pinky_home] of D6 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(174.2805 mm, 133.2784 mm): Pad 2 [pinky_home] of D6 on F.Cu
+    @(174.7333 mm, 137.0572 mm): PTH pad 1 [pinky_home] of S6
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(175.1702 mm, 116.3017 mm): Pad 2 [pinky_top] of D7 on F.Cu
+    @(175.1702 mm, 116.3017 mm): Pad 2 [pinky_top] of D7 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(175.1702 mm, 116.3017 mm): Pad 2 [pinky_top] of D7 on B.Cu
+    @(175.6230 mm, 120.0805 mm): PTH pad 1 [pinky_top] of S7
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(176.0599 mm, 99.3250 mm): Pad 2 [pinky_upper] of D8 on B.Cu
+    @(176.0599 mm, 99.3250 mm): Pad 2 [pinky_upper] of D8 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(176.0599 mm, 99.3250 mm): Pad 2 [pinky_upper] of D8 on B.Cu
+    @(176.5127 mm, 103.1038 mm): PTH pad 1 [pinky_upper] of S8
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(194.0986 mm, 145.0109 mm): Pad 2 [ring_bottom] of D9 on F.Cu
+    @(194.0986 mm, 145.0109 mm): Pad 2 [ring_bottom] of D9 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(194.0986 mm, 145.0109 mm): Pad 2 [ring_bottom] of D9 on B.Cu
+    @(194.0875 mm, 148.8168 mm): PTH pad 1 [ring_bottom] of S9
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(184.2394 mm, 147.0803 mm): PTH pad 2 [col2] of S9
+    @(188.5378 mm, 132.8099 mm): Pad 2 [col2] of S10 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(187.1914 mm, 130.3385 mm): PTH pad 2 [col2] of S10
+    @(191.4898 mm, 116.0681 mm): Pad 2 [col2] of S11 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(194.4418 mm, 99.3264 mm): Pad 2 [col2] of S12 on F.Cu
+    @(190.1435 mm, 113.5968 mm): PTH pad 2 [col2] of S11
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(197.0506 mm, 128.2691 mm): Pad 2 [ring_home] of D10 on B.Cu
+    @(197.0506 mm, 128.2691 mm): Pad 2 [ring_home] of D10 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(197.0506 mm, 128.2691 mm): Pad 2 [ring_home] of D10 on F.Cu
+    @(197.0395 mm, 132.0750 mm): PTH pad 1 [ring_home] of S10
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(200.0026 mm, 111.5274 mm): Pad 2 [ring_top] of D11 on B.Cu
+    @(200.0026 mm, 111.5274 mm): Pad 2 [ring_top] of D11 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(200.0026 mm, 111.5274 mm): Pad 2 [ring_top] of D11 on B.Cu
+    @(199.9915 mm, 115.3333 mm): PTH pad 1 [ring_top] of S11
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(202.9546 mm, 94.7857 mm): Pad 2 [ring_upper] of D12 on B.Cu
+    @(202.9546 mm, 94.7857 mm): Pad 2 [ring_upper] of D12 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(202.9546 mm, 94.7857 mm): Pad 2 [ring_upper] of D12 on B.Cu
+    @(202.9436 mm, 98.5916 mm): PTH pad 1 [ring_upper] of S12
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(212.3460 mm, 145.1821 mm): Pad 2 [middle_bottom] of D13 on B.Cu
+    @(212.3460 mm, 145.1821 mm): Pad 2 [middle_bottom] of D13 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(212.3460 mm, 145.1821 mm): Pad 2 [middle_bottom] of D13 on B.Cu
+    @(212.3350 mm, 148.9880 mm): PTH pad 1 [middle_bottom] of S13
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(202.4869 mm, 147.2515 mm): PTH pad 2 [col3] of S13
+    @(206.7852 mm, 132.9811 mm): Pad 2 [col3] of S14 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(203.8332 mm, 149.7228 mm): Pad 2 [col3] of S13 on F.Cu
+    @(215.3426 mm, 176.9501 mm): Pad 2 [col3] of S25 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(205.4389 mm, 130.5098 mm): PTH pad 2 [col3] of S14
+    @(209.7373 mm, 116.2394 mm): Pad 2 [col3] of S15 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(212.6893 mm, 99.4977 mm): Pad 2 [col3] of S16 on F.Cu
+    @(208.3910 mm, 113.7681 mm): PTH pad 2 [col3] of S15
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(215.2981 mm, 128.4404 mm): Pad 2 [middle_home] of D14 on F.Cu
+    @(215.2981 mm, 128.4404 mm): Pad 2 [middle_home] of D14 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(215.2981 mm, 128.4404 mm): Pad 2 [middle_home] of D14 on B.Cu
+    @(215.2870 mm, 132.2463 mm): PTH pad 1 [middle_home] of S14
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(218.2501 mm, 111.6986 mm): Pad 2 [middle_top] of D15 on B.Cu
+    @(218.2501 mm, 111.6986 mm): Pad 2 [middle_top] of D15 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(218.2501 mm, 111.6986 mm): Pad 2 [middle_top] of D15 on B.Cu
+    @(218.2390 mm, 115.5045 mm): PTH pad 1 [middle_top] of S15
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(221.2021 mm, 94.9569 mm): Pad 2 [middle_upper] of D16 on B.Cu
+    @(221.2021 mm, 94.9569 mm): Pad 2 [middle_upper] of D16 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(221.2021 mm, 94.9569 mm): Pad 2 [middle_upper] of D16 on F.Cu
+    @(221.1910 mm, 98.7628 mm): PTH pad 1 [middle_upper] of S16
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(228.6834 mm, 156.1862 mm): Pad 2 [index_bottom] of D17 on F.Cu
+    @(228.6834 mm, 156.1862 mm): Pad 2 [index_bottom] of D17 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(228.6834 mm, 156.1862 mm): Pad 2 [index_bottom] of D17 on B.Cu
+    @(228.6723 mm, 159.9921 mm): PTH pad 1 [index_bottom] of S17
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(218.8243 mm, 158.2556 mm): PTH pad 2 [col4] of S17
+    @(223.1226 mm, 143.9852 mm): Pad 2 [col4] of S18 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(226.0746 mm, 127.2435 mm): Pad 2 [col4] of S19 on F.Cu
+    @(221.7763 mm, 141.5139 mm): PTH pad 2 [col4] of S18
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(229.0266 mm, 110.5018 mm): Pad 2 [col4] of S20 on F.Cu
+    @(224.7283 mm, 124.7722 mm): PTH pad 2 [col4] of S19
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(233.3124 mm, 183.4471 mm): Pad 2 [col4] of S26 on B.Cu
+    @(220.1706 mm, 160.7270 mm): Pad 2 [col4] of S17 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(231.6354 mm, 139.4445 mm): Pad 2 [index_home] of D18 on B.Cu
+    @(231.6354 mm, 139.4445 mm): Pad 2 [index_home] of D18 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(231.6354 mm, 139.4445 mm): Pad 2 [index_home] of D18 on F.Cu
+    @(231.6244 mm, 143.2504 mm): PTH pad 1 [index_home] of S18
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(234.5874 mm, 122.7028 mm): Pad 2 [index_top] of D19 on F.Cu
+    @(234.5874 mm, 122.7028 mm): Pad 2 [index_top] of D19 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(234.5874 mm, 122.7028 mm): Pad 2 [index_top] of D19 on B.Cu
+    @(234.5764 mm, 126.5087 mm): PTH pad 1 [index_top] of S19
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(237.5395 mm, 105.9610 mm): Pad 2 [index_upper] of D20 on B.Cu
+    @(237.5395 mm, 105.9610 mm): Pad 2 [index_upper] of D20 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(237.5395 mm, 105.9610 mm): Pad 2 [index_upper] of D20 on F.Cu
+    @(237.5284 mm, 109.7669 mm): PTH pad 1 [index_upper] of S20
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(246.0626 mm, 161.2815 mm): Pad 2 [inner_bottom] of D21 on B.Cu
+    @(246.0626 mm, 161.2815 mm): Pad 2 [inner_bottom] of D21 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(246.0626 mm, 161.2815 mm): Pad 2 [inner_bottom] of D21 on F.Cu
+    @(246.0516 mm, 165.0874 mm): PTH pad 1 [inner_bottom] of S21
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(236.2035 mm, 163.3509 mm): PTH pad 2 [col5] of S21
+    @(240.5018 mm, 149.0805 mm): Pad 2 [col5] of S22 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(237.5498 mm, 165.8223 mm): Pad 2 [col5] of S21 on F.Cu
+    @(250.9998 mm, 191.9124 mm): Pad 2 [col5] of S27 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(243.4539 mm, 132.3388 mm): Pad 2 [col5] of S23 on F.Cu
+    @(239.1555 mm, 146.6092 mm): PTH pad 2 [col5] of S22
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(246.4059 mm, 115.5971 mm): Pad 2 [col5] of S24 on F.Cu
+    @(242.1075 mm, 129.8675 mm): PTH pad 2 [col5] of S23
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(249.0147 mm, 144.5398 mm): Pad 2 [inner_home] of D22 on B.Cu
+    @(249.0147 mm, 144.5398 mm): Pad 2 [inner_home] of D22 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(249.0147 mm, 144.5398 mm): Pad 2 [inner_home] of D22 on B.Cu
+    @(249.0036 mm, 148.3457 mm): PTH pad 1 [inner_home] of S22
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(251.9667 mm, 127.7980 mm): Pad 2 [inner_top] of D23 on F.Cu
+    @(251.9667 mm, 127.7980 mm): Pad 2 [inner_top] of D23 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(251.9667 mm, 127.7980 mm): Pad 2 [inner_top] of D23 on B.Cu
+    @(251.9556 mm, 131.6039 mm): PTH pad 1 [inner_top] of S23
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(254.9187 mm, 111.0563 mm): Pad 2 [inner_upper] of D24 on B.Cu
+    @(254.9187 mm, 111.0563 mm): Pad 2 [inner_upper] of D24 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(254.9187 mm, 111.0563 mm): Pad 2 [inner_upper] of D24 on F.Cu
+    @(254.9076 mm, 114.8622 mm): PTH pad 1 [inner_upper] of S24
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(227.8991 mm, 177.5297 mm): Pad 2 [near_thumb] of D25 on B.Cu
+    @(227.8991 mm, 177.5297 mm): Pad 2 [near_thumb] of D25 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(227.8991 mm, 177.5297 mm): Pad 2 [near_thumb] of D25 on B.Cu
+    @(227.2274 mm, 181.2758 mm): PTH pad 1 [near_thumb] of S25
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(245.7707 mm, 185.1188 mm): Pad 2 [home_thumb] of D26 on F.Cu
+    @(245.7707 mm, 185.1188 mm): Pad 2 [home_thumb] of D26 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(245.7707 mm, 185.1188 mm): Pad 2 [home_thumb] of D26 on F.Cu
+    @(244.7750 mm, 188.7922 mm): PTH pad 1 [home_thumb] of S26
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(263.2649 mm, 194.6636 mm): Pad 2 [far_thumb] of D27 on B.Cu
+    @(263.2649 mm, 194.6636 mm): Pad 2 [far_thumb] of D27 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(263.2649 mm, 194.6636 mm): Pad 2 [far_thumb] of D27 on B.Cu
+    @(261.9528 mm, 198.2362 mm): PTH pad 1 [far_thumb] of S27
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(157.6500 mm, 150.0000 mm): Pad 1 [bottom] of D1 on B.Cu
+    @(157.6500 mm, 150.0000 mm): Pad 1 [bottom] of D1 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(176.6862 mm, 150.4278 mm): Pad 1 [bottom] of D5 on F.Cu
+    @(176.6862 mm, 150.4278 mm): Pad 1 [bottom] of D5 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(176.6862 mm, 150.4278 mm): Pad 1 [bottom] of D5 on F.Cu
+    @(157.6500 mm, 150.0000 mm): Pad 1 [bottom] of D1 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(197.3484 mm, 145.5839 mm): Pad 1 [bottom] of D9 on B.Cu
+    @(197.3484 mm, 145.5839 mm): Pad 1 [bottom] of D9 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(197.3484 mm, 145.5839 mm): Pad 1 [bottom] of D9 on B.Cu
+    @(176.6862 mm, 150.4278 mm): Pad 1 [bottom] of D5 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(215.5959 mm, 145.7551 mm): Pad 1 [bottom] of D13 on B.Cu
+    @(215.5959 mm, 145.7551 mm): Pad 1 [bottom] of D13 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(215.5959 mm, 145.7551 mm): Pad 1 [bottom] of D13 on F.Cu
+    @(197.3484 mm, 145.5839 mm): Pad 1 [bottom] of D9 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(231.9333 mm, 156.7593 mm): Pad 1 [bottom] of D17 on F.Cu
+    @(231.9333 mm, 156.7593 mm): Pad 1 [bottom] of D17 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(231.9333 mm, 156.7593 mm): Pad 1 [bottom] of D17 on B.Cu
+    @(249.3125 mm, 161.8545 mm): Pad 1 [bottom] of D21 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(231.9333 mm, 156.7593 mm): Pad 1 [bottom] of D17 on B.Cu
+    @(215.5959 mm, 145.7551 mm): Pad 1 [bottom] of D13 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(249.3125 mm, 161.8545 mm): Pad 1 [bottom] of D21 on F.Cu
+    @(249.3125 mm, 161.8545 mm): Pad 1 [bottom] of D21 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(157.6500 mm, 133.0000 mm): Pad 1 [home] of D2 on F.Cu
+    @(157.6500 mm, 133.0000 mm): Pad 1 [home] of D2 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(157.6500 mm, 133.0000 mm): Pad 1 [home] of D2 on B.Cu
+    @(177.5759 mm, 133.4511 mm): Pad 1 [home] of D6 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(177.5759 mm, 133.4511 mm): Pad 1 [home] of D6 on F.Cu
+    @(177.5759 mm, 133.4511 mm): Pad 1 [home] of D6 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(200.3004 mm, 128.8422 mm): Pad 1 [home] of D10 on F.Cu
+    @(200.3004 mm, 128.8422 mm): Pad 1 [home] of D10 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(200.3004 mm, 128.8422 mm): Pad 1 [home] of D10 on F.Cu
+    @(177.5759 mm, 133.4511 mm): Pad 1 [home] of D6 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(218.5479 mm, 129.0134 mm): Pad 1 [home] of D14 on F.Cu
+    @(218.5479 mm, 129.0134 mm): Pad 1 [home] of D14 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(218.5479 mm, 129.0134 mm): Pad 1 [home] of D14 on F.Cu
+    @(200.3004 mm, 128.8422 mm): Pad 1 [home] of D10 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(234.8853 mm, 140.0175 mm): Pad 1 [home] of D18 on F.Cu
+    @(234.8853 mm, 140.0175 mm): Pad 1 [home] of D18 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(234.8853 mm, 140.0175 mm): Pad 1 [home] of D18 on F.Cu
+    @(218.5479 mm, 129.0134 mm): Pad 1 [home] of D14 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(252.2645 mm, 145.1128 mm): Pad 1 [home] of D22 on F.Cu
+    @(252.2645 mm, 145.1128 mm): Pad 1 [home] of D22 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(252.2645 mm, 145.1128 mm): Pad 1 [home] of D22 on B.Cu
+    @(234.8853 mm, 140.0175 mm): Pad 1 [home] of D18 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(157.6500 mm, 116.0000 mm): Pad 1 [top] of D3 on F.Cu
+    @(157.6500 mm, 116.0000 mm): Pad 1 [top] of D3 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(157.6500 mm, 116.0000 mm): Pad 1 [top] of D3 on B.Cu
+    @(178.4657 mm, 116.4744 mm): Pad 1 [top] of D7 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(178.4657 mm, 116.4744 mm): Pad 1 [top] of D7 on B.Cu
+    @(178.4657 mm, 116.4744 mm): Pad 1 [top] of D7 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(203.2525 mm, 112.1004 mm): Pad 1 [top] of D11 on B.Cu
+    @(203.2525 mm, 112.1004 mm): Pad 1 [top] of D11 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(203.2525 mm, 112.1004 mm): Pad 1 [top] of D11 on F.Cu
+    @(178.4657 mm, 116.4744 mm): Pad 1 [top] of D7 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(221.4999 mm, 112.2717 mm): Pad 1 [top] of D15 on F.Cu
+    @(221.4999 mm, 112.2717 mm): Pad 1 [top] of D15 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(221.4999 mm, 112.2717 mm): Pad 1 [top] of D15 on F.Cu
+    @(203.2525 mm, 112.1004 mm): Pad 1 [top] of D11 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(237.8373 mm, 123.2758 mm): Pad 1 [top] of D19 on B.Cu
+    @(237.8373 mm, 123.2758 mm): Pad 1 [top] of D19 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(237.8373 mm, 123.2758 mm): Pad 1 [top] of D19 on F.Cu
+    @(221.4999 mm, 112.2717 mm): Pad 1 [top] of D15 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(255.2165 mm, 128.3711 mm): Pad 1 [top] of D23 on B.Cu
+    @(255.2165 mm, 128.3711 mm): Pad 1 [top] of D23 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(255.2165 mm, 128.3711 mm): Pad 1 [top] of D23 on B.Cu
+    @(237.8373 mm, 123.2758 mm): Pad 1 [top] of D19 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(157.6500 mm, 99.0000 mm): Pad 1 [upper] of D4 on B.Cu
+    @(157.6500 mm, 99.0000 mm): Pad 1 [upper] of D4 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(157.6500 mm, 99.0000 mm): Pad 1 [upper] of D4 on B.Cu
+    @(179.3554 mm, 99.4977 mm): Pad 1 [upper] of D8 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(179.3554 mm, 99.4977 mm): Pad 1 [upper] of D8 on F.Cu
+    @(179.3554 mm, 99.4977 mm): Pad 1 [upper] of D8 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(206.2045 mm, 95.3587 mm): Pad 1 [upper] of D12 on B.Cu
+    @(206.2045 mm, 95.3587 mm): Pad 1 [upper] of D12 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(206.2045 mm, 95.3587 mm): Pad 1 [upper] of D12 on B.Cu
+    @(179.3554 mm, 99.4977 mm): Pad 1 [upper] of D8 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(224.4520 mm, 95.5299 mm): Pad 1 [upper] of D16 on F.Cu
+    @(224.4520 mm, 95.5299 mm): Pad 1 [upper] of D16 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(224.4520 mm, 95.5299 mm): Pad 1 [upper] of D16 on F.Cu
+    @(206.2045 mm, 95.3587 mm): Pad 1 [upper] of D12 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(240.7893 mm, 106.5341 mm): Pad 1 [upper] of D20 on B.Cu
+    @(240.7893 mm, 106.5341 mm): Pad 1 [upper] of D20 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(240.7893 mm, 106.5341 mm): Pad 1 [upper] of D20 on B.Cu
+    @(224.4520 mm, 95.5299 mm): Pad 1 [upper] of D16 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(258.1686 mm, 111.6294 mm): Pad 1 [upper] of D24 on B.Cu
+    @(258.1686 mm, 111.6294 mm): Pad 1 [upper] of D24 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(258.1686 mm, 111.6294 mm): Pad 1 [upper] of D24 on B.Cu
+    @(240.7893 mm, 106.5341 mm): Pad 1 [upper] of D20 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(231.0001 mm, 178.6583 mm): Pad 1 [thumb] of D25 on B.Cu
+    @(231.0001 mm, 178.6583 mm): Pad 1 [thumb] of D25 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(248.7615 mm, 186.5135 mm): Pad 1 [thumb] of D26 on B.Cu
+    @(248.7615 mm, 186.5135 mm): Pad 1 [thumb] of D26 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(248.7615 mm, 186.5135 mm): Pad 1 [thumb] of D26 on F.Cu
+    @(231.0001 mm, 178.6583 mm): Pad 1 [thumb] of D25 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(266.1228 mm, 196.3136 mm): Pad 1 [thumb] of D27 on B.Cu
+    @(266.1228 mm, 196.3136 mm): Pad 1 [thumb] of D27 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(266.1228 mm, 196.3136 mm): Pad 1 [thumb] of D27 on F.Cu
+    @(248.7615 mm, 186.5135 mm): Pad 1 [thumb] of D26 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(257.9634 mm, 168.4571 mm): Pad 1 [BAT_P] of JST1 on B.Cu
+    @(257.6161 mm, 170.4267 mm): Pad 1 [BAT_P] of JST1 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(272.3302 mm, 157.1998 mm): Pad 3 [BAT_P] of PWR1 on B.Cu
+    @(272.3302 mm, 157.1998 mm): Pad 1 [BAT_P] of PWR1 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(272.3302 mm, 157.1998 mm): Pad 3 [BAT_P] of PWR1 on B.Cu
+    @(257.9634 mm, 168.4571 mm): Pad 1 [BAT_P] of JST1 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(272.4348 mm, 155.7035 mm): Pad 2 [RAW] of PWR1 on B.Cu
+    @(272.5394 mm, 154.2071 mm): Pad 2 [RAW] of PWR1 on F.Cu
+
+** Found 0 Footprint errors **
+
+** Ignored checks **
+    - Footprint has no courtyard defined
+    - Track endpoint not centered on via
+    - Tuning profile track geometries
+    - Footprint doesn't match symbol's footprint filters
+    - Footprint component type doesn't match footprint pads
+
+** End of Report **
